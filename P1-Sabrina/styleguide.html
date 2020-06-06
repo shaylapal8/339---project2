@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>IAT 339 Project 1</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/flexbox.css">
+	</head>
+
+	<body>
+		<h1 class="title-main">IAT 339 PROJECT 1</h1>
+
+		<nav class="pages">
+
+			<a href="./styleguide.html" class="pages-item">Styleguide</a>
+			<a href="./wireframes.html" class="pages-item">Wireframes</a>
+			<a href="./citations.html" class="pages-item">Citations</a>
+
+		</nav>
+
+		<section>
+
+			<div class="interactiveElements box">
+				<h2 class="title-section">Interactive Elements</h2>
+					<div class="interactiveElements-item box-item">
+						<h3 class="title-element">In Text Link</h3>
+							<p>This is a
+								<a href="https://www.pinterest.ca/pin/52706258125457032/" class="hyperlink" target="_blank">link</a>.
+							</p>
+								
+<!-- START OF SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;p>This is a
+	&lt;a href="https://www.pinterest.ca/pin/52706258125457032/" class="hyperlink" target="_blank">link&lt;/a>
+&lt;/p>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.hyperlink {
+	font-style: italic;
+	text-decoration: none;
+	transition: color 0.5s ease-out;
+	color: rgb(150,150,100);
+}
+
+.hyperlink:active, .hyperlink:hover, .hyperlink:focus {
+	color: rgb(180,180,140);
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF SAMPLE CODE -->							
+					</div>			
+
+
+					<div class="interactiveElements-item">
+						<h3 class="title-element">Call to Action Button</h3>
+						<button class="btn-ctn">Order Now</button>
+<!-- START OF SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;button class="btn-ctn">Order Now&lt;/button>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.btn-ctn {
+	font-size: 1.2rem;
+
+	padding: 0.8rem 3rem 0.6rem 3rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+
+	color: white;
+	background-color: rgb(221,190,169);
+	border-style: none;
+
+	transition: background-color 0.5s ease-out;
+}
+
+.btn-ctn:active, .btn-ctn:hover, .btn-ctn:focus {
+	background-color: rgb(237,220,210);
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF SAMPLE CODE -->	
+
+					</div>
+
+					<div class="interactiveElements-item">
+						<h3 class="title-element">Submit + Reset Buttons for Forms</h3>
+							<button class="btn-submit">Submit</button>
+
+							<button class="btn-reset">Reset</button>
+<!-- START OF SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;button class="btn-submit">Submit&lt;/button>
+&lt;button class="btn-reset">Reset&lt;/button>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.btn-submit{
+	color: white;
+	background-color: rgb(237,220,210);
+	border-style: none;
+
+	padding: 0.6rem 2rem 0.5rem 2rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+
+	transition: color 0.1s ease-out;
+}
+
+.btn-submit:active, .btn-submit:hover, .btn-submit:focus {
+	color: rgb(221,190,169);
+}
+
+.btn-reset{
+	color: rgb(221,190,169);
+	background-color: transparent;
+	border-color: rgb(221,190,169);
+	border-weight: 1;
+
+	padding: 0.6rem 2rem 0.5rem 2rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+
+	transition: background-color 0.1s ease-out;
+}
+
+.btn-reset:active, .btn-reset:hover, .btn-reset:focus {
+	background-color: rgba(221,190,169,0.2);
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF SAMPLE CODE -->	
+
+					</div>							
+					</div>
+
+					<div class="interactiveElements-item">
+						<h3 class="title-element">Text Input Field + Label</h3>
+							
+							<label for="address">Address</label>
+							<input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+
+<!-- START OF SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;label for="address">Address&lt;/label>
+&lt;input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+label {
+	display: block;
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.2rem;
+
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+input {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: grey;
+
+	border-style: solid;
+	border-width: 1.2px;
+	border-color: rgb(237,220,210);
+
+	margin-bottom: 0;
+	margin-top: 0.5rem;
+	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF SAMPLE CODE -->							
+
+					</div>
+
+					<div class="interactiveElements-item">
+						<h3 class="title-element">Colour Swatches</h3>
+						<h4>Primary Colours</h4>
+							<div class="swatch">
+								<div class="swatch-block">
+									<div class="swatch-block-color" id="dark-beige">
+									</div>
+
+									<div class="swatch-block-detail">
+										<h3>Dark Beige</h3>
+										<p>Call to Action</p>
+										<p>R221 G190 B269</p>
+										<p>#ddbea9</p>
+									</div>
+								</div>
+
+								<div class="swatch-block">
+									<div class="swatch-block-color" id="green">
+									</div>
+
+									<div class="swatch-block-detail">
+										<h3>Green</h3>
+										<p>Accent Colour</p>
+										<p>R157 G168 B138</p>
+										<p>#9da88a</p>
+									</div>
+								</div>
+							</div>
+
+							<h4>Secondary Colours</h4>
+							<div class="swatch">
+								<div class="swatch-block">
+									<div class="swatch-block-color" id="cream">
+									</div>
+
+									<div class="swatch-block-detail">
+										<h3>Cream</h3>
+										<p>Background Colour</p>
+										<p>R240 G239 B235</p>
+										<p>#f0efeb</p>
+									</div>
+								</div>
+
+								<div class="swatch-block">
+									<div class="swatch-block-color" id="warm-cream">
+									</div>
+
+									<div class="swatch-block-detail">
+										<h3>Warm Cream</h3>
+										<p>Header / Footer</p>
+										<p>R252 G244 B237</p>
+										<p>#fcf4ed</p>
+									</div>
+								</div>
+
+								<div class="swatch-block">
+									<div class="swatch-block-color" id="light-beige">
+									</div>
+
+									<div class="swatch-block-detail">
+										<h3>Light Beige</h3>
+										<p>Header / Footer</p>
+										<p>R235 G224 B218</p>
+										<p>#ebe0da</p>
+									</div>
+								</div>
+							</div>
+					</div>
+						
+
+
+			<!-- end of INTERACTIVE ELEMENTS div -->
+
+
+
+			<div class="textStyling">
+				<h2 class="title-section">Text Styling</h2>
+
+					<div class="textStyling-item">
+						<h3 class="title-element">Level 1 Heading</h3>
+							<h1>Header</h1>
+<!-- START OF H1 SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;h1>Header&lt;/h1>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+h1 {
+	font-family: "Cherolina", Helvetica, sans-serif;
+	margin: 1rem;
+	font-weight: normal;
+	font-size: 5rem;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF H1 SAMPLE CODE -->		
+						<h3 class="title-element">Level 2 Heading</h3>
+							<h2>Section Title</h2>
+<!-- START OF H2 SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;h2>Section Title&lt;/h2>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+h2 {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	margin-top: 2rem;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF  H2 SAMPLE CODE -->		
+						
+						<h3 class="title-element">Level 3 Heading</h3>
+							<h3>Sub-Title</h3>
+<!-- START OF H3 SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;h3>Sub-Title&lt;/h3>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+h3 {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	margin-top: 2rem;
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF  H3 SAMPLE CODE -->							
+
+					</div>
+
+
+					<div class="textStyling-item">
+						<h3 class="title-element">Paragraph</h3>
+							<p>This is the body text styling. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!-- START OF P SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;p>This is the body text styling. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+p {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	max-width: 650px;
+	line-height: 1.2;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF  P SAMPLE CODE -->						
+					</div>
+
+
+					<div class="textStyling-item">
+						<h3 class="title-element">Bulletted List</h3>
+						<ul>
+							<li>Roses</li>
+							<li>Orchids</li>
+							<li>Lilies</li>
+						</ul>
+
+<!-- START OF bulletted list SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;ul>
+	&lt;li>Roses&lt;/li>
+	&lt;li>Orchids&lt;/li>
+	&lt;li>Lilies&lt;/li>
+&lt;/ul>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+li {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF  bulletted SAMPLE CODE -->
+					</div>
+
+					<div class="textStyling-item">
+						<h3 class="title-element">Numbered List</h3>
+						<ol>
+							<li>First item</li>
+							<li>Second item</li>
+							<li>Third item</li>
+						</ol>
+
+<!-- START OF bulletted list SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;ol>
+	&lt;li>First item&lt;/li>
+	&lt;li>Second item&lt;/li>
+	&lt;li>Third item&lt;/li>
+&lt;/ol>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+li {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF  bulletted SAMPLE CODE -->
+					</div>
+					
+			</div>
+
+			<div>
+			<h2 class="title-section">Modular Pattern Elements</h2>
+				<div class="interactiveElements-item">
+				<h3 class="title-element">Main Navigation Module</h3>
+					<div class="nav">
+						<h1 class="nav-title" id="logo">Arcadia</h1>
+					<div class="nav-tab">
+						<h4>About Us</h4>
+						<h4>Gifting</h4>
+						<h4>Events</h4>
+						<h4>Contact Us</h4>
+					</div>	
+
+					<div class="nav-item">
+						<img src="img/account.png" alt="Icon for your account" id="account-icon">
+						<img src="img/cart.png" alt="Icon for your cart" id="cart-icon">
+					</div>	
+					</div>
+<!-- START OF main nav SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="nav">
+	&lt;h1 class="nav-title" id="logo">Arcadia&lt;/h1>
+	&lt;div class="nav-tab">
+		&lt;h4>About Us&lt;/h4>
+		&lt;h4>Gifting&lt;/h4>
+		&lt;h4>Events&lt;/h4>
+		&lt;h4>Contact Us&lt;/h4>
+	&lt;/div>	
+
+	&lt;div class="nav-item">
+		&lt;img src="img/account.png" alt="Icon for your account" id="account-icon">
+		&lt;img src="img/cart.png" alt="Icon for your cart" id="cart-icon">
+	&lt;/div>	
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.nav{
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content:space-around;
+	align-items: center;
+}
+
+.nav-title{
+	margin-left: 3rem;
+}
+
+.nav-tab {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 2rem;
+}
+
+.nav-item {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin-right: 3rem;
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF main nav SAMPLE CODE -->						
+
+				<h3 class="title-element">Product Listing Module</h3>
+					<div class="product">
+						<div class="product-item">
+							<a href="#">	
+								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+							</a>
+
+							<div class="product-item-btn">	
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-cart">Add to Cart</button>
+								</form>
+
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-now">Order Now</button>
+								</form>
+							</div>
+
+							<div class="product-item-detail">
+								<h2 class="product-name">Signature Bouquet</h2>
+								<p>$50</p>
+							</div>
+						</div>
+
+						<div class="product-item">
+							<a href="#">	
+								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+							</a>
+
+							<div class="product-item-btn">	
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-cart">Add to Cart</button>
+								</form>
+
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-now">Order Now</button>
+								</form>
+							</div>
+
+							<div class="product-item-detail">
+								<h2 class="product-name">Signature Bouquet</h2>
+								<p>$50</p>
+							</div>
+						</div>
+
+						<div class="product-item">
+							<a href="#">	
+								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+							</a>
+
+							<div class="product-item-btn">	
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-cart">Add to Cart</button>
+								</form>
+
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-now">Order Now</button>
+								</form>
+							</div>
+
+							<div class="product-item-detail">
+								<h2 class="product-name">Signature Bouquet</h2>
+								<p>$50</p>
+							</div>
+						</div>
+
+						<div class="product-item">
+							<a href="#">	
+								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+							</a>
+
+							<div class="product-item-btn">	
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-cart">Add to Cart</button>
+								</form>
+
+								<form style="display: inline" action="http://google.com/" method="get">
+									<button class="btn-product-now">Order Now</button>
+								</form>
+							</div>
+
+							<div class="product-item-detail">
+								<h2 class="product-name">Signature Bouquet</h2>
+								<p>$50</p>
+							</div>
+						</div>
+					</div>
+
+<!-- START OF product listing SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="product">
+	&lt;div class="product-item">
+		&lt;a href="#">	
+			&lt;img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+		&lt;/a>
+
+		&lt;div class="product-item-btn">	
+			&lt;a href="#">
+				&lt;button class="btn-product-cart">Add to Cart&lt;/button>
+			&lt;/a>
+
+			&lt;a href="#">
+				&lt;button class="btn-product-now">Order Now&lt;/button>
+			&lt;/a>
+		&lt;/div>
+
+		&lt;div class="product-item-detail">
+			&lt;h2 class="product-name">Signature Bouquet&lt;/h2>
+			&lt;p>$50&lt;/p>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.product{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+}
+
+.product-item{
+	flex: 1 1 auto;
+	flex-wrap:nowrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.product-item-detail{
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.product-item-btn{
+	flex-direction: row;
+	flex: 1 1 auto;
+	margin-right: 1rem;
+}
+
+@media (max-width: 50em){
+	.review-container, .layout, .product{
+		flex-direction: column;
+	}
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF product listing SAMPLE CODE -->
+
+				<h3 class="title-element">Customer Review Module</h3>
+				<div class="review-container">
+					<div class="review-container-item">
+						<h3>Customer 1</h3>
+						<p class="date">2020/03/01</p>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."</p>
+					</div>
+
+					<div class="review-container-item">
+						<h3>Customer 2</h3>
+						<p class="date">2020/03/01</p>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</p>
+					</div>
+
+					<div class="review-container-item">
+						<h3>Customer 3</h3>
+						<p class="date">2020/03/01</p>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. "</p>
+					</div>
+				</div>
+
+<!-- START OF review SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="review-container">
+	&lt;div class="review-container-item">
+		&lt;h3>Customer 1&lt;/h3>
+		&lt;p class="date">2020/03/01&lt;/p>
+		&lt;p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."&lt;/p>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.review-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.review-container-item{
+	margin: 0.5rem;
+}
+
+@media (max-width: 50em){
+	.review-container{
+		flex-direction: column;
+	}
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF review SAMPLE CODE -->				
+
+
+				<h3 class="title-element">Grid Structure</h3>
+				<h4>4 column - Product Listing, Shopping Cart</h4>
+					<div class="layout">
+						<div class="layout-product-item layout-product-bg">
+							<code>.layout-product</code>
+						</div>
+
+						<div class="layout-product-item layout-product-bg">
+							<code>.layout-product</code>
+						</div>
+
+						<div class="layout-product-item layout-product-bg">
+							<code>.layout-product</code>
+						</div>
+
+						<div class="layout-product-item layout-product-bg">
+							<code>.layout-product</code>
+						</div>
+					</div>
+<!-- START OF 4 column SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="layout">
+	&lt;div class="layout-product-item layout-product-bg">
+		&lt;code>.layout-product&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-product-item layout-product-bg">
+		&lt;code>.layout-product&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-product-item layout-product-bg">
+		&lt;code>.layout-product&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-product-item layout-product-bg">
+		&lt;code>.layout-product&lt;/code>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.layout{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.layout-product-item{
+	margin-right: 0.5rem;
+	max-width: 30rem;
+	margin-bottom: 2rem;
+	flex: 1 1 auto;
+}
+
+@media (max-width: 50em){
+	.review-container, .layout{
+		flex-direction: column;
+	}
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF 4 column SAMPLE CODE -->						
+
+				<h4>Unequal - Product Page, About Us Page</h4>
+					<div class="layout">
+						<div class="layout-minor layout-page-bg">
+							<code>.layout-minor</code>
+						</div>
+
+						<div class="layout-major layout-page-bg">
+							<code>.layout-major</code>
+						</div>
+
+					</div>
+<!-- START OF unequal SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="layout">
+	&lt;div class="layout-minor layout-page-bg">
+		&lt;code>.layout-minor&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-major layout-page-bg">
+		&lt;code>.layout-major&lt;/code>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.layout-minor{
+	flex: 1 6 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.layout-major{
+	flex: 6 1 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 50em){
+	.review-container, .layout{
+		flex-direction: column;
+	}
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF unequal SAMPLE CODE -->
+
+				<h4>Product Detail Page - 2 column</h4>
+					<div class="layout">
+						<div class="layout-left-img layout-page-bg">
+							<code>.layout-left-img</code>
+						</div>
+
+						<div class="layout-right-text layout-page-bg">
+							<code>.layout-right-text</code>
+						</div>
+					</div>		
+<!-- START OF 2 column SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="layout">
+	&lt;div class="layout-left-img layout-page-bg">
+		&lt;code>.layout-left-img&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-right-text layout-page-bg">
+		&lt;code>.layout-right-text&lt;/code>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="box-code">
+										<h4 class="title-code">CSS</h4>
+										<pre>
+											<code>
+.layout-left-img, .layout-right-text{
+	flex: 1 1 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 50em){
+	.review-container, .layout{
+		flex-direction: column;
+	}
+}
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF 2 column SAMPLE CODE -->
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+	</body>
+</html>
