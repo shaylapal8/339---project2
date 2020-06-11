@@ -125,6 +125,7 @@ a {
 	text-decoration: none;
 	transition: color 0.5s ease-out;
 	color: #9da88a;
+	margin-top: 3rem;
 }
 
 .pages-item:active, .pages-item:hover, .pages-item:focus {
@@ -143,6 +144,7 @@ pre {
 	white-space: pre-wrap;
 	tab-size: 2.5;
 	word-wrap: break-word;
+	font-size: 0.8rem;
 	/*how to use <pre> tag https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
 }
 
@@ -272,7 +274,7 @@ input {
 }
 
 #cream{
-	background-color: #f0efeb;
+	background-color: #f5f5f2;
 }
 
 #warm-cream{
