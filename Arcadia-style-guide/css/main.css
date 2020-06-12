@@ -286,7 +286,11 @@ input {
 }
 
 .nav{
-	background-color: #ebe0da;
+	background-color: white;
+}
+
+.nav-tab {
+	color: #DDBEA9;
 }
 
 #account-icon{
@@ -300,7 +304,7 @@ input {
 }
 
 #logo{
-	color: #B08265;
+	color: #DDBEA9;
 }
 
 .product-item-img{
@@ -309,7 +313,7 @@ input {
 }
 
 .review-container-item{
-	background-color: #fcf4ed;
+	background-color: white;
 	padding: 1rem 1rem 1rem 1rem;
 }
 
