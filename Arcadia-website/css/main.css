@@ -377,17 +377,13 @@ input {
 	padding-bottom: 0.8rem;
 }
 
-#subtotal {
-	padding: 10rem;
-}
-
 .cart-product-name, .quantity{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
 
-.subtitle-item{
-	 padding: 5rem;
+.subtotal{
+	 padding: 0rem;
 }
 
 .price {
