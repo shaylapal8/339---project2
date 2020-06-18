@@ -370,15 +370,24 @@ input {
 	border-style: none;
 }
 
+/*----------- Item Cart CSS -----------*/
 #cart-product-img{
 	max-width:10rem;
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
 }
 
+#subtotal {
+	padding: 10rem;
+}
+
 .cart-product-name, .quantity{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
+}
+
+.subtitle-item{
+	 padding: 5rem;
 }
 
 .price {
