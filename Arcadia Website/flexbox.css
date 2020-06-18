@@ -1,0 +1,160 @@
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+/*   * means EVERYTHING */
+
+.box {
+	flex-direction: column;
+	/* stack on top of each other */
+
+	flex-wrap:nowrap;
+	 /*if elements cannot be side by side, they will stack*/
+
+	justify-content:space-around;
+    /*if there's extra space around element, how should we use it? */
+	}
+
+.box-item{
+	flex: 1 1 auto; 
+	/* grow, shrink, basis (initial default size for the item, using auto allows us to edit the size elsewhere = we have more control of the sizing) */
+}
+
+.pages{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	/*justify-content:space-around;*/
+}
+
+.pages-item{
+	flex: 1 1 auto; 
+	padding: 0.5rem;
+}
+
+.swatch {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.swatch-block {
+	margin: 1rem;
+	flex: 1 1 auto;
+	background-color: white;
+}
+
+.swatch-block-color {
+	height: 10rem;
+	border-style: solid;
+	border-color: white;
+}
+
+.swatch-block-detail {
+	margin-bottom: 0;
+	padding: 0rem 0.5rem 1rem 1rem;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content:space-around;
+	align-items: center;
+}
+
+.nav-title{
+	margin-left: 3rem;
+}
+
+.nav-tab {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 2rem;
+}
+
+.nav-item {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin-right: 3rem;
+}
+
+.product{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+}
+
+.product-item{
+	flex: 1 1 auto;
+	flex-wrap:nowrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.product-item-detail{
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.product-item-btn{
+	flex-direction: row;
+	flex: 1 1 auto;
+	margin-right: 1rem;
+}
+
+.review-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.review-container-item{
+	margin: 0.5rem;
+}
+
+.layout{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.layout-product-item{
+	margin-right: 0.5rem;
+	max-width: 30rem;
+	margin-bottom: 2rem;
+	flex: 1 1 auto;
+}
+
+.layout-minor{
+	flex: 1 6 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.layout-major{
+	flex: 6 1 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.layout-left-img, .layout-right-text{
+	flex: 1 1 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 50em){
+	.review-container, .layout, .product{
+		flex-direction: column;
+	}
+}
+
+
+
+
+

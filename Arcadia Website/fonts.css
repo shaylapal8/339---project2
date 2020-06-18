@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Cherolina';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Cherolina.otf');
+	src: url('../fonts/Cherolina.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: 200;
+	font-style: normal;
+	src: url('../fonts/NeutraText-LightAlt.otf');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/NeutraText-BookAlt.otf');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/NeutraText-DemiAlt.otf');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: 200;
+	font-style: italic;
+	src: url('../fonts/NeutraText-LightItalicAlt.otf');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../fonts/NeutraTextBookItalicAlt.otf');
+}
+
+@font-face {
+	font-family: 'NeutraText';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../fonts/NeutraText-DemiItalicAlt.otf');
+}
