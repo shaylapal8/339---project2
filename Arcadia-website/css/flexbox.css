@@ -1,59 +1,6 @@
 *, *::after, *::before{
 	box-sizing: border-box;
 }
-/*   * means EVERYTHING */
-
-.box {
-	flex-direction: column;
-	/* stack on top of each other */
-
-	flex-wrap:nowrap;
-	 /*if elements cannot be side by side, they will stack*/
-
-	justify-content:space-around;
-    /*if there's extra space around element, how should we use it? */
-	}
-
-.box-item{
-	flex: 1 1 auto; 
-	/* grow, shrink, basis (initial default size for the item, using auto allows us to edit the size elsewhere = we have more control of the sizing) */
-}
-
-.pages{
-	display: flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-	/*justify-content:space-around;*/
-}
-
-.pages-item{
-	flex: 1 1 auto; 
-	padding: 0.5rem;
-}
-
-.swatch {
-	display: flex;
-	flex-wrap:wrap;
-	justify-content: space-around;
-	flex-direction: row;
-}
-
-.swatch-block {
-	margin: 1rem;
-	flex: 1 1 auto;
-	background-color: white;
-}
-
-.swatch-block-color {
-	height: 10rem;
-	border-style: solid;
-	border-color: white;
-}
-
-.swatch-block-detail {
-	margin-bottom: 0;
-	padding: 0rem 0.5rem 1rem 1rem;
-}
 
 .nav{
 	display: flex;
@@ -77,28 +24,52 @@
 	justify-content: flex-end;
 }
 
+.browse-container {
+	flex-direction: row;
+	/* stack on top of each other */
+
+	justify-content:space-around;
+    /*if there's extra space around element, how should we use it? */
+    display: flex;
+}
+
+.browse-container-filter{
+	margin-right: 2rem;
+	flex: 1 1 30%;
+}
+
+.container-product{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	flex: 1 1 100%;
+}
+
+.section-title{
+	flex: 1 1 auto;
+}
+
 .product{
 	display: flex;
-	flex-direction: row;
-	margin-top: 1rem;
 }
 
 .product-item{
-	flex: 1 1 auto;
-	flex-wrap:nowrap;
+	flex: 1 1 20%;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-right: 0.5rem;
 }
 
 .product-item-detail{
 	margin-top: 0;
 	margin-bottom: 2rem;
+	margin-right: 0.5rem;
 }
 
 .product-item-btn{
 	flex-direction: row;
-	flex: 1 1 auto;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
+	display: flex;
 }
 
 .review-container{
@@ -123,18 +94,6 @@
 	flex: 1 1 auto;
 }
 
-.layout-minor{
-	flex: 1 6 auto;
-	margin-right: 0.5rem;
-	margin-bottom: 2rem;
-}
-
-.layout-major{
-	flex: 6 1 auto;
-	margin-right: 0.5rem;
-	margin-bottom: 2rem;
-}
-
 .layout-left-img, .layout-right-text{
 	flex: 1 1 auto;
 	margin-right: 0.5rem;
@@ -156,12 +115,15 @@
 }
 
 @media (max-width: 50em){
-	.review-container, .layout, .product, .cart-layout {
+	.review-container, .layout, .cart-layout {
 		flex-direction: column;
 	}
 }
 
-
-
+@media (max-width: 100em){
+	.product{
+		flex-wrap: wrap;
+	}
+}
 
 
