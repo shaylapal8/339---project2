@@ -283,7 +283,6 @@ input {
     width: 90%;
 }
 
-/* -------------- IMAGES -------------- */
 .img{
 	border-style: none;
 }
@@ -299,26 +298,9 @@ input {
 
 #cart-product-img{
 	max-width:10rem;
-	position: fixed;
-	margin-top: -10rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 /* -------------- END of IMAGES -------------- */
 
-/* -------------- PRODUCT LISTING -------------- */
-.browse-container{
-	margin-left: 5rem;
-	margin-right: 5rem;
-	overflow-x: hidden;
-}
 
-.product-item-img{
-	max-width: 90%;
-	margin: 0;
-}
-/* -------------- END of PRODUCT LISTING -------------- */
-
-/* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
-/*.sidebar {
-	position: sticky;
-	top: 10 rem;
-}*/
