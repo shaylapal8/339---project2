@@ -382,9 +382,18 @@ input {
 	padding-bottom: 4rem;
 }
 
-.subtotal{
-	 padding: 0rem;
+.cart-item{
+	padding-bottom: 2rem;
 }
+
+p.cart-item-name{
+	padding-bottom: 1.34rem;
+}
+
+#subtotal{
+	 padding-left: 2rem;
+}
+
 
 .price {
 	padding-top: 5rem;
