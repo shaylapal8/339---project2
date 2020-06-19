@@ -57,6 +57,10 @@ p {
 	line-height: 1.2;
 }
 
+.about-blurb{
+	max-width: 30rem;
+}
+
 .date{
 	color: #9da88a;
 	font-style: italic;
