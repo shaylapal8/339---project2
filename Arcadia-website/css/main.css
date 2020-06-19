@@ -23,8 +23,8 @@ h2 {
 h3 {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 1rem;
-	font-weight: bold;
-	font-size: 1.2rem;
+	font-weight: normal;
+	font-size: 1.5rem;
 }
 
 h4 {
@@ -45,7 +45,7 @@ h5{
 p {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-top: 1rem;
 	margin-bottom: 0;
 	max-width: 650px;
@@ -73,7 +73,6 @@ a {
 	text-decoration: none;
 }
 
-
 .product-name {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: bold;
@@ -87,7 +86,6 @@ a {
 	text-decoration: none;
 	transition: color 0.5s ease-out;
 	color: rgb(150,150,100);
-	font-size: 0.8rem;
 }
 
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
@@ -124,9 +122,8 @@ button {
 
 .btn-submit{
 	color: white;
-	background-color: #B7B7A4;
+	background-color: rgb(237,220,210);
 	border-style: none;
-	height: 30%;
 
 	padding: 0.6rem 2rem 0.5rem 2rem;
 	margin-bottom: 0;
@@ -136,7 +133,7 @@ button {
 }
 
 .btn-submit:active, .btn-submit:hover, .btn-submit:focus {
-	color: #D9D9C9;
+	color: rgb(221,190,169);
 }
 
 .btn-reset{
@@ -166,7 +163,7 @@ button {
 	padding: 0.6rem 0.8rem 0.5rem .8rem;
 	margin-bottom: 0;
 
-	transition: color 0.5s ease-out;
+	transition: color 0.1s ease-out;
 }
 
 .btn-product-cart:active, .btn-product-cart:hover, .btn-product-cart:focus {
@@ -183,17 +180,11 @@ button {
 	padding: 0.6rem 0.8rem 0.5rem .8rem;
 	margin-bottom: 0;
 
-	transition: color 0.5s ease-out;
+	transition: color 0.1s ease-out;
 }
 
-.btn-product-now:active, .btn-product-now:hover, .btn-product-now:focus, .product-page-cart, .product-page-cart:hover, .product-page-cart:focus {
+.btn-product-now:active, .btn-product-now:hover, .btn-product-now:focus {
 	background-color: rgba(221,190,169,0.5);
-}
-
-.product-page-cart{
-	margin-top: 1rem;
-	background-color: #ddbea9;
-	font-size: 1rem;
 }
 
 /* -------------- END of BUTTONS STYLING -------------- */
@@ -221,11 +212,6 @@ input {
 	margin-bottom: 0;
 	margin-top: 0.5rem;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
-}
-
-.comment-box{
-	width: 50%;
-	height: 10rem;
 }
 
 /* -------------- COLOUR PALATTE -------------- */
@@ -330,92 +316,6 @@ input {
 	margin: 0;
 }
 /* -------------- END of PRODUCT LISTING -------------- */
-
-
-.back-nav{
-	margin-left: 5rem;
-}
-
-.view-review{
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-}
-
-
-.product-page-img{
-	max-width: 50%;
-	height: auto;
-	margin-right: 2rem;
-}
-
-.product-name {
-	font-size: 1.8rem;
-}
-
-/* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
-/*.product-page-slide-container{
-    width: 150rem;
-    height: 50rem;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.img-holder{
-    width: 1500px;
-    background-color: white;
-    height: 500px;
-    clear: both;
-    position: relative;
-   
-    -webkit-transition: left 1s;
-    -moz-transition: left 1s;
-    -o-transition: left 1s;
-    transition: left 1s;
-}
-
-.slide-img{
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-}
-
-#slide-img-1:target ~ .img-holder{
-    left: 0px;
-}
-
-#slide-img-2:target ~ .img-holder{
-    left: -500px;
-}
-
-#slide-img-3:target ~ .img-holder{
-    left: -1000px;
-}
-
-.btn-holder{
-    position: relative;
-    top: -20px;
-    left: 0;
-}
-
-.slide-change{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: brown;
-}*/
-
-/* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
-
-
-
-
-
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
 /*.sidebar {
