@@ -81,6 +81,23 @@
 	margin: 0.5rem;
 }
 
+.review-module{
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 5rem 3rem 5rem;
+}
+
+.review-form{
+	display: flex;
+	margin-bottom: 2rem;
+	flex-direction: column;
+}
+
+.review-form-item{
+	margin-right: 2rem;
+	flex: 1 1 auto;
+}
+
 .layout{
 	display: flex;
 	flex-direction: row;
@@ -122,6 +139,24 @@
 .back-button-layout{
 	flex: 1 1 auto;
 	flex-direction: row;
+}
+
+.product-page-container{
+	display: flex;
+	flex-direction: row;
+	margin: 2rem 5rem 2rem 5rem;
+}
+
+/*.product-page-slides-container{
+	display: flex;
+}*/
+
+.product-page-text{
+	flex: 1 1 auto;
+}
+
+.product-page-img{
+	flex: 1 1 auto;
 }
 
 @media (max-width: 50em){
