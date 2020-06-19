@@ -185,12 +185,32 @@
 	flex: 1 1 auto;
 	margin-right: 1rem;
 }
-/*---------- START of ABOUT PAGE ----------*/
+/*---------- END of ABOUT PAGE ----------*/
 
+/*---------- START of EVENTS PAGE ----------*/
+.events-form-container{
+	display: flex;
+	flex-direction: row;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+}
+
+.events-form-left{
+	flex:1 1 auto;
+	margin-right: 2rem;
+}
+
+.events-form-right{
+	flex:1 1 auto;
+	margin-right: 2rem;
+}
+/*---------- END of EVENTS PAGE ----------*/
 
 @media (max-width: 50em){
-	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container {
+	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container, .events-form-container {
 		flex-direction: column;
+
 	}
 
 	.contact-container, .about-container{
