@@ -124,12 +124,22 @@
 	justify-content: space-between;
 }
 
+.cart-item{
+	max-width: 25rem;
+	flex: 1 1 auto;
+}
+
 .layout-product-item{
 	margin-right: 0.5rem;
 	max-width: 40rem;
 	margin-bottom: 2rem;
 	flex: 1 1 auto;
 	flex-direction:column;
+}
+
+.back-button-layout{
+	flex: 1 1 auto;
+	flex-direction: row;
 }
 
 .product-page-container{

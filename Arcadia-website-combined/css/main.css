@@ -82,6 +82,14 @@ a {
 	text-decoration: none;
 }
 
+.product-page-name {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+
 .hyperlink {
 	font-style: italic;
 	text-decoration: none;
@@ -336,6 +344,15 @@ input {
 	margin-left: 5rem;
 }
 
+.back-button {
+	padding-left:10%;
+}
+
+img.back-button {
+	width:15%;
+	height:15%;
+}
+
 .view-review{
 	padding-top: 2rem;
 	padding-bottom: 1rem;
@@ -348,9 +365,82 @@ input {
 	margin-right: 2rem;
 }
 
-.product-name {
-	font-size: 1.8rem;
+/*----------- Item Cart CSS -----------*/
+
+
+.cart-product-name, .quantity{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
+
+.cart-item{
+	padding-bottom: 2rem;
+}
+
+p.cart-item-name{
+	padding-bottom: 1.34rem;
+}
+
+#subtotal{
+	 padding-left: 2rem;
+}
+
+#btn-cs{
+	background-color: #EDDCD2;
+}
+
+.price {
+	padding-top: 5rem;
+	padding-bottom:4rem;
+	margin-left: 1rem;
+}
+
+
+#quantity-coloumn, #amount-coloumn{
+  padding-top: 6.75rem;
+}
+
+
+#product-name-coloumn {
+	padding-top: 11rem;
+}
+
+/*---------------Quantity Selector-------------*/
+
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+} 
+button[class*=btn].layout-product-item {
+  background-color: #E1E8EE;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+  border: none;
+}
+.plus-btn img {
+  margin-top: 2px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+ border: none;
+}
+
+
+
+
 
 /* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
 /*.product-page-slide-container{

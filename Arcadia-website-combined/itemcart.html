@@ -36,9 +36,11 @@
 		</div>	
 	</nav>
 <!----------- END OF main nav SECTION ----------->
- 	
-<h5> back to browsing</h5>
-<div class="cart-layout">
+<div class="back-button-layout">
+<img src="img/arrows-03.png" alt=""class="back-button"/> 	
+<h5 class="back-button"> back to browsing</h5>
+</div>
+  <div class="cart-layout">
 
 	<div class="layout-product-item">
 	</div>
@@ -52,69 +54,73 @@
 		<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img">
 	</div> 
 
-	<div class="layout-product-item">
-		<h5> Signature Bouquet </h5>
-		<h5> Bouquet </h5>
+	<div class="layout-product-item" id="product-name-coloumn">
+		<h5 class="cart-product-name"> Signature Bouquet </h5>
+		<h5 class="cart-product-name"> Bouquet </h5>
 	</div>
 
-	<div class="layout-product-item">
-		<h3> Quantity</h3>
+	<div class="layout-product-item" id="quantity-coloumn">
+		<h5> Quantity</h5>
 		 <div class="quantity">
           <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
+            <img src="img/arrows-02.png" alt="" />
           </button>
             <input type="text" name="name" value="1">
           <button class="minus-btn" type="button" name="button">
-           <img src="minus.svg" alt="" />
+           <img src="img/arrows-01.png" alt="" />
           </button>
-          </div>
+         </div>
 
-           <div class="quantity">
+         <div class="quantity">
           <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
+            <img src="img/arrows-02.png" alt="" />
           </button>
             <input type="text" name="name" value="1">
           <button class="minus-btn" type="button" name="button">
-           <img src="minus.svg" alt="" />
+           <img src="img/arrows-01.png" alt="" />
           </button>
-          </div>
+         </div>
+	</div>
+
+	<div class="layout-product-item" id="amount-coloumn">
+		<h5> Amount </h5>
+		<p class="price"> 50$ </p>
+		<p class="price"> 50$ </p>
 	</div>
 
 	<div class="layout-product-item">
-		<h3> Amount </h3>
-		<p> 50$ </p>
-		<p> 50$ </p>
-		
 	</div>
+   </div>
 
-	<div class="layout-product-item">
-	</div>
-</div>
-
-<hr class="line-break">
-</hr>
+<hr class="line-break"> </hr>
 
    <div class="cart-layout">
-   	 <div class="layout-product-item">
-	</div>
-	<div class="layout-product-item">
-	</div>
-	<div class="layout-product-item">
-	</div>
-	<div class="layout-product-item">
-		<h2> Subtotal </h2>
-		<h3> Taxes</h3>
-		<h3> Shipping</h3>
-		<button class="btn-cta">Continue Shopping</button>
-	</div>
-	<div class="layout-product-item">
-		<p>$100</p>
-		<p>$12</p>
-		<p>Calculated at Checkout</p>
+   	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+
+	  </div>
+
+	  <div class="cart-item" id="subtotal">
+	    <h5 class="cart-item-name"> Subtotal </h5>
+		<h5 class="cart-item-name"> Taxes</h5>
+		<h5 class="cart-item-name"> Shipping</h5>
+		<button class="btn-cta" id="btn-cs">Continue Shopping</button>
+	  </div>
+
+	  <div class="cart-item">
+	  	<p class="cart-item-name">$100</p>
+		<p class="cart-item-name">$12</p>
+		<p class="cart-item-name">Calculated at Checkout</p>
 		<button class="btn-cta">Checkout</button>
-	</div>
-	<div class="layout-product-item">
-	</div>
+	  </div>
    </div>
 
 </body>

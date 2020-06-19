@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Checkout </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/normalize.css"> 
+	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>	
+
+<body>
+
+<!----------- START OF main nav SECTION ----------->
+	<nav class="nav">
+		<a href="#">
+			<h1 class="nav-title">Arcadia</h1>
+		</a>
+
+		<div class="nav-tab">
+			<a href="#about" class="nav-tab-item">About Us</a>
+			<a href="#events" class="nav-tab-item">Events</a>
+			<a href="#contact" class="nav-tab-item">Contact Us</a>
+		</div>	
+
+		<div class="nav-icon">
+			<a href="#" class="nav-icon-item">
+				<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
+			</a>
+			
+			<a href="#" class="nav-icon-item">
+				<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+			</a>
+		</div>	
+	</nav>
+<!----------- END OF main nav SECTION ----------->
+ 	
+<h5 class="back-button"> back to browsing</h5>
+  <div class="cart-layout">
+
+	<div class="layout-product-item">
+	</div>
+
+	<div class="layout-product-item">
+		<h2>Cart </h2>
+		<br>
+		<h5>Product</h5>
+		<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img" >
+		<br>
+		<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img">
+	</div> 
+
+	<div class="layout-product-item" id="product-name-coloumn">
+		<h5 class="cart-product-name"> Signature Bouquet </h5>
+		<h5 class="cart-product-name"> Bouquet </h5>
+	</div>
+
+	<div class="layout-product-item" id="quantity-coloumn">
+		<h5> Delivery Details</h5>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+											
+         </div>
+	</div>
+
+	<div class="layout-product-item" id="amount-coloumn">
+		<h5> Message </h5>
+		<p class="price"> 50$ </p>
+		<p class="price"> 50$ </p>
+	</div>
+
+	<div class="layout-product-item">
+	</div>
+   </div>
+
+<hr class="line-break"> </hr>
+
+   <div class="cart-layout">
+   	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+	  </div>
+
+	  <div class="cart-item">
+
+	  </div>
+
+	  <div class="cart-item" id="subtotal">
+	    <h5 class="cart-item-name"> Subtotal </h5>
+		<h5 class="cart-item-name"> Taxes</h5>
+		<h5 class="cart-item-name"> Shipping</h5>
+		<button class="btn-cta" id="btn-cs">Continue Shopping</button>
+	  </div>
+
+	  <div class="cart-item">
+	  	<p class="cart-item-name">$100</p>
+		<p class="cart-item-name">$12</p>
+		<p class="cart-item-name">Calculated at Checkout</p>
+		<button class="btn-cta">Checkout</button>
+	  </div>
+   </div>
+
+</body>
+
+
+</html>
