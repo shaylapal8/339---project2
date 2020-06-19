@@ -160,6 +160,16 @@
 	flex: 1 1 auto;
 }
 
+.contact-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.contact-container-item{
+	flex: 1 1 auto;
+}
+
 @media (max-width: 50em){
 	.review-container, .layout, .cart-layout, .review-form, .product-page-container {
 		flex-direction: column;

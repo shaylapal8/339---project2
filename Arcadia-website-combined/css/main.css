@@ -13,6 +13,11 @@ h1 {
 	font-size: 5rem;
 }
 
+.page-title{
+	font-size: 3rem;
+	margin: 1rem 0 2rem 0;
+}
+
 h2 {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 2rem;
@@ -323,6 +328,12 @@ input {
 	max-width:10rem;
 	margin-top: -10rem;
 }
+
+.map-img{
+	max-width: 100%;
+	height: auto;
+	margin-top: 2rem;
+}
 /* -------------- END of IMAGES -------------- */
 
 /* -------------- PRODUCT LISTING -------------- */
@@ -507,6 +518,10 @@ button[class*=btn].layout-product-item {
 /* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
 
 
+/* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
+.narrow-layout{
+	margin: 0 10rem 3rem 10rem;
+}
 
 
 
