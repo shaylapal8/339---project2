@@ -225,11 +225,12 @@ label {
 	margin-bottom: 0;
 }
 
-input {
+input, .event-selector, select, textarea {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 200;
 	font-size: 1rem;
 	color: grey;
+	width: 100%;
 
 	border-style: solid;
 	border-width: 1.2px;
@@ -526,8 +527,6 @@ button[class*=btn].layout-product-item {
 .narrow-layout{
 	margin: 0 10rem 3rem 10rem;
 }
-
-
 
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
