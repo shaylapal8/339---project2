@@ -75,7 +75,6 @@
 .review-module{
 	display: flex;
 	flex-direction: column;
-	margin: 2rem 5rem 3rem 5rem;
 }
 
 .review-form{
@@ -148,7 +147,6 @@
 .product-page-container{
 	display: flex;
 	flex-direction: row;
-	margin: 2rem 5rem 2rem 5rem;
 }
 
 /*.product-page-slides-container{

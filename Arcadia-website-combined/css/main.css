@@ -10,12 +10,14 @@ h1 {
 	font-family: "Cherolina", Helvetica, sans-serif;
 	margin: 1rem;
 	font-weight: normal;
-	font-size: 5rem;
+	font-size: 3rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .page-title{
-	font-size: 3rem;
-	margin: 1rem 0 2rem 0;
+	font-size: 4rem;
+	margin: 1rem 0 1rem 0;
 }
 
 h2 {
@@ -230,7 +232,6 @@ input, .event-selector, select, textarea {
 	font-weight: 200;
 	font-size: 1rem;
 	color: grey;
-	width: 100%;
 
 	border-style: solid;
 	border-width: 1.2px;
@@ -239,6 +240,10 @@ input, .event-selector, select, textarea {
 	margin-bottom: 0;
 	margin-top: 0.5rem;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+}
+
+.form-field{
+	width: 100%;
 }
 
 .comment-box{
@@ -321,10 +326,9 @@ input, .event-selector, select, textarea {
 }
 
 .img-banner{
-	width: 100%;
+	width: 84%;
 	/*z-index: 1;*/
-	padding-left: 5rem;
-	padding-right: 5rem;
+	margin: -10rem 8% 3rem 8%;
 	margin-top: -10rem;
 	margin-bottom: 3rem;
 }
@@ -338,8 +342,8 @@ input, .event-selector, select, textarea {
 
 /* -------------- PRODUCT LISTING -------------- */
 .browse-container{
-	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-left: 8%;
+	margin-right: 8%;
 	overflow-x: hidden;
 }
 
@@ -351,7 +355,7 @@ input, .event-selector, select, textarea {
 
 
 .back-nav{
-	margin-left: 5rem;
+	margin-left: 8%;
 }
 
 .back-button {
@@ -523,9 +527,16 @@ button[class*=btn].layout-product-item {
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{
-	margin: 0 10rem 3rem 10rem;
+	margin: 0 20% 3rem 20%;
 }
 
+.product-page-container {
+	margin: 2rem 8% 2rem 8%;
+}
+
+.review-module {
+	margin: 2rem 8% 3rem 8%;
+}
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
 /*.sidebar {
