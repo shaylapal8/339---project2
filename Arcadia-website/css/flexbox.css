@@ -119,6 +119,11 @@
 	flex-direction:column;
 }
 
+.back-button-layout{
+	flex: 1 1 auto;
+	flex-direction: row;
+}
+
 @media (max-width: 50em){
 	.review-container, .layout, .cart-layout {
 		flex-direction: column;

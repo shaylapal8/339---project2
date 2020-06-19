@@ -366,6 +366,11 @@ input {
 	padding-left:10%;
 }
 
+img.back-button {
+	width:15%;
+	height:15%;
+}
+
 .img{
 	border-style: none;
 }
@@ -394,6 +399,9 @@ p.cart-item-name{
 	 padding-left: 2rem;
 }
 
+#btn-cs{
+	background-color: #EDDCD2;
+}
 
 .price {
 	padding-top: 5rem;
@@ -410,3 +418,37 @@ p.cart-item-name{
 #product-name-coloumn {
 	padding-top: 11rem;
 }
+
+/*---------------Quantity Selector-------------*/
+
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+} 
+button[class*=btn].layout-product-item {
+  background-color: #E1E8EE;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+  border: none;
+}
+.plus-btn img {
+  margin-top: 2px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+ border: none;
+}
+ 
