@@ -124,6 +124,11 @@
 	justify-content: space-between;
 }
 
+.cart-item{
+	max-width: 25rem;
+	flex: 1 1 auto;
+}
+
 .layout-product-item{
 	margin-right: 0.5rem;
 	max-width: 40rem;
@@ -148,6 +153,11 @@
 
 .product-page-img{
 	flex: 1 1 auto;
+}
+
+.back-button-layout{
+	flex: 1 1 auto;
+	flex-direction: row;
 }
 
 @media (max-width: 50em){

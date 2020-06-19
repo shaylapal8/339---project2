@@ -1,4 +1,3 @@
-/* -------------- TEXT STYLING -------------- */
 body {
 	font-family: Roboto, Helvetica, sans-serif;
 	font-weight: normal;
@@ -82,6 +81,19 @@ a {
 	text-decoration: none;
 }
 
+.title-code {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.interactiveElements-item, .textStyling-item {
+	background-color: #f5f5f2;
+	padding: 1rem;
+	margin-bottom: 0;
+}
+
 .hyperlink {
 	font-style: italic;
 	text-decoration: none;
@@ -94,10 +106,34 @@ a {
 	color: rgb(180,180,140);
 }
 
-/* -------------- END of TEXT STYLING -------------- */
+.pages-item{
+	font-family: "NeutraText", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: color 0.5s ease-out;
+	color: #9da88a;
+	margin-top: 3rem;
+}
 
+.pages-item:active, .pages-item:hover, .pages-item:focus {
+	color: #6a7853;
+}
 
-/* -------------- BUTTONS STYLING -------------- */
+.box-code{
+	margin-top: 1rem;
+	background-color: #fcfcfc;
+	padding: 1rem 1rem 0 1rem;
+}
+
+pre {
+	margin-bottom: 0;
+	color: rgb(130,130,130);
+	white-space: pre-wrap;
+	tab-size: 2.5;
+	word-wrap: break-word;
+	font-size: 0.8rem;
+	/*how to use <pre> tag https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
+}
+
 button {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
@@ -156,15 +192,16 @@ button {
 	background-color: rgba(221,190,169,0.2);
 }
 
+
 .btn-product-cart {
 	color: white;
 	background-color: rgb(237,220,210);
 	border-style: none;
 	text-decoration: none;
-	font-size: 0.8rem;
 
 	padding: 0.6rem 0.8rem 0.5rem .8rem;
 	margin-bottom: 0;
+	margin-top: 0.5rem;
 
 	transition: color 0.5s ease-out;
 }
@@ -178,22 +215,16 @@ button {
 	background-color: #ddbea9;
 	border-style: none;
 	text-decoration: none;
-	font-size: 0.8rem;
 
 	padding: 0.6rem 0.8rem 0.5rem .8rem;
 	margin-bottom: 0;
+	margin-top: 0.5rem;
 
 	transition: color 0.5s ease-out;
 }
 
 .btn-product-now:active, .btn-product-now:hover, .btn-product-now:focus, .product-page-cart, .product-page-cart:hover, .product-page-cart:focus {
 	background-color: rgba(221,190,169,0.5);
-}
-
-.product-page-cart{
-	margin-top: 1rem;
-	background-color: #ddbea9;
-	font-size: 1rem;
 }
 
 /* -------------- END of BUTTONS STYLING -------------- */
@@ -223,11 +254,6 @@ input {
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
 }
 
-.comment-box{
-	width: 50%;
-	height: 10rem;
-}
-
 /* -------------- COLOUR PALATTE -------------- */
 #dark-beige{
 	background-color: #ddbea9;
@@ -248,9 +274,7 @@ input {
 #light-beige{
 	background-color: #ebe0da;
 }
-/* -------------- END of COLOUR PALATTE -------------- */
 
-/* -------------- MAIN NAV -------------- */
 .nav{
 	background-color: white;
 	padding-left: 5rem;
@@ -285,11 +309,35 @@ input {
 	padding-right: 1rem;
 }
 
-/* -------------- END of MAIN NAV -------------- */
+.product-item-img{
+	max-width: 90%;
+	margin: 0;
+}
 
 .review-container-item{
 	background-color: white;
 	padding: 1rem 1rem 1rem 1rem;
+}
+
+.layout-bg{
+	background-color: rgb(200,200,200);
+	height: 20rem;
+	padding: 1rem 2rem 0 1rem;
+	text-align: center;
+}
+
+.layout-product-bg{
+	background-color: rgb(220,220,220);
+	height: 10rem;
+	padding: 1rem 2rem 0 1rem;
+	text-align: center;
+}
+
+.layout-page-bg{
+	background-color: rgb(220,220,220);
+	height: 20rem;
+	padding: 1rem 2rem 0 1rem;
+	text-align: center;
 }
 
 .line-break {
@@ -297,128 +345,95 @@ input {
     width: 90%;
 }
 
-/* -------------- IMAGES -------------- */
+.back-button {
+	padding-left:10%;
+}
+
+img.back-button {
+	width:15%;
+	height:15%;
+}
+
 .img{
 	border-style: none;
 }
 
-.img-banner{
-	width: 100%;
-	/*z-index: 1;*/
-	padding-left: 5rem;
-	padding-right: 5rem;
-	margin-top: -10rem;
-	margin-bottom: 3rem;
-}
-
+/*----------- Item Cart CSS -----------*/
 #cart-product-img{
 	max-width:10rem;
-	position: fixed;
-	margin-top: -10rem;
-}
-/* -------------- END of IMAGES -------------- */
-
-/* -------------- PRODUCT LISTING -------------- */
-.browse-container{
-	margin-left: 5rem;
-	margin-right: 5rem;
-	overflow-x: hidden;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
 }
 
-.product-item-img{
-	max-width: 90%;
-	margin: 0;
-}
-/* -------------- END of PRODUCT LISTING -------------- */
-
-
-.back-nav{
-	margin-left: 5rem;
+.cart-product-name, .quantity{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
-.view-review{
-	padding-top: 2rem;
-	padding-bottom: 1rem;
+.cart-item{
+	padding-bottom: 2rem;
 }
-
-
-.product-page-img{
-	max-width: 50%;
-	height: auto;
-	margin-right: 2rem;
-}
-
-.product-name {
-	font-size: 1.8rem;
-}
-
-/* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
-/*.product-page-slide-container{
-    width: 150rem;
-    height: 50rem;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.img-holder{
-    width: 1500px;
-    background-color: white;
-    height: 500px;
-    clear: both;
-    position: relative;
-   
-    -webkit-transition: left 1s;
-    -moz-transition: left 1s;
-    -o-transition: left 1s;
-    transition: left 1s;
-}
-
-.slide-img{
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-}
-
-#slide-img-1:target ~ .img-holder{
-    left: 0px;
-}
-
-#slide-img-2:target ~ .img-holder{
-    left: -500px;
-}
-
-#slide-img-3:target ~ .img-holder{
-    left: -1000px;
-}
-
-.btn-holder{
-    position: relative;
-    top: -20px;
-    left: 0;
-}
-
-.slide-change{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: brown;
-}*/
-
-/* -------------- EXPERIEMENT of PRODUCT IMAGE SLIDE -------------- */
-
-
-
-
-
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
 /*.sidebar {
 	position: sticky;
 	top: 10 rem;
 }*/
+
+#subtotal{
+	 padding-left: 2rem;
+}
+
+#btn-cs{
+	background-color: #EDDCD2;
+}
+
+.price {
+	padding-top: 5rem;
+	padding-bottom:4rem;
+	margin-left: 1rem;
+}
+
+
+#quantity-coloumn, #amount-coloumn{
+  padding-top: 6.75rem;
+}
+
+
+#product-name-coloumn {
+	padding-top: 11rem;
+}
+
+/*---------------Quantity Selector-------------*/
+
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+} 
+button[class*=btn].layout-product-item {
+  background-color: #E1E8EE;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+  border: none;
+}
+.plus-btn img {
+  margin-top: 2px;
+  width:20%;
+  max-width: 20%;
+  max-height: 20%;
+ border: none;
+}
+ 
