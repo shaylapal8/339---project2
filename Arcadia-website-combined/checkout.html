@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> Checkout </title>
+	<title> Item Cart </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/normalize.css"> 
@@ -36,83 +36,154 @@
 		</div>	
 	</nav>
 <!----------- END OF main nav SECTION ----------->
- 	
-<h5 class="back-button"> back to browsing</h5>
-  <div class="cart-layout">
-
-	<div class="layout-product-item">
-	</div>
-
-	<div class="layout-product-item">
-		<h2>Checkout </h2>
-		<br>
-		<h5>Product</h5>
-		<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img" >
-		<br>
-		<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img">
-	</div> 
-
-	<div class="layout-product-item" id="product-name-coloumn">
-		<h5 class="cart-product-name"> Signature Bouquet </h5>
-		<h5 class="cart-product-name"> Bouquet </h5>
-	</div>
-
-	<div class="layout-product-item" id="quantity-coloumn">
-		<h5> Delivery Details</h5>
-          <label for="address">Receiver's Name</label>
-          <input type="text" id="address" name="Name" placeholder="Name">
-		  
-          <label for="address">Receiver's Phone Number</label>
-          <input type="text" id="address" name="Phone Number" placeholder="Phone Number">
-
-          <label for="address">Delivery Address</label>
-          <input type="text" id="address" name="address" placeholder="Address">  
-																	
-         </div>
-	</div>
-
-	<div class="layout-product-item" id="amount-coloumn">
-		<h5> Message </h5>
-		 <label for="address">Message</label>
-         <input type="text" id="message" name="Message" placeholder="Message">  
-	</div>
-
-	<div class="layout-product-item">
-	</div>
+   <div class="back-button-layout">
+     <img src="img/arrows-03.png" alt=""class="back-button"/> 	
+     <h5 class="back-button"> back to browsing</h5> 
    </div>
+    
+     <div>
+	  <h2 class="subtitle">Checkout </h2>
+     </div>
+
+<div class="cart-container">
+  <div class="cart-layout">
+	 <div class="cart-item">
+	 </div>
+
+	 <div class="cart-item">
+		<h5>Product</h5>
+	 </div> 
+
+	 <div class="cart-item">	
+	 </div>
+
+	 <div class="cart-item" >
+		<h5> Delivery Details</h5>
+     </div>
+
+      <div class="cart-item">
+        <h5> Message</h5>	
+	 </div>
+
+	  <div class="cart-item">	
+	 </div>
+   </div>
+
+
+   <div class="cart-layout">
+     <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+     	<img src="img/bouquet.jpeg" alt="Product Image." id="co-product-img" >
+	 </div>
+	 
+	 <div class="cart-item">
+	 	<h5 class="cart-item-name"> Signature Bouquet </h5>
+	 </div>
+     
+       <div class="cart-item">
+         <label class="checkout" for="address">Receiver's Name</label>
+         <input type="text" id="address" name="address" placeholder="Name">
+
+         <label class="checkout" for="address">Receiver's Phone Number</label>
+         <input type="text" id="address" name="address" placeholder="Phone Number">
+
+         <label class="checkout" for="address">Delivery Address</label>
+          <input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+	   </div>
+     
+       <div class="cart-item">
+          <input type="text" id="checkout-message" name="address" placeholder="Message">
+	   </div>
+     
+       <div class="cart-item">
+	   </div>
+   </div>
+
+  
+   <div class="cart-layout">
+     <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+     	<img src="img/bouquet.jpeg" alt="Product Image." id="co-product-img" >
+	 </div>
+	 
+	 <div class="cart-item">
+	 	<h5 class="cart-item-name"> Bouquet </h5>
+	 </div>
+     
+       <div class="cart-item">
+         <label class="checkout" for="address">Receiver's Name</label>
+         <input type="text" id="address" name="address" placeholder="Name">
+
+         <label class="checkout" for="address">Receiver's Phone Number</label>
+         <input type="text" id="address" name="address" placeholder="Phone Number">
+
+         <label class="checkout" for="address">Delivery Address</label>
+          <input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+	   </div>
+     
+       <div class="cart-item">
+          <input type="text" id="checkout-message" name="address" placeholder="Message">
+	   </div>
+     
+       <div class="cart-item">
+	   </div>
+   </div>
+   
 
 <hr class="line-break"> </hr>
 
-   <div class="cart-layout">
-   	  <div class="cart-item">
-	  </div>
-
-	  <div class="cart-item">
-	  </div>
-
-	  <div class="cart-item">
-	  </div>
-
-	  <div class="cart-item">
-
-	  </div>
-
-	  <div class="cart-item" id="subtotal">
-	    <h5 class="cart-item-name"> Subtotal </h5>
-		<h5 class="cart-item-name"> Taxes</h5>
-		<h5 class="cart-item-name"> Shipping</h5>
-		<button class="btn-cta" id="btn-cs">Continue Shopping</button>
-	  </div>
-
-	  <div class="cart-item">
+<div class="cart-layout">
+     <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+	 </div>
+	 
+	 <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+       <h5> Subtotal </h5>
+       <h5> Taxes</h5>
+	   <h5> Shipping</h5>
+	</div>
+     
+ 	  <div class="cart-item">
 	  	<p class="cart-item-name">$100</p>
 		<p class="cart-item-name">$12</p>
-		<p class="cart-item-name">Calculated at Checkout</p>
-		<button class="btn-cta">Checkout</button>
+		<p class="cart-item-name">$10</p>
 	  </div>
+     
+     <div class="cart-item">
+	</div>
    </div>
 
+   <div class="cart-layout">
+     <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+	 </div>
+	 
+	 <div class="cart-item">
+	 </div>
+     
+     <div class="cart-item">
+	   <button class="btn-cta" id="btn-cs">Proceed to Payment</button>
+	</div>
+     
+ 	  <div class="cart-item">
+	  </div>
+     
+     <div class="cart-item">
+	</div>
+   </div>
+
+
+</div>
 </body>
-
-
 </html>

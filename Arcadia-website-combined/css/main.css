@@ -396,6 +396,28 @@ img.back-button {
 	background-color: #EDDCD2;
 }
 
+/*-------------Checkout CSS-----------*/
+
+label {
+	display: block;
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 0.8rem;
+
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+
+#co-product-img{
+    max-width: 65%;
+ 	width: 65%;
+ 	border: none;
+}
+
+#checkout-message{
+   height: 175px;
+}
 
 /*---------------Quantity Selector-------------*/
 
