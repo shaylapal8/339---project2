@@ -382,6 +382,16 @@ img.back-button {
 
 /*----------- Item Cart CSS -----------*/
 
+.back-button {
+	padding-left:10%;
+	display: in-line;
+}
+
+img.back-button {
+	width:15%;
+	height:15%;
+}
+
 .subtitle{
 	margin-left: 9.5rem;
 }
@@ -427,7 +437,6 @@ label {
 
 .quantity input {
   -webkit-appearance: none;
-  border: none;
   text-align: center;
   width: 32px;
   font-size: 16px;
@@ -437,12 +446,24 @@ label {
  
 } 
 button[class*=btn].layout-product-item {
-  background-color: #E1E8EE;
-  border: none;
-  cursor: pointer;
 }
 .minus-btn img {
-  margin-bottom: 3px;
+}
+.plus-btn img {
+}
+
+/* 
+input
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+
+buttons
+  margin-top: 2px;
   width:20%;
   max-width: 5%;
   max-height: 20%;
@@ -450,17 +471,8 @@ button[class*=btn].layout-product-item {
   padding: 0;
   margin-left:0;
   margin-right:0;
-}
-.plus-btn img {
-  margin-top: 2px;
-  width:20%;
-  max-width: 5%;
-  max-height: 20%;
-  border: none;
-  padding: 0;
-}
 
-
+*/
 
 
 
