@@ -382,6 +382,16 @@ img.back-button {
 
 /*----------- Item Cart CSS -----------*/
 
+.back-button {
+	padding-left:10%;
+	display: in-line;
+}
+
+img.back-button {
+	width:15%;
+	height:15%;
+}
+
 .subtitle{
 	margin-left: 9.5rem;
 }
@@ -427,7 +437,6 @@ label {
 
 .quantity input {
   -webkit-appearance: none;
-  border: none;
   text-align: center;
   width: 32px;
   font-size: 16px;
@@ -458,9 +467,31 @@ button[class*=btn].layout-product-item {
   max-height: 20%;
   border: none;
   padding: 0;
+  margin-left:0;
+  margin-right:0;
 }
 
+/* 
+input
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
 
+buttons
+  margin-top: 2px;
+  width:20%;
+  max-width: 5%;
+  max-height: 20%;
+  border: none;
+  padding: 0;
+  margin-left:0;
+  margin-right:0;
+
+*/
 
 
 
