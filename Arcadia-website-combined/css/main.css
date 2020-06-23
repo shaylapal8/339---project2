@@ -410,6 +410,16 @@ img.back-button {
 	background-color: #EDDCD2;
 }
 
+.cart-item h5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	padding: 1rem;
+	flex: 1 1 100%;
+	margin: 1rem;
+}
+
 /*-------------Checkout CSS-----------*/
 
 label {
@@ -448,55 +458,25 @@ label {
 button[class*=btn].layout-product-item {
 }
 .minus-btn img {
+width:60%;
 }
 .plus-btn img {
+width:60%;	
 }
 
-/* 
-input
-  -webkit-appearance: none;
-  border: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
-
-buttons
-  margin-top: 2px;
-  width:20%;
-  max-width: 5%;
-  max-height: 20%;
-  border: none;
-  padding: 0;
-  margin-left:0;
-  margin-right:0;
-<<<<<<< HEAD
-=======
+.minus-btn{
+	width: 20%;
+	padding: 0;
+	padding-top:0.25rem;
 }
 
-/* 
-input
-  -webkit-appearance: none;
-  border: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
+.plus-btn{
+	width:20%;
+	padding: 0;
+   	padding-top:0.25rem;
 
-buttons
-  margin-top: 2px;
-  width:20%;
-  max-width: 5%;
-  max-height: 20%;
-  border: none;
-  padding: 0;
-  margin-left:0;
-  margin-right:0;
->>>>>>> master
+}
 
-*/
 
 
 
