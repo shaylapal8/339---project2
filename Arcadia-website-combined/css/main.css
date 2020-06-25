@@ -74,6 +74,16 @@ p {
 	line-height: 1;
 }
 
+.status-delivered{
+	font-weight: 500;
+	color: #6CB517;
+}
+
+.status-preparing{
+	font-weight: 500;
+	color: #E3CBBA;
+}
+
 li {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;

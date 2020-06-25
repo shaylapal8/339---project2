@@ -50,82 +50,167 @@
 <!----------- END OF main nav SECTION ----------->
 
 	<section class="narrow-layout">
-	  		<h1 class="page-title">Cart</h1>
+	  		<h1 class="page-title">Hi, Cecilia</h1>
 
 	  		<div class="four-col-title">
-	  			<h5 class="four-col-title-item-large">Product</h5>
-	  			<h5 class="four-col-title-item">Quantity</h5>
-	  			<h5 class="four-col-title-item">Amount</h5>
+	  			<h5 class="four-col-title-item">Order Number</h5>
+	  			<h5 class="four-col-title-item">Order Date</h5>
+	  			<h5 class="four-col-title-item">Products</h5>
+	  			<h5 class="four-col-title-item">Status</h5>
 	  		</div>
 
-			<!------- single product ------->
+			<!------- single order ------->
 	  		<div class="four-col">
-	  			<div class="four-col-item-large">
-	  				<img src="img/bouquet.jpeg" alt="Product Image." class="cart-product-img four-col-item-large-item">
-	  				<p class="four-col-item-large-item"> Signature Bouquet <p>
+	  			<div class="four-col-item">
+	  				<p> 178293 <p>
+	  				<form method="get" action="./cart.html" class="subtotal-box-item-text">
+						<button type="submit" class="btn-submit">Order Again</button>
+					</form>
 	  			</div>
 
 	  			<form class="four-col-item">
-					<input type="number" min="1" max="9" value="1" >
+					<p> 06/20/2020 <p>
 				</form>
 
 				<div class="four-col-item">
-					<p>$50</p>
+					<p>Signature Bouquet</p>
+				</div>
+
+				<div class="four-col-item">
+					<p class="status-delivered">Delivered</p>
 				</div>
 	  		</div>
 
-	  		<!------- single product ------->
+	  		<!------- single order ------->
 	  		<div class="four-col">
-	  			<div class="four-col-item-large">
-	  				<img src="img/bouquet.jpeg" alt="Product Image." class="cart-product-img four-col-item-large-item">
-	  				<p class="four-col-item-large-item"> Spring Bouquet <p>
+	  			<div class="four-col-item">
+	  				<p> 264687 <p>
+	  				<form method="get" action="./cart.html" class="subtotal-box-item-text">
+						<button type="submit" class="btn-submit">Order Again</button>
+					</form>
 	  			</div>
 
 	  			<form class="four-col-item">
-					<input type="number" min="1" max="9" value="1" >
+					<p> 03/26/2020 <p>
 				</form>
 
 				<div class="four-col-item">
-					<p>$45</p>
+					<p>Spring Bouquet</p>
+				</div>
+
+				<div class="four-col-item">
+					<p class="status-preparing">Preparing</p>
 				</div>
 	  		</div>
+
 		</div>
+	</section>
 <!------- END of PRODUCTS SUMMARY ------->
 
-		<hr class="line-break"> </hr>
+	<hr class="line-break"> </hr>
 
-		<div class="narrow-layout">
-			<div class="two-col">
-				<div class="two-col-item"></div>
-				<div class="two-col-item subtotal-box">
-					<div class="subtotal-box-item">
-						<h5 class="subtotal-box-item-text">Subtotal</h5>
-						<p class="subtotal-box-item-text">$100</p>
-					</div>
-
-					<div class="subtotal-box-item">
-						<h5 class="subtotal-box-item-text">Taxes</h5>
-						<p class="subtotal-box-item-text">$12</p>
-					</div>
-
-					<div class="subtotal-box-item">
-						<h5 class="subtotal-box-item-text">Shipping</h5>
-						<p class="subtotal-box-item-text">Calculated at Checkout</p>
-					</div>
-
-					<div class="subtotal-box-item">
-						<form method="get" action="./checkout.html" class="subtotal-box-item-text">
-						    <button type="submit" class="btn-cta">Checkout</button>
+	<section class="narrow-layout">
+		<h3>Best Sellers</h3>
+		<div class="product">
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form method="get" action="./home.html" class="subtotal-box-item-text">
-						    <button type="submit" class="btn-cs">Continue Shopping</button>
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
 				</div>
-			</div>	
 
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+			
+		</div>
+		
 	</section>
+
+		
+
+	
 
 	
 </body>
