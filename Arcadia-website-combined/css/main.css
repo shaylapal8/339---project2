@@ -55,7 +55,7 @@ p {
 	font-size: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 0;
-	max-width: 650px;
+	max-width: 400px;
 	line-height: 1.2;
 }
 
@@ -137,7 +137,23 @@ button {
 	transition: background-color 0.5s ease-out;
 }
 
-.btn-cta:active, .btn-cta:hover, .btn-cta:focus {
+.btn-cs {
+	font-size: 1.2rem;
+
+	padding: 0.8rem 2rem 0.6rem 2rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+
+	color: rgb(221,190,169);
+	background: none;
+	border-width: 0.1rem;
+	border-color: #EDDCD2;
+
+	transition: background-color 0.5s ease-out;
+}
+
+
+.btn-cta:active, .btn-cta:hover, .btn-cta:focus, .btn-cs:active, .btn-cs:hover, .btn-cs:focus {
 	background-color: rgb(237,220,210);
 }
 
@@ -326,11 +342,9 @@ input, .event-selector, select, textarea {
 }
 
 .img-banner{
-	width: 84%;
+	width: 80%;
 	/*z-index: 1;*/
-	margin: -10rem 8% 3rem 8%;
-	margin-top: -10rem;
-	margin-bottom: 3rem;
+	margin: -10rem 10% 3rem 10%;
 }
 
 .map-img{
@@ -341,12 +355,6 @@ input, .event-selector, select, textarea {
 /* -------------- END of IMAGES -------------- */
 
 /* -------------- PRODUCT LISTING -------------- */
-.browse-container{
-	margin-left: 8%;
-	margin-right: 8%;
-	overflow-x: hidden;
-}
-
 .product-item-img{
 	max-width: 90%;
 	margin: 0;
@@ -355,7 +363,7 @@ input, .event-selector, select, textarea {
 
 
 .back-nav{
-	margin-left: 8%;
+	margin-left: 10%;
 }
 
 .back-button {
@@ -383,32 +391,22 @@ img.back-button {
 /*----------- Item Cart CSS -----------*/
 
 .back-button {
-	padding-left:10%;
-	display: in-line;
-}
-
-img.back-button {
 	width:15%;
 	height:15%;
 }
 
-.subtitle{
-	margin-left: 9.5rem;
-}
-
- #cart-product-img{
+ .cart-product-img{
  	max-width: 50%;
- 	width: 50%;
+ 	min-width: 50%;
  	border: none;
+
  }
 
 #subtotal{
 	 padding-left: 2rem;
 }
 
-#btn-cs{
-	background-color: #EDDCD2;
-}
+
 
 /*-------------Checkout CSS-----------*/
 
@@ -566,12 +564,12 @@ buttons
 	margin: 0 20% 3rem 20%;
 }
 
-.product-page-container {
-	margin: 2rem 8% 2rem 8%;
+.wide-layout {
+	margin: 2rem 10% 2rem 10%;
 }
 
 .review-module {
-	margin: 2rem 8% 3rem 8%;
+	margin: 2rem 10% 3rem 10%;
 }
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
