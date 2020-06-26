@@ -633,6 +633,10 @@ label {
    height: 175px;
 }
 
+.delivery-form{
+	margin-bottom: 1rem;
+}
+
 
 /*---------------Quantity Selector-------------*/
 
