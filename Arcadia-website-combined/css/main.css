@@ -51,6 +51,11 @@ h5, .filter-toggle{
 	font-size: 1rem;
 }
 
+h6 {
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-size: 0.8rem;
+}
+
 p {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
