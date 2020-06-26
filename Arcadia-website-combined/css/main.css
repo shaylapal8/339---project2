@@ -47,6 +47,7 @@ h4 {
 h5, .filter-toggle{
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 2rem;
+	margin-bottom: 0;
 	font-weight: bold;
 	font-size: 1rem;
 }
@@ -559,6 +560,7 @@ input, .event-selector, select{
 
 .back-nav{
 	margin-left: 10%;
+	padding-top: 3rem;
 }
 
 .back-button {
@@ -627,30 +629,6 @@ label {
 }
 
 /*---------------Quantity Selector-------------*/
-
-.quantity input {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
-}
- 
-} 
-button[class*=btn].layout-product-item {
-}
-.minus-btn img {
-}
-.plus-btn img {
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    transform: rotate(90deg);
-    height: 80px;
-    opacity: 0;
-}
 
 .quantity{
 	padding: 0.7rem 1rem 0.5rem 1.3rem;
@@ -791,7 +769,7 @@ buttons
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{
-	margin: 0 20% 3rem 20%;
+	margin: 2rem 20% 3rem 20%;
 }
 
 .wide-layout {

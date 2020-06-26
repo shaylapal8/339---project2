@@ -106,7 +106,7 @@
 
 .review-form{
 	display: flex;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	flex-direction: column;
 }
 
@@ -118,6 +118,7 @@
 .review-container{
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 1rem;
 }
 
 .review-container-item{
@@ -226,7 +227,7 @@
 .four-col{
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 2rem;
+	margin-top: 2rem;
 	align-items: center;
 }
 
