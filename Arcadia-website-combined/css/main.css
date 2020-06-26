@@ -633,58 +633,6 @@ label {
    height: 175px;
 }
 
-/*---------------Progress Bar----------------- */
-.progress-bar{
- display: inline-flex;
- position: row;
- flex:1 1 90%;
- margin-bottom: 5%;
- margin-right: 8%;
- align-items: right;
- justify-content: space-between;
- padding-top:1rem;
-}
-
-.progress-labels{
- display: inline-flex;
- position: row;
- flex:1 1 100%;
- margin-right: 8%;
- align-items: stretch;
- justify-content: space-between;
-}
-
-.prog-line{
- width:8rem;
- height: 0.1rem;
- border: none;
- background-color: #5d5f60;
-
-}
-
-.prog-line2{
- height: 0.1rem;
- width:8rem;
- border: none;
-  background-color: #bbb;
-}
-
-.prog-cf {
-  height: 25px;
-  width: 25px;
-  background-color: #5d5f60;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.prog-c {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 
 /*---------------Quantity Selector-------------*/
 
@@ -727,20 +675,28 @@ label {
  padding-top:1rem;
 }
 
-.progress-labels{
+.progress-yes-labels, .progress-no-labels{
  display: inline-flex;
  position: row;
  flex:1 1 100%;
- margin-right: 8%;
+ margin-top: 0.5rem;
  align-items: stretch;
  justify-content: space-between;
+}
+
+.progress-yes-labels{
+	color: #9DA88A;
+}
+
+.progress-no-labels{
+	color: #D3D3C3;
 }
 
 .prog-line{
  width:8rem;
  height: 0.1rem;
  border: none;
- background-color: #5d5f60;
+ background-color: #9DA88A;
 
 }
 
@@ -748,13 +704,13 @@ label {
  height: 0.1rem;
  width:8rem;
  border: none;
-  background-color: #bbb;
+  background-color: #D3D3C3;
 }
 
 .prog-cf {
   height: 25px;
   width: 25px;
-  background-color: #5d5f60;
+  background-color: #9DA88A;
   border-radius: 50%;
   display: inline-block;
 }
@@ -762,7 +718,7 @@ label {
 .prog-c {
   height: 25px;
   width: 25px;
-  background-color: #bbb;
+  background-color: #D3D3C3;
   border-radius: 50%;
   display: inline-block;
 }

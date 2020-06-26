@@ -290,14 +290,24 @@
 .progress-bar{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	align-items: flex-start;
+	/*justify-content: space-between;*/
 }
 
 .progress-bar-item{
 	/*flex: 1 1 auto;*/
+}
+
+.progress-state{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.progress-box{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-betw;
 }
 
 /*---------- START of CONTACT PAGE ----------*/
@@ -321,7 +331,7 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: 2rem;
-	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .about-container-item{
@@ -362,7 +372,7 @@
 }
 
 @media (max-width: 50em){
-	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .two-col, .browse-container {
+	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .two-col, .browse-container, .progress-box {
 		flex-direction: column;
 	}
 
