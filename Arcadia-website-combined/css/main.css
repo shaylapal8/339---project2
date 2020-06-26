@@ -47,6 +47,7 @@ h4 {
 h5, .filter-toggle{
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 2rem;
+	margin-bottom: 0;
 	font-weight: bold;
 	font-size: 1rem;
 }
@@ -90,6 +91,11 @@ li {
 	font-size: 1rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
+	margin-left: 0;
+}
+
+ul{
+	padding-inline-start: 1rem;
 }
 
 a {
@@ -243,9 +249,21 @@ button {
 }
 
 .product-page-cart{
-	margin-top: 1rem;
 	background-color: #ddbea9;
 	font-size: 1rem;
+
+	color: white;
+	background-color: rgb(237,220,210);
+	border-style: none;
+	text-decoration: none;
+	height: 2.5rem;
+	width: 100%;
+
+	padding: 0.6rem 1rem 0.5rem 1rem;
+	margin-bottom: 0;
+	/*margin-top: 1rem;*/
+
+	transition: color 0.5s ease-out;
 }
 
 /* -------------- END of BUTTONS STYLING -------------- */
@@ -265,14 +283,23 @@ input, .event-selector, select, textarea {
 	font-weight: 200;
 	font-size: 1rem;
 	color: grey;
+	width: 100%;
 
 	border-style: solid;
 	border-width: 1.2px;
 	border-color: rgb(237,220,210);
 
 	margin-bottom: 0;
-	margin-top: 0.5rem;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+}
+
+input, .event-selector, select{
+	height: 2.5rem;
+}
+
+.input-filter{
+	height: auto;
+	width: auto;
 }
 
 .form-field{
@@ -308,10 +335,8 @@ input, .event-selector, select, textarea {
 /* -------------- MAIN NAV -------------- */
 .nav{
 	background-color: white;
-	padding-left: 5rem;
-	padding-right: 5rem;
-	margin-bottom: 3rem;
-	margin-top: 0;
+	padding-left: 8%;
+	padding-right: 8%;
 	position: sticky;
 	top: 0;
 }
@@ -332,7 +357,7 @@ input, .event-selector, select, textarea {
 
 .nav-title{
 	color: #DDBEA9;
-	margin: 0;
+	margin: 0 1rem 0 0;
 }
 
 .nav-icon-cart, .nav-icon-account{
@@ -428,7 +453,7 @@ input, .event-selector, select, textarea {
 }
 
 .line-break {
-    color: #979797;
+    border: 0.03rem solid #D6D6D6;
     width: 90%;
 }
 
@@ -520,6 +545,12 @@ input, .event-selector, select, textarea {
 	margin: 0;
 }
 
+.diy-img{
+	max-width: 100%;
+	/*max-height: 100%;*/
+	/*height*/
+}
+
 .product-item-img:active, .product-item-img:hover, .product-item-img:focus {
 	background-color: #c59c81;
 }
@@ -529,6 +560,7 @@ input, .event-selector, select, textarea {
 
 .back-nav{
 	margin-left: 10%;
+	padding-top: 3rem;
 }
 
 .back-button {
@@ -549,7 +581,7 @@ img.back-button {
 
 .product-page-img{
 	max-width: 50%;
-	height: auto;
+	/*height: auto;*/
 	margin-right: 2rem;
 }
 
@@ -651,21 +683,32 @@ label {
 
 /*---------------Quantity Selector-------------*/
 
-.quantity input {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
+.quantity{
+	padding: 0.7rem 1rem 0.5rem 1.3rem;
+	text-align: center;
 }
- 
-} 
-button[class*=btn].layout-product-item {
+
+.quantity-wrapper {
+    position: relative;
 }
-.minus-btn img {
+
+.quantity-wrapper:after {
+    content: "+";
+    position: absolute;
+    right: 0.5rem;
+    /*height: 100%;*/
+    top: 0.6rem;
+    pointer-events: none;
+    color: rgb(237,220,210);
 }
-.plus-btn img {
+
+.quantity-wrapper:before {
+    content: "-";
+    position: absolute;
+    left: 0.5rem;
+    /*height: 100%;*/
+    top: 0.6rem;
+    color: rgb(237,220,210);
 }
 
 /* 
@@ -779,19 +822,14 @@ buttons
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{
-	margin: 0 20% 3rem 20%;
+	margin: 2rem 20% 3rem 20%;
 }
 
 .wide-layout {
-	margin: 2rem 10% 2rem 10%;
+	margin: 2rem 10% 3rem 10%;
 }
 
 .review-module {
 	margin: 2rem 10% 3rem 10%;
 }
 
-/* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
-/*.sidebar {
-	position: sticky;
-	top: 10 rem;
-}*/

@@ -19,33 +19,35 @@
 			<h1 class="nav-title">Arcadia</h1>
 		</a>
 
-		<div class="nav-tab">
-			<a href="./about.html" class="nav-tab-item">About Us</a>
-			<a href="./events.html" class="nav-tab-item">Events</a>
-			<a href="./contact.html" class="nav-tab-item">Contact Us</a>
-		</div>	
+		<div class="nav-content">
+			<div class="nav-tab">
+				<a href="./about.html" class="nav-tab-item">About Us</a>
+				<a href="./events.html" class="nav-tab-item">Events</a>
+				<a href="./contact.html" class="nav-tab-item">Contact Us</a>
+			</div>
 
-		<div class="nav-icon">
-			<div class="tab nav-icon-item">
-				<input type="radio" id="tab-1" name="tab-group-1" />
-				<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
-				<div class="tab close-tab">
-				  <input type="radio" id="tab-close" name="tab-group-1" />
-				</div>
+			<div class="nav-icon">
+				<div class="tab nav-icon-item">
+					<input type="radio" id="tab-1" name="tab-group-1" />
+					<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
+					<div class="tab close-tab">
+					  <input type="radio" id="tab-close" name="tab-group-1" />
+					</div>
 
-				<div class="content">
-				  <ul>
-				    <li><a href="./track.html" class="account-item">My orders</a></li>
-				    <li><a href="#" class="account-item">Settings</a></li>
-				    <li><a href="#" class="account-item">Log out</a></li>
-				  </ul>
+					<div class="content">
+					  <ul>
+					    <li><a href="./track.html" class="account-item">My orders</a></li>
+					    <li><a href="#" class="account-item">Settings</a></li>
+					    <li><a href="#" class="account-item">Log out</a></li>
+					  </ul>
+					</div>
 				</div>
-		    </div>
-			
-			<a href="./cart.html" class="nav-icon-item">
-				<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
-			</a>
-		</div>	
+				
+				<a href="./cart.html" class="nav-icon-item">
+					<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+				</a>
+			</div>
+		</div>		
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 	
@@ -79,66 +81,188 @@
 				<h2 class="product-page-name">Signature Bouquet</h2>
 				<p>$50</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<h3>What's inside?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-
-				<a href="#review" class="hyperlink view-review">View Reviews</a>
-
+				<div class="description-list-box">
+					<div class="description-list-item">
+						<h5>What's inside?</h5>
+						<ul>
+							<li>Peonies</li>
+							<li>Roses</li>
+							<li>Calla Lilies</li>
+							<li>Daisies</li>
+						</ul>
+					</div>
+					<div class="description-list-item">
+						<h5>Perfect for</h5>
+						<ul>
+							<li>Weddings</li>
+							<li>Birthdays</li>
+							<li>Anniversaries</li>
+							<li>Mother's Day</li>
+						</ul>
+					</div>
+				</div>
+				
 				<form>
-					<div>
-						<label for="quantity">Quantity</label>
-						<input type="number" min="1" max="9" value="1" >
+					<label for="quantity"><h5>Quantity</h5></label>
+					<div class="quantity-cart-box">
+						<div class="quantity-wrapper">
+							<input type="number" min="1" max="9" value="1" class="quantity-cart-box-item quantity">
+						</div>
+						<button class="product-page-cart quantity-cart-box-item">Add to Cart</button>
 					</div>
 				</form>
 
-				<button class="btn-product-cart product-page-cart">Add to Cart</button>
+				<p>*For large orders, please visit our <a href="./events.html" class="hyperlink">Events Page</a></p>				
 			</div>
 		</div>
 <!----------- END of PRODUCT DETAIL CONTAINER ----------->
 
-			<hr class="line-break"></hr>
+		<hr class="line-break"></hr>
 
-			<div class="review-module" id="review">
-				<h3>Reviews</h3>
-				<div class="review-form">
-					<div class="review-form-item">
-						<textarea name="Text1" cols="40" rows="5"></textarea>
-					
-						<button class="btn-submit">Leave a Review</button>
-					</div>
+		<div class="review-module" id="review">
+			<h3>Reviews</h3>
+			<div class="review-container">
+				<div class="review-container-item">
+					<h3>Customer 1</h3>
+					<p class="date">2020/03/01</p>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."</p>
 				</div>
-				<div class="review-container">
-					<div class="review-container-item">
-						<h3>Customer 1</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."</p>
-					</div>
 
-					<div class="review-container-item">
-						<h3>Customer 2</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</p>
-					</div>
+				<div class="review-container-item">
+					<h3>Customer 2</h3>
+					<p class="date">2020/03/01</p>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</p>
+				</div>
 
-					<div class="review-container-item">
-						<h3>Customer 3</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. "</p>
-					</div>
+				<div class="review-container-item">
+					<h3>Customer 3</h3>
+					<p class="date">2020/03/01</p>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. "</p>
 				</div>
 			</div>
 
-
-
-			
-			
-
-		
-
-		
-
-
+			<div class="review-form two-col">
+				<div class="review-form-item two-col-review-item">
+					<textarea name="Text1" cols="40" rows="5"></textarea>
+				
+					<button class="btn-submit">Leave a Review</button>
+				</div>
+				<div class="two-col-review-item"></div>
+			</div>
+		</div>
 	</section>
+<!----------- END of REVIEW MODULE ----------->
+	<hr class="line-break"></hr>
+
+	<section class="wide-layout">
+		<h3>You Might Also Like</h3>
+		<div class="product">
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/product10.jpg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Florist's Favourite</h2>
+					<p>$60</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/product12.jpg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Sunshine Bouquet</h2>
+					<p>$45</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/product7.jpg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Ash Rose Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/product11.jpg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Classic Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+
+			
+			
+
+		
+
+		
+
+
+
 	
 
 
