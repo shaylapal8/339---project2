@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Track Your Orders</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/normalize.css"> 
+	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+<!----------- START OF main nav SECTION ----------->
+	<nav class="nav">
+		<a href="./home.html">
+			<h1 class="nav-title">Arcadia</h1>
+		</a>
+
+		<div class="nav-tab">
+			<a href="./about.html" class="nav-tab-item">About Us</a>
+			<a href="./events.html" class="nav-tab-item">Events</a>
+			<a href="./contact.html" class="nav-tab-item">Contact Us</a>
+		</div>	
+
+		<div class="nav-icon">
+			<div class="tab nav-icon-item">
+				<input type="radio" id="tab-1" name="tab-group-1" />
+				<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
+				<div class="tab close-tab">
+				  <input type="radio" id="tab-close" name="tab-group-1" />
+				</div>
+
+				<div class="content">
+				  <ul>
+				    <li><a href="./track.html" class="account-item">My orders</a></li>
+				    <li><a href="#" class="account-item">Settings</a></li>
+				    <li><a href="#" class="account-item">Log out</a></li>
+				  </ul>
+				</div>
+		    </div>
+			
+			<a href="./cart.html" class="nav-icon-item">
+				<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+			</a>
+		</div>	
+	</nav>
+<!----------- END OF main nav SECTION ----------->
+
+	<section class="narrow-layout">
+	  		<h1 class="page-title">Hi, Cecilia</h1>
+
+	  		<div class="four-col-title">
+	  			<h5 class="four-col-title-item">Order Number</h5>
+	  			<h5 class="four-col-title-item">Order Date</h5>
+	  			<h5 class="four-col-title-item">Products</h5>
+	  			<h5 class="four-col-title-item">Status</h5>
+	  		</div>
+
+			<!------- single order ------->
+	  		<div class="four-col">
+	  			<div class="four-col-item">
+	  				<p> 178293 <p>
+	  				<form method="get" action="./cart.html" class="subtotal-box-item-text">
+						<button type="submit" class="btn-submit">Order Again</button>
+					</form>
+	  			</div>
+
+	  			<form class="four-col-item">
+					<p> 06/20/2020 <p>
+				</form>
+
+				<div class="four-col-item">
+					<p>Signature Bouquet</p>
+				</div>
+
+				<div class="four-col-item">
+					<p class="status-delivered">Delivered</p>
+				</div>
+	  		</div>
+
+	  		<!------- single order ------->
+	  		<div class="four-col">
+	  			<div class="four-col-item">
+	  				<p> 264687 <p>
+	  				<form method="get" action="./cart.html" class="subtotal-box-item-text">
+						<button type="submit" class="btn-submit">Order Again</button>
+					</form>
+	  			</div>
+
+	  			<form class="four-col-item">
+					<p> 03/26/2020 <p>
+				</form>
+
+				<div class="four-col-item">
+					<p>Spring Bouquet</p>
+				</div>
+
+				<div class="four-col-item">
+					<p class="status-preparing">Preparing</p>
+				</div>
+	  		</div>
+
+		</div>
+	</section>
+<!------- END of PRODUCTS SUMMARY ------->
+
+	<hr class="line-break"> </hr>
+
+	<section class="narrow-layout">
+		<h3>Best Sellers</h3>
+		<div class="product">
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+		
+
+	
+
+	
+</body>
+</html>
