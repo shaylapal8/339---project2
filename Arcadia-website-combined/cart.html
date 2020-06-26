@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> Checkout </title>
+	<title> Your Shopping Cart </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/normalize.css"> 
@@ -51,37 +51,14 @@
   
 	<section>
 		<a href="./home.html" class="hyperlink back-nav">back to browsing</a>
-         
-        <div class="narrow-layout">
-	  	  <h1 class="page-title">Checkout</h1>
-	  	     <div class="two-col">
-	  	      <div class="two-col-item"></div>	
-	  	      <div class="two-col-item">
-	  	      <div class="progress-bar">
-	  	    	<span class="prog-cf"></span>
-	  	    	<hr class="prog-line">
-	  	    	<span class="prog-c"></span>
-	  	    	<hr class="prog-line2">
-	  	    	<span class="prog-c"></span>
-	  	      </div>
-	  	      </div>
-	  	     </div>
-             
-             <div class="two-col">
-              <div class="two-col-item"></div>	
-               <div class="two-col-item">	
-	  	        <div class="progress-labels">
-	  	       	 <h6>Delivery  </h6>
-	  	      	 <h6>Payment  </h6>
-	  	      	 <h6>Done</h6>
-	  	      	</div>
-	  	      </div>
-	  	     </div>
+    
+    	<div class="narrow-layout">
+	  		<h1 class="page-title">Cart</h1>
 
-	     	<div class="four-col-title">
+	  		<div class="four-col-title">
 	  			<h5 class="four-col-title-item-large">Product</h5>
-	  			<h5 class="four-col-title-item">Delivery Details</h5>
-	  			<h5 class="four-col-title-item">Message</h5>
+	  			<h5 class="four-col-title-item">Quantity</h5>
+	  			<h5 class="four-col-title-item">Amount</h5>
 	  		</div>
 
 			<!------- single product ------->
@@ -91,50 +68,37 @@
 	  				<p class="four-col-item-large-item"> Signature Bouquet <p>
 	  			</div>
 
-	  			<div class="four-col-item">	
-                  <label class="checkout" for="address">Receiver's Name</label>
-                  <input type="text" id="address" name="address" placeholder="Name">
+	  			<form class="four-col-item">
+					<input type="number" min="1" max="9" value="1" >
+				</form>
 
-                  <label class="checkout" for="address">Receiver's Phone Number</label>
-                  <input type="text" id="address" name="address" placeholder="Phone Number">
-
-                  <label class="checkout" for="address">Delivery Address</label>
-                  <input type="text" id="address" name="address" placeholder="Suite #, Street, City">
-				</div>
-
-				<div class="four-col-item">	
-                  <input type="text" id="checkout-message" name="address" placeholder="Message">
+				<div class="four-col-item">
+					<p>$50</p>
 				</div>
 	  		</div>
 
-
-			<!------- single product ------->
+	  		<!------- single product ------->
 	  		<div class="four-col">
 	  			<div class="four-col-item-large">
 	  				<img src="img/bouquet.jpeg" alt="Product Image." class="cart-product-img four-col-item-large-item">
 	  				<p class="four-col-item-large-item"> Spring Bouquet <p>
 	  			</div>
 
-	  			<div class="four-col-item">	
-                  <label class="checkout" for="address">Receiver's Name</label>
-                  <input type="text" id="address" name="address" placeholder="Name">
+	  			<form class="four-col-item">
+					<input type="number" min="1" max="9" value="1" >
+				</form>
 
-                  <label class="checkout" for="address">Receiver's Phone Number</label>
-                  <input type="text" id="address" name="address" placeholder="Phone Number">
-
-                  <label class="checkout" for="address">Delivery Address</label>
-                  <input type="text" id="address" name="address" placeholder="Suite #, Street, City">
-				</div>
-
-				<div class="four-col-item">	
-                  <input type="text" id="checkout-message" name="address" placeholder="Message">
+				<div class="four-col-item">
+					<p>$45</p>
 				</div>
 	  		</div>
-   
-            <hr class="line-break"> </hr>
+		</div>
+<!------- END of PRODUCTS SUMMARY ------->
 
-		   <div class="narrow-layout">
-			 <div class="two-col">
+		<hr class="line-break"> </hr>
+
+		<div class="narrow-layout">
+			<div class="two-col">
 				<div class="two-col-item"></div>
 				<div class="two-col-item subtotal-box">
 					<div class="subtotal-box-item">
@@ -149,19 +113,23 @@
 
 					<div class="subtotal-box-item">
 						<h5 class="subtotal-box-item-text">Shipping</h5>
-						<p class="subtotal-box-item-text">$10</p>
+						<p class="subtotal-box-item-text">Calculated at Checkout</p>
 					</div>
 
 					<div class="subtotal-box-item">
 						<form method="get" action="./checkout.html" class="subtotal-box-item-text">
-						    <button type="submit" class="btn-cta">Proceed to Payment</button>
+						    <button type="submit" class="btn-cta">Checkout</button>
+						</form>
+
+						<form method="get" action="./home.html" class="subtotal-box-item-text">
+						    <button type="submit" class="btn-cs">Continue Shopping</button>
 						</form>
 					</div>
-				  </div>
-			   </div>		
-		    </div>
+				</div>
+			</div>	
 
-
-</div>
+			
+		</div>
+	</section>
 </body>
 </html>

@@ -26,11 +26,23 @@
 		</div>	
 
 		<div class="nav-icon">
-			<a href="#" class="nav-icon-item">
+			<div class="tab nav-icon-item">
+				<input type="radio" id="tab-1" name="tab-group-1" />
 				<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
-			</a>
+				<div class="tab close-tab">
+				  <input type="radio" id="tab-close" name="tab-group-1" />
+				</div>
+
+				<div class="content">
+				  <ul>
+				    <li><a href="./track.html" class="account-item">My orders</a></li>
+				    <li><a href="#" class="account-item">Settings</a></li>
+				    <li><a href="#" class="account-item">Log out</a></li>
+				  </ul>
+				</div>
+		    </div>
 			
-			<a href="./itemcart.html" class="nav-icon-item">
+			<a href="./cart.html" class="nav-icon-item">
 				<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
 			</a>
 		</div>	
@@ -39,28 +51,108 @@
 
 	<img src="img/banner-flower.jpg" alt="A promotional banner" class="img-banner">
 
-	<section class="browse-container">
-<!----------- START OF SIDEBAR FILTER module ----------->
+	<section class="wide-layout browse-container">
+<!----------- START OF SIDEBAR  module ----------->
 		<div class="browse-container-filter sidebar">
-			<h3>Filters</h3>
-			<form>
-				<label for="occasion1" class="label-filter">
-					<input type="checkbox"> Wedding
-				</label>
 
-				<label for="occasion2" class="label-filter">
-					<input type="checkbox"> Birthday
-				</label>
+			<div class="clsp-container">
 
-				<label for="occasion3" class="label-filter">
-					<input type="checkbox"> Graduation
-				</label>
+			<!-- collapsible menu tutorial: https://alligator.io/css/collapsible/ -->
+			<!-- occasions -->
+			<h3>Shop by</h3>
+			<div class="clsp-container-item">
+				<input id="clsp-occasions" class="toggle" type="checkbox" checked>
+				<label for="clsp-occasions" class="filter-toggle">Occasions</label>
+				<div class="collapsible-filters">
+					<form>
+						<label for="occasion1" class="label-filter">
+							<input type="checkbox"> Wedding
+						</label>
 
-				<label for="occasion4" class="label-filter">
-					<input type="checkbox"> Valentine's Day
-				</label>
-			</form>
+						<label for="occasion2" class="label-filter">
+							<input type="checkbox"> Birthday
+						</label>
+
+						<label for="occasion3" class="label-filter">
+							<input type="checkbox"> Graduation
+						</label>
+
+						<label for="occasion4" class="label-filter">
+							<input type="checkbox"> Valentine's Day
+						</label>
+					</form>
+				</div>
+			</div>
+
+			<!-- sort by -->
+			<div class="clsp-container-item">
+				<input id="clsp-flowers" class="toggle" type="checkbox">
+				<label for="clsp-flowers" class="filter-toggle">Flowers</label>
+				<div class="collapsible-filters">
+					<form>
+						<label for="flower1" class="label-filter">
+							<input type="checkbox"> Roses
+						</label>
+
+						<label for="flower2" class="label-filter">
+							<input type="checkbox"> Orchids
+						</label>
+
+						<label for="flower3" class="label-filter">
+							<input type="checkbox"> Lilies
+						</label>
+
+						<label for="flower4" class="label-filter">
+							<input type="checkbox"> Daisies
+						</label>
+
+						<label for="flower5" class="label-filter">
+							<input type="checkbox"> Tulips
+						</label>
+
+						<label for="flower6" class="label-filter">
+							<input type="checkbox"> Peonies
+						</label>
+					</form>
+				</div>
+			</div>
+
+			<!-- colours -->
+			<div class="clsp-container-item">
+				<input id="clsp-colours" class="toggle" type="checkbox">
+				<label for="clsp-colours" class="filter-toggle">Colours</label>
+				<div class="collapsible-filters">
+					<form>
+						<label for="colour1" class="label-filter">
+							<input type="checkbox"> Red
+						</label>
+
+						<label for="colour2" class="label-filter">
+							<input type="checkbox"> Pink
+						</label>
+
+						<label for="colour3" class="label-filter">
+							<input type="checkbox"> Yellow
+						</label>
+
+						<label for="colour4" class="label-filter">
+							<input type="checkbox"> Purple
+						</label>
+
+						<label for="colour5" class="label-filter">
+							<input type="checkbox"> White
+						</label>
+					</form>
+				</div>
+			</div>
+
 		</div>
+
+			
+
+		</div>
+
+
 <!----------- END OF SIDEBAR FILTER module ----------->
 
 <!----------- START of PRODUCT LISTING module ----------->
@@ -73,21 +165,22 @@
 
 			<!-- single product -->
 				<div class="product-item">
-					<a href="./product.html">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
+					<div class="product-item-box">
+						<a href="./product.html" class="product-item-element">	
+							<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+						</a>
+						<div class="product-item-element">	
+							<form style="display: inline" class="product-item-element-btn">
+								<button class="btn-product-cart">Add to Cart</button>
+							</form>
 
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
+							<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+								<button class="btn-product-now">Order Now</button>
+							</form>
+						</div>
 					</div>
 
-					<div class="product-item-detail">
+					<div class="product-item-box">
 						<h2 class="product-name">Signature Bouquet</h2>
 						<p>$50</p>
 					</div>
@@ -95,21 +188,22 @@
 
 			<!-- single product -->
 				<div class="product-item">
-					<a href="#">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
+					<div class="product-item-box">
+						<a href="./product.html" class="product-item-element">	
+							<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+						</a>
+						<div class="product-item-element">	
+							<form style="display: inline" class="product-item-element-btn">
+								<button class="btn-product-cart">Add to Cart</button>
+							</form>
 
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
+							<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+								<button class="btn-product-now">Order Now</button>
+							</form>
+						</div>
 					</div>
 
-					<div class="product-item-detail">
+					<div class="product-item-box">
 						<h2 class="product-name">Signature Bouquet</h2>
 						<p>$50</p>
 					</div>
@@ -117,21 +211,22 @@
 
 			<!-- single product -->
 				<div class="product-item">
-					<a href="#">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
+					<div class="product-item-box">
+						<a href="./product.html" class="product-item-element">	
+							<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+						</a>
+						<div class="product-item-element">	
+							<form style="display: inline" class="product-item-element-btn">
+								<button class="btn-product-cart">Add to Cart</button>
+							</form>
 
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
+							<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+								<button class="btn-product-now">Order Now</button>
+							</form>
+						</div>
 					</div>
 
-					<div class="product-item-detail">
+					<div class="product-item-box">
 						<h2 class="product-name">Signature Bouquet</h2>
 						<p>$50</p>
 					</div>
@@ -139,21 +234,22 @@
 
 			<!-- single product -->
 				<div class="product-item">
-					<a href="#">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
+					<div class="product-item-box">
+						<a href="./product.html" class="product-item-element">	
+							<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+						</a>
+						<div class="product-item-element">	
+							<form style="display: inline" class="product-item-element-btn">
+								<button class="btn-product-cart">Add to Cart</button>
+							</form>
 
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
+							<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+								<button class="btn-product-now">Order Now</button>
+							</form>
+						</div>
 					</div>
 
-					<div class="product-item-detail">
+					<div class="product-item-box">
 						<h2 class="product-name">Signature Bouquet</h2>
 						<p>$50</p>
 					</div>
@@ -161,179 +257,187 @@
 
 			<!-- single product -->
 				<div class="product-item">
-					<a href="#">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
+					<div class="product-item-box">
+						<a href="./product.html" class="product-item-element">	
+							<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+						</a>
+						<div class="product-item-element">	
+							<form style="display: inline" class="product-item-element-btn">
+								<button class="btn-product-cart">Add to Cart</button>
+							</form>
 
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
+							<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+								<button class="btn-product-now">Order Now</button>
+							</form>
+						</div>
 					</div>
 
-					<div class="product-item-detail">
+					<div class="product-item-box">
 						<h2 class="product-name">Signature Bouquet</h2>
 						<p>$50</p>
 					</div>
 				</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
 				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
 				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
 				</div>
 
-				<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
-						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-cart">Add to Cart</button>
-						</form>
-
-						<form style="display: inline" action="http://google.com/" method="get">
-							<button class="btn-product-now">Order Now</button>
-						</form>
-					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
 				</div>
+			</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
 				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
-
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
-					</div>
 				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
 
 			<!-- single product -->
-				<div class="product-item">
-					<a href="#">	
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
 						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
 					</a>
-
-					<div class="product-item-btn">	
-						<form style="display: inline" action="http://google.com/" method="get">
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
 							<button class="btn-product-cart">Add to Cart</button>
 						</form>
 
-						<form style="display: inline" action="http://google.com/" method="get">
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
 							<button class="btn-product-now">Order Now</button>
 						</form>
 					</div>
+				</div>
 
-					<div class="product-item-detail">
-						<h2 class="product-name">Signature Bouquet</h2>
-						<p>$50</p>
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
+
+			<!-- single product -->
+			<div class="product-item">
+				<div class="product-item-box">
+					<a href="./product.html" class="product-item-element">	
+						<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
+					</a>
+					<div class="product-item-element">	
+						<form style="display: inline" class="product-item-element-btn">
+							<button class="btn-product-cart">Add to Cart</button>
+						</form>
+
+						<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+							<button class="btn-product-now">Order Now</button>
+						</form>
 					</div>
 				</div>
+
+				<div class="product-item-box">
+					<h2 class="product-name">Signature Bouquet</h2>
+					<p>$50</p>
+				</div>
+			</div>
 <!----------- END of PRODUCT LISTING module ----------->
 
 

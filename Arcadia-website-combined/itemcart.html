@@ -26,11 +26,23 @@
 		</div>	
 
 		<div class="nav-icon">
-			<a href="#" class="nav-icon-item">
+			<div class="tab nav-icon-item">
+				<input type="radio" id="tab-1" name="tab-group-1" />
 				<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
-			</a>
+				<div class="tab close-tab">
+				  <input type="radio" id="tab-close" name="tab-group-1" />
+				</div>
+
+				<div class="content">
+				  <ul>
+				    <li><a href="./track.html" class="account-item">My orders</a></li>
+				    <li><a href="#" class="account-item">Settings</a></li>
+				    <li><a href="#" class="account-item">Log out</a></li>
+				  </ul>
+				</div>
+		    </div>
 			
-			<a href="./itemcart.html" class="nav-icon-item">
+			<a href="./cart.html" class="nav-icon-item">
 				<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
 			</a>
 		</div>	
@@ -40,12 +52,10 @@
 	<section>
 		<a href="./home.html" class="hyperlink back-nav">back to browsing</a>
     
-     <div>
-	  <h2 class="subtitle">Cart </h2>
-     </div>
-
+    	<div class="narrow-layout">
+	  		<h1 class="page-title">About us</h1>
+     
 <div class="cart-container">
-
   <div class="cart-layout">
 	 <div class="cart-item">
 	 </div>
@@ -69,12 +79,12 @@
 	 </div>
    </div>
 
+
    <div class="cart-layout">
      <div class="cart-item">
 	 </div>
      
      <div class="cart-item">
-   
      	<img src="img/bouquet.jpeg" alt="Product Image." id="cart-product-img" >
 	 </div>
 	 
@@ -83,7 +93,6 @@
 	 </div>
      
        <div class="cart-item">
-     
           <div class="quantity">
             <button class="plus-btn" type="button" name="button">
               <img src="img/arrows-02.png" alt="" />
@@ -96,7 +105,6 @@
 	   </div>
      
        <div class="cart-item">
-      
      	<p> $50 </p>
 	   </div>
      
@@ -178,7 +186,7 @@
 	 </div>
      
      <div class="cart-item">
-	   <button class="btn-cta" id="btn-cs">Continue Shopping</button>
+	   <button class="btn-cs">Continue Shopping</button>
 	</div>
      
  	  <div class="cart-item">
@@ -188,6 +196,7 @@
      <div class="cart-item">
 	</div>
    </div>
+</div>
 
 
 </div>
