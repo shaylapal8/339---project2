@@ -719,11 +719,10 @@ label {
 /*---------------Progress Bar----------------- */
 .progress-bar{
  display: inline-flex;
- position: row;
- flex:1 1 90%;
+ /*position: row;*/
+ /*flex:1 1 90%;*/
  margin-bottom: 5%;
  margin-right: 8%;
- align-items: right;
  justify-content: space-between;
  padding-top:1rem;
 }
