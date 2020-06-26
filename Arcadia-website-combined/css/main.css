@@ -137,6 +137,12 @@ a {
 	color: rgb(180,180,140);
 }
 
+.hyperlink-back-nav {
+	transition: color 0.5s ease-out;
+	color: rgb(150,150,100);
+	font-size: 0.8rem;
+	margin-left: 9.5rem;
+}
 /* -------------- END of TEXT STYLING -------------- */
 
 
