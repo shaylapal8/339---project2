@@ -27,12 +27,14 @@ h2 {
 	font-size: 1.8rem;
 }
 
-h3 {
+h3{
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 1rem;
 	font-weight: bold;
 	font-size: 1.2rem;
 }
+
+
 
 h4 {
 	font-family: "NeutraText", Helvetica, sans-serif;
@@ -42,7 +44,7 @@ h4 {
 	padding-right: 0.5rem;
 }
 
-h5{
+h5, .filter-toggle{
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 2rem;
 	font-weight: bold;
@@ -55,7 +57,7 @@ p {
 	font-size: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 0;
-	max-width: 650px;
+	max-width: 400px;
 	line-height: 1.2;
 }
 
@@ -72,10 +74,20 @@ p {
 	line-height: 1;
 }
 
+.status-delivered{
+	font-weight: 500;
+	color: #6CB517;
+}
+
+.status-preparing{
+	font-weight: 500;
+	color: #E3CBBA;
+}
+
 li {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
 }
@@ -88,8 +100,9 @@ a {
 .product-name {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin-top: 1rem;
+	margin-bottom: 0;
 	text-decoration: none;
 }
 
@@ -137,7 +150,23 @@ button {
 	transition: background-color 0.5s ease-out;
 }
 
-.btn-cta:active, .btn-cta:hover, .btn-cta:focus {
+.btn-cs {
+	font-size: 1.2rem;
+
+	padding: 0.8rem 2rem 0.6rem 2rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+
+	color: rgb(221,190,169);
+	background: none;
+	border-width: 0.1rem;
+	border-color: #EDDCD2;
+
+	transition: background-color 0.5s ease-out;
+}
+
+
+.btn-cta:active, .btn-cta:hover, .btn-cta:focus, .btn-cs:active, .btn-cs:hover, .btn-cs:focus {
 	background-color: rgb(237,220,210);
 }
 
@@ -181,8 +210,10 @@ button {
 	border-style: none;
 	text-decoration: none;
 	font-size: 0.8rem;
+	width: 100%;
+	height: 100%;
 
-	padding: 0.6rem 0.8rem 0.5rem .8rem;
+	padding: 0.6rem 1rem 0.5rem 1rem;
 	margin-bottom: 0;
 
 	transition: color 0.5s ease-out;
@@ -198,8 +229,10 @@ button {
 	border-style: none;
 	text-decoration: none;
 	font-size: 0.8rem;
+	width: 100%;
+	height: 100%;
 
-	padding: 0.6rem 0.8rem 0.5rem .8rem;
+	padding: 0.6rem 1rem 0.5rem 1rem;
 	margin-bottom: 0;
 
 	transition: color 0.5s ease-out;
@@ -252,8 +285,7 @@ input, .event-selector, select, textarea {
 }
 
 /* -------------- COLOUR PALATTE -------------- */
-#dark-beige{
-	background-color: #ddbea9;
+#dark-beige	background-color: #ddbea9;
 }
 
 #green{
@@ -291,7 +323,7 @@ input, .event-selector, select, textarea {
 	font-size: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	transition: color 0.1s ease-out;
+	transition: color 0.3s ease-out;
 }
 
 .nav-tab-item:active, .nav-tab-item:hover, .nav-tab-item:focus {
@@ -306,6 +338,86 @@ input, .event-selector, select, textarea {
 .nav-icon-cart, .nav-icon-account{
 	max-width: 2rem;
 	padding-right: 1rem;
+}
+
+.nav-icon{
+	position: relative;
+    clear: both;
+}
+
+.tab {
+	float: left;
+	position: relative;
+}
+
+.tab, .nav-icon-account{
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	position: relative;
+}
+
+.tab [type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 2.6rem;
+  opacity: 0;
+  right: 0;
+  background: white;
+  padding: 0.6rem 2rem 0.8rem 2rem;
+}
+
+.content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.account-item {
+	font-weight: 300;
+	color: #DDBEA9;
+	display: block;
+	white-space: nowrap;
+	text-decoration: none;
+	padding-top:0.2rem;
+	padding-bottom:0.2rem;
+	font-weight: 300;
+
+}
+
+.account-item:active, .account-item:hover, .account-item:focus{
+	color: #c59c81;
+}
+
+[type="radio"]:checked ~ .nav-icon-account {
+  z-index: 2;
+}
+[type="radio"]:checked ~ .nav-icon-account ~ .content {
+  z-index: 1;
+  opacity: 1;
+}
+
+.close-tab {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[type="radio"]:checked ~ .nav-icon-account ~ .close-tab {
+  z-index: 3;
 }
 
 /* -------------- END of MAIN NAV -------------- */
@@ -326,11 +438,9 @@ input, .event-selector, select, textarea {
 }
 
 .img-banner{
-	width: 84%;
+	width: 80%;
 	/*z-index: 1;*/
-	margin: -10rem 8% 3rem 8%;
-	margin-top: -10rem;
-	margin-bottom: 3rem;
+	margin: -6rem 10% 3rem 10%;
 }
 
 .map-img{
@@ -338,24 +448,87 @@ input, .event-selector, select, textarea {
 	height: auto;
 	margin-top: 2rem;
 }
+
+
 /* -------------- END of IMAGES -------------- */
 
-/* -------------- PRODUCT LISTING -------------- */
-.browse-container{
-	margin-left: 8%;
-	margin-right: 8%;
-	overflow-x: hidden;
+/* -------------- FILTER MENU -------------- */
+/*collapsible menu tutorial: https://alligator.io/css/collapsible/*/
+
+.clsp-container{
+	margin-bottom: 2rem;
+	position: sticky;
+	top: 8rem;
 }
 
+.toggle{
+	display: none;
+}
+
+.filter-toggle{
+	display: block;
+}
+
+.filter-toggle:active, .filter-toggle:hover, .filter-toggle:focus{
+	color: #9DA88A;
+}
+
+.filter-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform 0.5s ease-out;
+}
+
+.collapsible-filters {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 0.5s ease-in-out;
+}
+
+.toggle:checked + .filter-toggle + .collapsible-filters {
+  max-height: 20rem;
+}
+
+.toggle:checked + .filter-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .filter-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* -------------- END of FILTER MENU -------------- */
+
+/* -------------- CHECKBOX STYLING -------------- */
+
+/* -------------- END of CHECKBOX STYLING -------------- */
+
+/* -------------- PRODUCT LISTING -------------- */
 .product-item-img{
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0;
 }
+
+.product-item-img:active, .product-item-img:hover, .product-item-img:focus {
+	background-color: #c59c81;
+}
+
 /* -------------- END of PRODUCT LISTING -------------- */
 
 
 .back-nav{
-	margin-left: 8%;
+	margin-left: 10%;
 }
 
 .back-button {
@@ -383,42 +556,22 @@ img.back-button {
 /*----------- Item Cart CSS -----------*/
 
 .back-button {
-	padding-left:10%;
-	display: in-line;
-}
-
-img.back-button {
 	width:15%;
 	height:15%;
 }
 
-.subtitle{
-	margin-left: 9.5rem;
-}
-
- #cart-product-img{
+ .cart-product-img{
  	max-width: 50%;
- 	width: 50%;
+ 	min-width: 50%;
  	border: none;
+
  }
 
 #subtotal{
 	 padding-left: 2rem;
 }
 
-#btn-cs{
-	background-color: #EDDCD2;
-}
 
-.cart-item h5 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	padding: 1rem;
-	flex: 1 1 100%;
-	margin: 1rem;
-}
 
 /*-------------Checkout CSS-----------*/
 
@@ -458,25 +611,55 @@ label {
 button[class*=btn].layout-product-item {
 }
 .minus-btn img {
-width:60%;
 }
 .plus-btn img {
-width:60%;	
 }
 
-.minus-btn{
-	width: 20%;
-	padding: 0;
-	padding-top:0.25rem;
+/* 
+input
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+
+buttons
+  margin-top: 2px;
+  width:20%;
+  max-width: 5%;
+  max-height: 20%;
+  border: none;
+  padding: 0;
+  margin-left:0;
+  margin-right:0;
+<<<<<<< HEAD
+=======
 }
 
-.plus-btn{
-	width:20%;
-	padding: 0;
-   	padding-top:0.25rem;
+/* 
+input
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
 
-}
+buttons
+  margin-top: 2px;
+  width:20%;
+  max-width: 5%;
+  max-height: 20%;
+  border: none;
+  padding: 0;
+  margin-left:0;
+  margin-right:0;
+>>>>>>> master
 
+*/
 
 
 
@@ -546,12 +729,12 @@ width:60%;
 	margin: 0 20% 3rem 20%;
 }
 
-.product-page-container {
-	margin: 2rem 8% 2rem 8%;
+.wide-layout {
+	margin: 2rem 10% 2rem 10%;
 }
 
 .review-module {
-	margin: 2rem 8% 3rem 8%;
+	margin: 2rem 10% 3rem 10%;
 }
 
 /* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
