@@ -596,6 +596,59 @@ label {
    height: 175px;
 }
 
+/*---------------Progress Bar----------------- */
+.progress-bar{
+ display: inline-flex;
+ position: row;
+ flex:1 1 90%;
+ margin-bottom: 5%;
+ margin-right: 8%;
+ align-items: right;
+ justify-content: space-between;
+ padding-top:1rem;
+}
+
+.progress-labels{
+ display: inline-flex;
+ position: row;
+ flex:1 1 100%;
+ margin-right: 8%;
+ align-items: stretch;
+ justify-content: space-between;
+}
+
+.prog-line{
+ width:8rem;
+ height: 0.1rem;
+ border: none;
+ background-color: #5d5f60;
+
+}
+
+.prog-line2{
+ height: 0.1rem;
+ width:8rem;
+ border: none;
+  background-color: #bbb;
+}
+
+.prog-cf {
+  height: 25px;
+  width: 25px;
+  background-color: #5d5f60;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.prog-c {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
 /*---------------Quantity Selector-------------*/
 
 .quantity input {
