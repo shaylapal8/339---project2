@@ -693,16 +693,16 @@ label {
 }
 
 .prog-line{
- width:8rem;
- height: 0.1rem;
+ width:6rem;
+ height: 0.05rem;
  border: none;
  background-color: #9DA88A;
 
 }
 
 .prog-line2{
- height: 0.1rem;
- width:8rem;
+ height: 0.05rem;
+ width:6rem;
  border: none;
   background-color: #D3D3C3;
 }
