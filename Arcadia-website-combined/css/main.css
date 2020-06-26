@@ -90,6 +90,11 @@ li {
 	font-size: 1rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
+	margin-left: 0;
+}
+
+ul{
+	padding-inline-start: 1rem;
 }
 
 a {
@@ -329,10 +334,8 @@ input, .event-selector, select{
 /* -------------- MAIN NAV -------------- */
 .nav{
 	background-color: white;
-	padding-left: 5rem;
-	padding-right: 5rem;
-	margin-bottom: 3rem;
-	margin-top: 0;
+	padding-left: 8%;
+	padding-right: 8%;
 	position: sticky;
 	top: 0;
 }
@@ -353,7 +356,7 @@ input, .event-selector, select{
 
 .nav-title{
 	color: #DDBEA9;
-	margin: 0;
+	margin: 0 1rem 0 0;
 }
 
 .nav-icon-cart, .nav-icon-account{
@@ -541,6 +544,12 @@ input, .event-selector, select{
 	margin: 0;
 }
 
+.diy-img{
+	max-width: 100%;
+	/*max-height: 100%;*/
+	/*height*/
+}
+
 .product-item-img:active, .product-item-img:hover, .product-item-img:focus {
 	background-color: #c59c81;
 }
@@ -570,7 +579,7 @@ img.back-button {
 
 .product-page-img{
 	max-width: 50%;
-	height: auto;
+	/*height: auto;*/
 	margin-right: 2rem;
 }
 
@@ -793,8 +802,3 @@ buttons
 	margin: 2rem 10% 3rem 10%;
 }
 
-/* HOW TO MAKE THE SIDEBAR STICKY (it's a child)? */
-/*.sidebar {
-	position: sticky;
-	top: 10 rem;
-}*/
