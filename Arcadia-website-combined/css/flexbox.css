@@ -5,8 +5,8 @@
 .nav{
 	display: flex;
 	flex-direction: row;
-	/*flex-wrap: wrap;*/
-	/*justify-content:space-around;*/
+	flex-wrap: wrap;
+	justify-content:space-around;
 	align-items: center;
 }
 
@@ -14,7 +14,6 @@
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: row;
-	margin-left: 2rem;
 	align-items: center;
 }
 
@@ -30,7 +29,6 @@
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
-	margin-left: 1rem;
 }
 
 .browse-container {
@@ -220,7 +218,7 @@
 }
 
 .four-col-title-item{
-	flex: 1 1 25%;
+	flex: 1 1 20%;
 	margin-right: 1rem;
 }
 
@@ -254,12 +252,12 @@
 }
 
 .five-col{
-
+	display: flex;
 }
 
 .five-col-item{
 	flex: 1 1 20%;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
 }
 
 .layout-product-item{
@@ -393,13 +391,12 @@
 
 /*---------- BROWSER WIDTH ----------*/
 
-@media (max-width: 32em){
+@media (max-width: 40em){
 	.nav{
 		flex-direction: column;
 	}
 
 	.nav-content{
-		margin-bottom: 1rem;
 		justify-content: space-between;
 	}
 }
@@ -417,7 +414,6 @@
 		flex-wrap: wrap;
 	}
 
-
 	.clsp-container-box{
 		flex-direction: row;
 		justify-content: space-between;
@@ -425,13 +421,10 @@
 }
 
 @media (max-width: 70em){
-	.footer-container{
+	.footer-container, .five-col{
 		flex-wrap: wrap;
 	}
-
-
 }
-
 
 
 @media (max-width: 100em){
@@ -439,5 +432,6 @@
 		flex-wrap: wrap;
 	}
 }
+
 
 
