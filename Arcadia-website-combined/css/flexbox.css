@@ -370,10 +370,12 @@
 	margin: 5% 10% 5% 10%;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 }
 
 .footer-item{
 	flex: 1 1 25%;
+	margin-right: 0.5rem;
 }
 
 .subscribe{
@@ -385,6 +387,7 @@
 
 .subscribe-item{
 	flex: 1 1 auto;
+
 }
 
 
@@ -402,7 +405,7 @@
 }
 
 @media (max-width: 50em){
-	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .two-col, .browse-container, .progress-box {
+	.review-container, .layout, .cart-layout, .review-form, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .two-col, .browse-container, .progress-box, .subscribe {
 		flex-direction: column;
 	}
 
@@ -422,10 +425,6 @@
 }
 
 @media (max-width: 70em){
-	.subscribe{
-		flex-direction: column;
-	}
-
 	.footer-container{
 		flex-wrap: wrap;
 	}
