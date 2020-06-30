@@ -130,7 +130,7 @@ a {
 	text-decoration: none;
 	transition: color 0.5s ease-out;
 	color: rgb(150,150,100);
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
@@ -189,7 +189,7 @@ button {
 
 .btn-submit{
 	color: white;
-	background-color: #B7B7A4;
+	background-color: #B9C3A8;
 	border-style: none;
 	height: 30%;
 
@@ -202,6 +202,7 @@ button {
 
 .btn-submit:active, .btn-submit:hover, .btn-submit:focus {
 	color: #D9D9C9;
+	background-color: #9DA88A;
 }
 
 .btn-reset{
@@ -236,7 +237,7 @@ button {
 	transition: color 0.5s ease-out;
 }
 
-.btn-product-cart:active, .btn-product-cart:hover, .btn-product-cart:focus {
+.btn-product-cart:active, .btn-product-cart:hover, .btn-product-cart:focus, .btn-subscribe:active, .btn-subscribe:hover, .btn-subscribe:focus {
 	background-color: rgba(237,220,210,0.5);
 }
 
@@ -261,7 +262,7 @@ button {
 
 .product-page-cart{
 	background-color: #ddbea9;
-	font-size: 1rem;
+	font-size: 0.9rem;
 
 	color: white;
 	background-color: rgb(237,220,210);
@@ -276,6 +277,19 @@ button {
 
 	transition: color 0.5s ease-out;
 }
+
+.btn-subscribe{
+	color: white;
+	background-color: rgb(237,220,210);
+	border-style: none;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.6rem 0.3rem 0.5rem 0.3rem;
+	margin-bottom: 0;
+	transition: color 0.5s ease-out;
+}
+
 
 /* -------------- END of BUTTONS STYLING -------------- */
 
@@ -359,16 +373,23 @@ input, .event-selector, select{
 	font-size: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	transition: color 0.3s ease-out;
+	transition: color 0.5s ease-out;
 }
 
 .nav-tab-item:active, .nav-tab-item:hover, .nav-tab-item:focus {
 	color: #c59c81;
+	font-weight: 400;
 }
 
 .nav-title{
 	color: #DDBEA9;
 	margin: 0 1rem 0 0;
+	transition: color 0.3s ease-out;
+}
+
+.nav-title:active, .nav-title:hover, .nav-title:focus {
+	color: #AC7B5F;
+	/*font-weight: 450;*/
 }
 
 .nav-icon-cart, .nav-icon-account{
@@ -853,5 +874,22 @@ buttons
 
 .review-module {
 	margin: 2rem 10% 3rem 10%;
+}
+
+/* -------------- FOOTER -------------- */
+footer{
+	height: 15rem;
+	background: #B9C3A8;
+}
+
+.h5-footer{
+	color: white;
+}
+
+.p-footer{
+	color: white;
+}
+
+.footer-links{
 }
 

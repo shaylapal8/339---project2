@@ -47,6 +47,11 @@
 	flex: 1 2 30%;
 }
 
+.clsp-container-box{
+	display: flex;
+	flex-direction: column;
+}
+
 .container-product{
 	display: flex;
 	flex-direction: column;
@@ -360,6 +365,31 @@
 }
 /*---------- END of EVENTS PAGE ----------*/
 
+/*---------- FOOTER ----------*/
+.footer-container{
+	margin: 5% 10% 5% 10%;
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-item{
+	flex: 1 1 25%;
+}
+
+.subscribe{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;	
+	margin-bottom: 1rem;	
+}
+
+.subscribe-item{
+	flex: 1 1 auto;
+}
+
+
+/*---------- BROWSER WIDTH ----------*/
+
 @media (max-width: 32em){
 	.nav{
 		flex-direction: column;
@@ -383,7 +413,27 @@
 	.contact-container, .about-container{
 		flex-wrap: wrap;
 	}
+
+
+	.clsp-container-box{
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
+
+@media (max-width: 70em){
+	.subscribe{
+		flex-direction: column;
+	}
+
+	.footer-container{
+		flex-wrap: wrap;
+	}
+
+
+}
+
+
 
 @media (max-width: 100em){
 	.product {
