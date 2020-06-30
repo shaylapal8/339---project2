@@ -461,10 +461,10 @@ input, .event-selector, select{
 	color: #c59c81;
 }
 
-[type="radio"]:checked ~ .nav-icon-account {
+[type="radio"]:hover ~ .nav-icon-account {
   z-index: 2;
 }
-[type="radio"]:checked ~ .nav-icon-account ~ .content {
+[type="radio"]:hover ~ .nav-icon-account ~ .content {
   z-index: 1;
   opacity: 1;
 }
@@ -478,7 +478,7 @@ input, .event-selector, select{
   height: 100%;
 }
 
-[type="radio"]:checked ~ .nav-icon-account ~ .close-tab {
+[type="radio"]:hover ~ .nav-icon-account ~ .close-tab {
   z-index: 3;
 }
 
