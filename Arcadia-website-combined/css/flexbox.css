@@ -405,7 +405,7 @@
 
 /*---------- FOOTER ----------*/
 .footer-container{
-	margin: 5% 10% 5% 10%;
+	margin: 5% 10% 2% 10%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
