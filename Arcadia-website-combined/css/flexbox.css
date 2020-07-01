@@ -63,14 +63,14 @@
 
 .product{
 	display: flex;
+	justify-content: space-between;
 }
 
 .product-item{
 	flex: 1 1 20%;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-right: 0.6rem;
-	margin-bottom: 1.5rem;
+	margin: 0 0.3rem 1.5rem 0.3rem;
 }
 
 .product-item-large{
@@ -290,10 +290,6 @@
 	flex-direction: row;
 }
 
-/*.product-page-slides-container{
-	display: flex;
-}*/
-
 .product-page-text{
 	flex: 1 1 auto;
 }
@@ -322,7 +318,41 @@
 .progress-box{
 	display: flex;
 	align-items: baseline;
-	justify-content: space-betw;
+	justify-content: space-between;
+}
+
+.hero-container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-btn-item{
+	flex: 1 1 50%;
+}
+
+.blog-container{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	margin-top: 3rem;
+}
+
+.blog-item{
+	flex: 1 1 33%;
+	text-align: center;
+	margin: 1rem;
+}
+
+.section-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 /*---------- START of CONTACT PAGE ----------*/
@@ -332,7 +362,6 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
 
 .contact-container-item{
 	flex: 1 1 auto;
@@ -404,7 +433,7 @@
 /*---------- BROWSER WIDTH ----------*/
 
 @media (max-width: 40em){
-	.nav{
+	.nav, .blog-container{
 		flex-direction: column;
 	}
 
