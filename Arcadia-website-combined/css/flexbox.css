@@ -246,6 +246,15 @@
 	margin-right: 1rem;
 }
 
+.four-col-item-sub{
+	margin: 0.5rem;
+	padding: 1rem;
+	display: 1 1 auto;
+	left: 0%;
+	right: 50%;
+	align-items: center;
+}
+
 .four-col-item{
 	flex: 1 1 auto;
 	margin-right: 1rem;
@@ -256,6 +265,9 @@
 	flex-direction: column;
 	flex: 1 1 50%;
 	align-items: center;	
+	text-align: left;
+	margin: 0.5rem;
+	padding: 0.5rem;
 }
 
 .col-divider{
