@@ -47,28 +47,12 @@
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 	
-	<section>
+	
 		<a href="./home.html" class="hyperlink-back-nav">  back to browsing&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;homepage</a>
 
 <!----------- START of PRODUCT DETAIL CONTAINER ----------->
-		<div class="product-page-container wide-layout">
-
-			<!-- Image slideshow tutorial: http://qnimate.com/creating-a-slider-using-html-and-css-only/ -->
-			<!-- <div class="product-page-slide-container">
-				<span id="slide-img-1"></span>
-		        <span id="slide-img-2"></span>
-		        <span id="slide-img-3"></span>
-		        <div class="img-holder">
-		            <img src="img/bouquet.jpeg" class="slide-img" />
-		            <img src="img/bouquet.jpeg" class="slide-img" />
-		            <img src="img/bouquet.jpeg" class="slide-img" />
-		        </div>
-		        <div class="btn-holder">
-		            <a href="#slide-img-1" class="slide-change"></a>
-		            <a href="#slide-img-2" class="slide-change"></a>
-		            <a href="#slide-img-3" class="slide-change"></a>
-		        </div>
-			</div> -->
+	<section class="wide-layout">
+		<div class="product-page-container ">
 
 			<img src="img/product10.jpg" alt="A wedding bouquet" class="product-page-img">
 
@@ -111,44 +95,54 @@
 				<p>*For large orders, please visit our <a href="./events.html" class="hyperlink">Events Page</a></p>				
 			</div>
 		</div>
+	</section>
 <!----------- END of PRODUCT DETAIL CONTAINER ----------->
 
-		<hr class="line-break"></hr>
+	<hr class="line-break"></hr>
 
-		<div class="review-module" id="review">
+	<section class="wide-layout">
+		<div id="review">
 			<h3>Reviews</h3>
 			<div class="review-container">
-				<div class="review-container-item">
-					<h3>Customer 1</h3>
-					<p class="date">2020/03/01</p>
-					<p>"The flowers were absolutely gorgeous and fresh! The staff was also incredibly helpful in advising me and my family on the best choices for our wedding design."</p>
+
+				<div class="review-item">
+					<div class="review-box">
+						<h3>Sophie Chen</h3>
+						<p class="date">2020/02/14</p>
+						<p>"The flowers were absolutely gorgeous and fresh! The staff was also incredibly helpful in advising me and my family on the best choices for our wedding design."</p>
+					</div>
+
+					<div class="review-box">
+						<h3>Lacey Vanderfield</h3>
+						<p class="date">2019/9/14</p>
+						<p>"I got some bouquets for my kids graduations and they were so nicely arranged and packed. And they stayed fresh for much longer than I expected.
+	                     "</p>
+					</div>
+
+					<div class="review-box">
+						<h3>Lawrence Ram</h3>
+						<p class="date">2019/10/09</p>
+						<p>"Couldn’t be happier!!! Flowers are lovely, and looked great in our pictures."</p>
+					</div>
 				</div>
 
-				<div class="review-container-item">
-					<h3>Customer 2</h3>
-					<p class="date">2020/03/01</p>
-					<p>"I got some bouquets for my kids graduations and they were so nicely arranged and packed. And they stayed fresh for much longer than I expected.
-                     "</p>
-				</div>
+				<div class="review-item">
+					<input type="reveal" value="Leave a Review" class="btn-reveal">
+						<div id="content">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="First and Last Name" class="form-field">
+							
+							<label for="text">Comments</label>
+							<textarea name="Text1" cols="40" rows="5" placeholder="How was the product?"></textarea>
 
-				<div class="review-container-item">
-					<h3>Customer 3</h3>
-					<p class="date">2020/03/01</p>
-					<p>"Couldn’t be happier!!! Flowers are lovely, and looked great in our pictures."</p>
+							<button class="btn-cs">Post Review</button>
+						</div>	
 				</div>
-			</div>
-
-			<div class="review-form two-col">
-				<div class="review-form-item two-col-review-item">
-					<textarea name="Text1" cols="40" rows="5"></textarea>
-				
-					<button class="btn-submit">Leave a Review</button>
-				</div>
-				<div class="two-col-review-item"></div>
-			</div>
+			
 		</div>
 	</section>
 <!----------- END of REVIEW MODULE ----------->
+
 	<hr class="line-break"></hr>
 
 	<section class="wide-layout">
