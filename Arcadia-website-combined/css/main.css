@@ -630,6 +630,13 @@ img.back-button {
 	margin-right: 2rem;
 }
 
+/*------------Payment CSS--------------*/
+
+.review-product-img
+{
+ max-width: 20%;
+}
+
 /*----------- Item Cart CSS -----------*/
 
 .back-button {
