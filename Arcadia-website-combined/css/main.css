@@ -79,6 +79,8 @@ p {
 	margin-bottom: 0;
 	max-width: 400px;
 	line-height: 1.2;
+	text-align: left;
+
 }
 
 .about-blurb{
@@ -691,13 +693,14 @@ img.back-button {
 	max-width: 50%;
 	/*height: auto;*/
 	margin-right: 2rem;
+
 }
 
 /*------------Payment CSS--------------*/
 
-.review-product-img
-{
- max-width: 20%;
+.review-product-img {
+max-width: 50%;
+ padding: 0.5rem;
 }
 
 /*----------- Item Cart CSS -----------*/
@@ -727,7 +730,7 @@ label {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 0.8rem;
-
+    text-align: left;
 	margin-top: 1rem;
 	margin-bottom: 0;
 }

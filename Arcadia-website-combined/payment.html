@@ -13,11 +13,6 @@
 
 <body>
 
-
-<!--PayPal Acceptance MarkSee the source code-->
-<!-- <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo"></a></td></tr></table>PayPal Logo --> 
-
-
 <!----------- START OF main nav SECTION ----------->
 	
 	<nav class="nav">
@@ -60,14 +55,14 @@
 	  	  		<h1 class="page-title two-col-item">Payment</h1>
 	  	  		<div class="two-col-item progress-bar">
 		  	      	<div class="progress-state">
-		  	    		<span class="prog-cf progress-bar-item"></span>
+		  	    		<span class="prog-c progress-bar-item"></span>
 		  	    		<h6 class="progress-yes-labels">Delivery</h6>
 		  	    	</div>
 		  	    	
 		  	    		<hr class="prog-line progress-bar-item">
 		  	    	
 		  	    	<div class="progress-state">
-		  	    		<span class="prog-c progress-bar-item"></span>
+		  	    		<span class="prog-cf progress-bar-item"></span>
 		  	    		<h6 class="progress-no-labels">Payment</h6>
 		  	    	</div>
 
@@ -89,28 +84,33 @@
 	  		<div class="four-col delivery-form">
 	  			<div class="four-col-item-review">
 	  			    <div class="col-divider">	
-	  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img four-col-item-large-item">
-	  				<p class="four-col-item-large-item"> Signature Bouquet x1 <p>
+	  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img">
+
+	  				<p class="four-col-item-sub"> Signature Bouquet x1 <p>
 	  				</div>	
 
 	  			    <div class="col-divider">	
-	  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img four-col-item-large-item">
-	  				<p class="four-col-item-large-item"> Signature Bouquet x1 <p>
+	  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img">
+
+	  				<p class="four-col-item-sub"> Signature Bouquet x1 <p>
 	  				</div>	
 	  			</div>
 
-	  			<div class="four-col-item">	
-                  <label class="checkout" for="address">Receiver's Name</label>
+	  			<div class="four-col-item-review">
+	  			</div>
+
+	  			<div class="four-col-item-review">	
+                  <label class="checkout" for="address">Customer Name</label>
                   <input type="name" id="name" name="name" placeholder="Name">
 
-                  <label class="checkout" for="address">Receiver's Phone Number</label>
+                  <label class="checkout" for="address">Customer Phone Number</label>
                   <input type="phone" id="phone" name="phone" placeholder="Phone Number">
 
-                  <label class="checkout" for="address">Delivery Address</label>
-                  <input type="address" id="address" name="address" placeholder="Suite #, Street, City">
+                  <label class="checkout" for="address">Customer Email</label>
+                  <input type="address" id="email" name="address" placeholder="person@mail.com">
 				</div>
 
-			    <div class="four-col-item">	
+			    <div class="four-col-item-review">	
                   <label class="checkout" for="address">Receiver's Name</label>
                   <input type="name" id="name" name="name" placeholder="Name">
 
@@ -131,22 +131,27 @@
 
 			<!------- single product ------->
 	  		<div class="four-col delivery-form">
-	  			<div class="four-col-item-large">
-	  			</div>
+	  			<div class="four-col-item-review">	
+	  				<p> PayPal </p>
+	  				<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo"></a></td></tr></table>
+                    <p> Credit Card </p>
+                    <p> Visa Checkout </p>
+				</div>
 
-	  			<div class="four-col-item">	
+			    <div class="four-col-item-review">	
                   <label class="checkout" for="address">Receiver's Name</label>
                   <input type="name" id="name" name="name" placeholder="Name">
 
                   <label class="checkout" for="address">Receiver's Phone Number</label>
-                  <input type="phone" id="phone" name="phone" placeholder="Phone Number">
+                  <input type="phone" id="phone" name="phone" placeholder="Phone Number">				
+              </div>
+              	    <div class="four-col-item-review">	
+                  <label class="checkout" for="address">Receiver's Name</label>
+                  <input type="name" id="name" name="name" placeholder="Name">
 
-                  <label class="checkout" for="address">Delivery Address</label>
-                  <input type="address" id="address" name="address" placeholder="Suite #, Street, City">
-
-                  <label class="checkout" for="address">Message</label>
-                  <input type="text" id="checkout-message" name="address" placeholder="Message">
-				</div>
+                  <label class="checkout" for="address">Receiver's Phone Number</label>
+                  <input type="phone" id="phone" name="phone" placeholder="Phone Number">				
+              </div>
 	  		</div>
 
    
