@@ -83,6 +83,7 @@ p {
 
 }
 
+
 .about-blurb{
 	max-width: 30rem;
 }
@@ -731,9 +732,41 @@ img.back-button {
 /*------------Payment CSS--------------*/
 
 .review-product-img {
-max-width: 50%;
- padding: 0.5rem;
+ max-width: 35%;
+ width: 35%;
+ min-width: auto;
 }
+
+.pay-img{
+	max-width: 35%;
+	padding: 0.5rem;
+}
+
+#mc{
+max-width: 35%;	
+}
+
+.pay-sub{
+	padding: 0.5rem;
+	text-align: left;
+	align-items:left;
+}
+
+.four-col-item-sub{
+	font-size: 0.85rem;
+	margin-left: 0.5rem;
+}
+
+
+#item-summary{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddbea9;
+    padding: 0rem 0rem 1.5rem 0.5rem;
+    border-radius: 1%;
+    width: 50%;
+}
+
 
 /*----------- Item Cart CSS -----------*/
 
@@ -763,7 +796,6 @@ label {
 	font-weight: normal;
 	font-size: 0.8rem;
     text-align: left;
-	margin-top: 1rem;
 	margin-bottom: 0;
 }
 
