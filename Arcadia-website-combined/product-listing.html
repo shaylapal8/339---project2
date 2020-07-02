@@ -47,7 +47,19 @@
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 
-	<section class="wide-layout browse-container">
+	<section class="wide-layout">
+		<!----------- BREADCRUMB NAV ----------->
+		<!-- tutorial from: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+		<nav class="breadcrumb-container">
+			<ul class="breadcrumb">
+			  <li><a href="./home.html">Home</a></li>
+			  <li><a href="./product-type.html">Product Types</a></li>
+			  <li class="current-page">All Bouquets</li>
+			</ul>
+		</nav>		
+		<!----------- END of BREADCRUMB NAV ----------->
+
+		<div class="browse-container">
 <!----------- START OF SIDEBAR  module ----------->
 		<div class="browse-container-filter ">
 
@@ -156,7 +168,7 @@
 <!----------- START of PRODUCT LISTING module ----------->
 		<div class="container-product">
 			<div class="section-title">
-				<h3>Bouquets</h3>
+				<h3>All Bouquets</h3>
 			</div>
 
 			<div class="product">
@@ -442,8 +454,9 @@
 
 			</div>
 
-			
+		
 		</div>
+	</div>
 	</section>
 
 <!----------- FOOTER ----------->

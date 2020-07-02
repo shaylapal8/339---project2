@@ -120,6 +120,7 @@ ul{
 	padding-inline-start: 1rem;
 }
 
+
 a {
 	text-decoration: none;
 }
@@ -530,6 +531,48 @@ input[type=radio] {
 }
 
 /* -------------- END of MAIN NAV -------------- */
+
+/* -------------- BREADCRUMB NAV -------------- */
+/* tutorial from: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+.breadcrumb-container{
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+}
+
+/* no default left margin */
+ul.breadcrumb {
+  padding-inline-start: 0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 0.3rem;
+  color: rgb(200,200,200);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: rgb(200,200,200);
+  text-decoration: none;
+  transform: color 0.5s ease-in-out;
+}
+
+.current-page{
+  color: #9DA88A;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:active, ul.breadcrumb li a:hover, ul.breadcrumb li a:focus{
+	color: #9DA88A;
+}
 
 /* -------------- REVIEW FORM -------------- */
 .review-box{
