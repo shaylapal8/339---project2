@@ -781,16 +781,22 @@ img.back-button {
 }
 
 .pay-img{
-	max-width: 35%;
-	padding: 0rem;
+	max-width: 30%;
+	padding-top: 1rem;
+	transition: opacity 0.2s ease-in-out;
 }
 
 #mc{
-max-width: 35%;	
+
 }
 
+.pay-img:hover{
+		opacity: 0.4;
+}
+
+
 .pay-sub{
-	padding: 0.5rem;
+	padding-top: 0.5rem;
 	text-align: left;
 	align-items:left;
 }
