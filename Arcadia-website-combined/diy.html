@@ -14,9 +14,128 @@
 <body>
 
 <!----------- START OF main nav SECTION ----------->
-	
-	
+	<nav class="nav">
+		<a href="./home.html">
+			<h1 class="nav-title">Arcadia</h1>
+		</a>
 
+		<div class="nav-content" id="menu">
+			<ul class="clearfix nav-tab">
+				<li><a href="./product-type.html" class="nav-tab-item">Bouquets</a>
+				  <input type="checkbox" id="sm1">
+				  <ul class="sub-menu">
+				    <li><a href="./product-listing.html" class="nav-tab-item">Shop all</a></li>
+				    <li><a href="./diy.html" class="nav-tab-item">Build your own</a></li>
+				  </ul>
+				</li>
+				<li><a href="./events.html" class="nav-tab-item">Events</a></li>
+				<li><a href="./about.html" class="nav-tab-item">About Us</a></li>
+				<li><a href="./contact.html" class="nav-tab-item">Contact Us</a></li>
+			</ul>
+
+			<div class="nav-icon">
+				
+				<a href="./track.html" class="nav-icon-item">
+					<img src="img/account.png" alt="Icon for your account" class="nav-icon-cart">
+				</a>
+				<a href="./cart.html" class="nav-icon-item">
+					<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+				</a>
+			</div>
+		</div>		
+	</nav>
+<!----------- END OF main nav SECTION ----------->
+	
+	<section class="wide-layout">
+		<!----------- BREADCRUMB NAV ----------->
+		<nav class="breadcrumb-container">
+			<ul class="breadcrumb">
+			  <li><a href="./home.html">Home</a></li>
+			  <li><a href="./product-type.html">Product Types</a></li>
+			  <li class="current-page">Build your own</li>
+			</ul>
+		</nav>		
+		<!----------- END of BREADCRUMB NAV ----------->
+		<section class="diy-container">
+			<div class="diy-title">
+				<h2>Build your own</h2>
+				<p>We believe bouquets are personal. At Arcadia, you have the chance to create the perfect bouquet for the special occasion and people in your life.</p>
+			</div>
+
+			<hr class="line-break-full"></hr>
+
+			<div class="diy-step1">
+				<h4>Step 1: Select your budget and desired flowers</h4>
+					<select id="budget" class="budget-selector">
+						<option value="open">Open Budget</option>
+						<option value="40-50">$40-$50</option>
+						<option value="50-60">$50-$60</option>
+						<option value="60-70">$60-70</option>
+						<option value="70-80">$70-$80</option>
+					</select>
+				<div class="flower-selection">
+					<div class="flower-item">
+						<img img src="img/" alt="Close up picture of flower" class="flower-img">
+						<p>Rose</p>
+
+						
+					</div>
+				</div>
+			</div>
+
+			<hr class="line-break-full"></hr>
+
+			<div class="diy-step2">
+				<h4>Step 2: Select quantities</h4>
+				<div class="four-col-title">
+						<h5 class="four-col-item">Items</h5>
+						<h5 class="four-col-item"></h5>
+						<h5 class="four-col-item">Quantity</h5>
+						<h5 class="four-col-item">Amount</h5>
+				</div>
+				<div class="-diyfour-col">
+					<p class="four-col-item">Your haven't selected anything yet.</p>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<hr class="line-break"></hr>
+
+	<section class="two-col wide-layout">
+		<div class="two-col-item"></div>
+		<div class="two-col-item subtotal-box">
+			<div class="subtotal-box-item">
+				<h5 class="subtotal-box-item-text">Subtotal</h5>
+				<p class="subtotal-box-item-text">$0</p>
+			</div>
+
+			<div class="subtotal-box-item">
+				<h5 class="subtotal-box-item-text">Taxes</h5>
+				<p class="subtotal-box-item-text">$0</p>
+			</div>
+
+			<div class="subtotal-box-item">
+				<h5 class="subtotal-box-item-text">Shipping</h5>
+				<p class="subtotal-box-item-text">Calculated at Checkout</p>
+			</div>
+
+			<div class="two-col-item two-col">
+				<div class="two-col-item">
+					<form method="get" action="./checkout.html" class="subtotal-box-item-text">
+					    <button type="submit" class="btn-cta">Checkout</button>
+					</form>
+				</div>
+				
+				<div class="two-col-item">
+					<form method="get" action="./home.html" class="subtotal-box-item-text">
+				    	<button type="submit" class="btn-cs">Continue Shopping</button>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
 	<!----------- FOOTER ----------->
 	<footer>
 		<div class="footer-container">

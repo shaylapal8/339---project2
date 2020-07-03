@@ -231,14 +231,13 @@
 }
 
 .four-col-final{
-	
 	display: flex;
 	flex-direction: row;
 	margin-top: 2rem;
 	align-items: center;
 	justify-content: space-between;
 }
-}
+
 
 .four-col-item-large{
 	display: flex;
@@ -445,6 +444,43 @@
 
 }
 
+/*---------- DIY PAGE ----------*/
+.diy-title{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.diy-step1{
+	display: flex;
+	flex-direction: column;
+}
+
+.diy-step2{
+	display: flex;
+	flex-direction: column;
+}
+
+.diy-four-col{
+	display: flex;
+	flex-direction: row;
+	margin-top: 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flower-selection{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flower-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 auto;
+}
 
 /*---------- BROWSER WIDTH ----------*/
 
@@ -459,7 +495,7 @@
 }
 
 @media (max-width: 50em){
-	.layout, .cart-layout, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .browse-container, .progress-box, .subscribe{
+	.layout, .cart-layout, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .browse-container, .progress-box, .subscribe, .diy-title-item{
 		flex-direction: column;
 	}
 
