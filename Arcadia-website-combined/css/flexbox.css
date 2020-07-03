@@ -230,6 +230,16 @@
 	justify-content: space-between;
 }
 
+.four-col-final{
+	
+	display: flex;
+	flex-direction: row;
+	margin-top: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+}
+
 .four-col-item-large{
 	display: flex;
 	flex-direction: row;

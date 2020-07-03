@@ -151,6 +151,7 @@ a {
 	font-size: 1rem;
 }
 
+
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
 	color: rgb(180,180,140);
 }
@@ -618,6 +619,13 @@ input:focus + div#content {
     width: 90%;
 }
 
+.line {
+	border: 0.03rem solid #D6D6D6;
+	padding-left: 0;
+	margin-left: 0;
+    width: 95%;
+}
+
 
 /* -------------- HOME PAGE -------------- */
 .hero-container{
@@ -814,6 +822,28 @@ img.back-button {
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
     width: 50%;
+}
+
+#done{
+	border-width: 1px;
+    border-style: solid;
+    border-color: #ddbea9;
+    padding: 0rem 0rem 1.5rem 0.5rem;
+    border-radius: 1%;
+    max-width: 60%;
+
+}
+
+#final-img{
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+
+
+
+.col-divider{
+	padding:0.5rem;
+
 }
 
 
