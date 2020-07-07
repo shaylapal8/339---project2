@@ -829,8 +829,12 @@ img.back-button {
 	transition: opacity 0.2s ease-in-out;
 }
 
-#mc{
+#pp:hover ~ #ccform {
+ background-color: black;
+}
 
+#ccform{
+	display: inline-block;
 }
 
 .pay-img:hover{
@@ -1018,6 +1022,13 @@ label {
   display: inline-block;
 }
 
+.prog-cf:hover {
+  opacity: 0.4;
+}
+
+.prog-c:hover {
+	opacity: 0.4;
+}
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{
