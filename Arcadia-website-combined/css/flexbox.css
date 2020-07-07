@@ -222,6 +222,7 @@
 	margin-right: 1rem;
 }
 
+
 .four-col, .five-col{
 	display: flex;
 	flex-direction: row;
@@ -261,6 +262,21 @@
 .four-col-item{
 	flex: 1 1 25%;
 	margin-right: 1rem;
+}
+
+.four-col-sign-up{
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.four-col-item-sign{
+	flex-direction: column;
+	flex: 1 1 25%;
+	margin: 1rem;
 }
 
 .four-col-item-review{

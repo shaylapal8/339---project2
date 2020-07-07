@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> Thank you </title>
+	<title> Sign Up or Sign In! </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/normalize.css"> 
@@ -53,9 +53,53 @@
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 
-	     	<div class="four-col-title">
-	  			<h3 class="four-col-title-item-large">Welcome!</h3>
+            
+	  		<div class="four-col-sign-up">
+	  			<div class="four-col-item-sign"></div>
+	  			<div class="four-col-item-sign" id="sign-form">	
+                  <h5>New? Sign up now!</h5>
+
+                  <hr class="line-break"> </hr>
+                  <label class="checkout" for="address">Email</label>
+                  <input type="email" name="email" placeholder="yourname@email.com">
+
+                  <label class="checkout" for="address">Password</label>
+                  <input type="password" name="password" placeholder="***********">
+
+                  <label class="checkout" for="address">Confirm Password</label>
+                  <input type="password" name="password" placeholder="***********">			
+
+
+                  <form method="get" action="./track.html" class="sign-box-item-text">
+			      <button type="submit" class="btn-sub">Submit</button>
+				  </form>
+				</div>
+
+                <div class="four-col-item-sign" id="or">
+                 <h5> OR </h5>
+                </div>
+
+
+              	<div class="four-col-item-sign" id="sign-form">	
+                  <h5>Already registered? Sign in here!</h5>
+                  <hr class="line-break"> </hr>
+                  <label class="checkout" for="address">Email</label>
+                  <input type="email" name="email" placeholder="yourname@email.com">
+
+                  <label class="checkout" for="address">Password</label>
+                  <input type="password" name="password" placeholder="***********">		
+
+                  <form method="get" action="./track.html" class="sign-box-item-text">
+			      <button type="submit" class="btn-sub">Submit</button>
+				  </form>
+
+				  <p class="forgot">Forgot your password? <a href="./contact.html">Click here</a></p>
+              </div>
+	  		  <div class="four-col-item-sign"></div>
 	  		</div>
+	  		
+
+
 
 	
 	

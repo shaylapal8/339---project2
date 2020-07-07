@@ -74,6 +74,8 @@ h6 {
 	font-weight: normal;
 }
 
+
+
 p {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
@@ -205,6 +207,24 @@ button {
 	transition: background-color 0.3s ease-out;
 }
 
+
+.btn-sub{
+
+	font-size: 1rem;
+
+	padding: 0.8rem;
+	margin-bottom: 0;
+	margin-top: 1.5rem;
+	width: 100%;
+
+	color: white;
+	background-color: rgb(221,190,169);
+	border-style: none;
+	align-items: center;
+	align-content: center;
+
+	transition: background-color 0.3s ease-out;
+}
 
 .btn-cta:active, .btn-cta:hover, .btn-cta:focus, .btn-cs:active, .btn-cs:hover, .btn-cs:focus {
 	background-color: rgb(237,220,210);
@@ -1029,6 +1049,50 @@ label {
 .prog-c:hover {
 	opacity: 0.4;
 }
+
+/*--------SIGN IN--------*/
+
+#or{
+	text-align:center;
+	padding: 0;
+	margin: 0;
+}
+
+.four-col-item-sign{
+	align-items: top;
+	align-content: top;
+	justify-content: top;
+	padding-bottom: 1rem;
+
+}
+
+ #sign-form{
+  	border-width: 1px;
+    border-style: solid;
+    border-color: #ddbea9;
+    padding: 1rem; 
+    border-radius: 1%;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #sign-form h5{
+ 	text-align: center;
+ }
+
+ #sign-form label{
+ 	padding-top: 1rem;
+ }
+
+ #sign-form p{
+
+	font-family: "NeutraText", Helvetica, sans-serif;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+ }
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{
