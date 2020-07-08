@@ -901,7 +901,7 @@ img.visa-img:hover ~ div.visa-form {
     border-color: #ddbea9;
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
-    max-width: 60%;
+    max-width: 100%;
 
 }
 
