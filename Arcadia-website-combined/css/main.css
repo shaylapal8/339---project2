@@ -849,16 +849,28 @@ img.back-button {
 	transition: opacity 0.2s ease-in-out;
 }
 
-#pp:hover ~ #ccform {
- background-color: black;
+div.pp-form, div.mc-form, div.visa-form{
+	display: none;
 }
 
-#ccform{
-	display: inline-block;
+img.pp-img:hover ~ div.pp-form {
+	display: block;
+}
+
+img.mc-img:hover ~ div.mc-form {
+	display: inline;
+}
+
+img.visa-img:hover ~ div.visa-form {
+	display: inline;
+}
+
+#pp-form{
+	/*display: inline-block;*/
 }
 
 .pay-img:hover{
-		opacity: 0.4;
+	opacity: 0.4;
 }
 
 
