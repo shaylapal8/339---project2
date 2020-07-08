@@ -395,6 +395,12 @@ input, .event-selector, select{
 	width: auto;
 }
 
+.shipping-filter{
+
+	height: auto;
+	width: auto;	
+}
+
 .form-field{
 	width: 100%;
 }
@@ -926,7 +932,8 @@ img.visa-img:hover ~ div.visa-form {
 }
 
  .cart-product-img{
- 	width: 20%;
+
+ 	max-width: 40%;
  	border: none;
  }
 
@@ -962,6 +969,18 @@ label {
 
 .delivery-form{
 	margin-bottom: 1rem;
+}
+
+.item-id{
+  	border-width: 1px;
+    border-style: solid;
+    border-color: #ddbea9;
+    padding: 1rem; 
+    border-radius: 1%;
+    max-width: 85%;
+    max-height:100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
