@@ -264,19 +264,23 @@
 	margin-right: 1rem;
 }
 
-.four-col-sign-up{
+.sign-up-container{
 	display: flex;
 	flex-direction: row;
-	margin: 1rem;
-	align-items: center;
-	justify-content: space-between;
-
+	align-items: stretch;
 }
 
-.four-col-item-sign{
+.sign-up-item{
+	display: flex;
 	flex-direction: column;
-	flex: 1 1 25%;
+	flex: 1 1 50%;
 	margin: 1rem;
+}
+
+.sign-up-item-narrow{
+	/*flex: 1 1 10%;*/
+	margin: 1rem;
+	/*align-items: center;*/
 }
 
 .four-col-item-review{
@@ -532,7 +536,7 @@
 		flex-wrap: wrap;
 	}
 
-	.two-col {
+	.two-col,.sign-up-container {
 		flex-direction: column;
 	}
 }

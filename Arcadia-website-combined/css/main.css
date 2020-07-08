@@ -719,6 +719,10 @@ input:focus + div#content {
 	opacity: 0.5;
 }
 
+.flower-img-selected{
+	opacity: 0.3;
+}
+
 /* -------------- END of IMAGES -------------- */
 
 /* -------------- FILTER MENU -------------- */
@@ -797,12 +801,6 @@ input:focus + div#content {
 
 /* -------------- END of PRODUCT LISTING -------------- */
 
-
-.back-nav{
-	margin-left: 10%;
-	padding-top: 3rem;
-}
-
 .back-button {
 	padding-left:10%;
 	display: in-line;
@@ -833,6 +831,22 @@ img.back-button {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+}
+
+.diy-four-col form{
+	margin-top: 1rem;
+}
+
+.diy-step{
+	margin-bottom: 1rem;
+}
+
+.diy-step label{
+	margin-bottom: 0;
+}
+
+.diy-step select{
+	margin-top:0.5rem;
 }
 
 /*------------Payment CSS--------------*/
@@ -1078,32 +1092,47 @@ label {
 
 }
 
- #sign-form{
+ .sign-form{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B6BFA6;
+    padding: 1rem 2rem 2rem 2rem; 
+    border-radius: 1%;
+ }
+
+  .login-form{
   	border-width: 1px;
     border-style: solid;
     border-color: #ddbea9;
-    padding: 1rem; 
+    padding: 1rem 2rem 2rem 2rem; 
     border-radius: 1%;
-    max-width: 70%;
-    align-items: center;
-    justify-content: center;
  }
 
- #sign-form h5{
+ .sign-form h5, .login-form h5{
  	text-align: center;
  }
 
- #sign-form label{
- 	padding-top: 1rem;
+ .sign-up-item h6{
+ 	text-align: center;
+ 	width: 100%;
  }
 
- #sign-form p{
+ .sign-form label{
+ 	padding-top: 1rem;
+ 	text-align: left;
+ }
 
+ .forgot{
 	font-family: "NeutraText", Helvetica, sans-serif;
 	font-size: 0.8rem;
 	margin-bottom: 0;
 	font-weight: normal;
 	text-align: center;
+	max-width: 100%;
+ }
+
+ .sign-form button{
+ 	background: #B6BFA6;
  }
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
