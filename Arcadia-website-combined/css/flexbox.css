@@ -287,12 +287,12 @@
 
 }
 
-.sign-up-item{
+/*.sign-up-item{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
 	margin: 1rem;
-}
+}*/
 
 .sign-up-item-narrow{
 	/*flex: 1 1 10%;*/

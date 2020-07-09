@@ -1,6 +1,6 @@
 /* -------------- TEXT STYLING -------------- */
 body {
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1rem;
 	background-color: #F5F5F2;
@@ -30,11 +30,13 @@ h2 {
 	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 2rem;
 	font-weight: bold;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
+	/*color: #DCBEA9;*/
 }
 
 .hero-text{
 	font-weight: normal;
+	font-size: 2rem;
 	color: white;
 }
 
@@ -376,9 +378,16 @@ input, .event-selector, select, textarea {
 	border-style: solid;
 	border-width: 1.2px;
 	border-color: rgb(237,220,210);
+	border-radius: 1%;
 
 	margin-bottom: 0;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+
+	outline: none;
+}
+
+input:focus, .event-selector:focus, select:focus, textarea:focus{
+	border-color:#D7B59D;
 }
 
 textarea{
@@ -1119,19 +1128,19 @@ label {
 }
 
  .sign-form{
-    border-width: 1px;
+    /*border-width: 1px;
     border-style: solid;
-    border-color: #B6BFA6;
+    border-color: #B6BFA6;*/
     padding: 1rem 2rem 2rem 2rem; 
-    border-radius: 1%;
+    /*border-radius: 1%;*/
  }
 
   .login-form{
-  	border-width: 1px;
+  	/*border-width: 1px;
     border-style: solid;
-    border-color: #ddbea9;
+    border-color: #ddbea9;*/
     padding: 1rem 2rem 2rem 2rem; 
-    border-radius: 1%;
+    /*border-radius: 1%;*/
  }
 
  .sign-form h5, .login-form h5{
@@ -1160,6 +1169,114 @@ label {
  .sign-form button{
  	background: #B6BFA6;
  }
+
+ /* --------- SIGN-IN FORM WITH TABS: https://codepen.io/flkt-crnpio/pen/WxROwy/?editors=0100 --------- */
+ .tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221,190,169);
+  border-radius: 1%;
+
+  padding: 1rem 2rem 0 2rem;
+}
+
+  .tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    /*color: #efedef;*/
+    /*cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center;*/
+}
+
+.tab-label{
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+    /*border-bottom: 1px solid rgba(239, 237, 239, 0.5);*/
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:focus {
+  border-bottom: 1px solid rgb(221,190,169); 
+}
+
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+  border-bottom: 1px solid rgb(221,190,169); 
+}
+
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
+  opacity: 1; 
+}
+
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
+  display: block;
+  opacity: 0;
+  /*padding: 2rem 0;*/
+  /*width: 90%;*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+}
+
+.tabs .tab-2 {
+width: 50%;
+}
+
+.tabs .tab-2 [type="radio"] + div {
+  width: 200%;
+  margin-left: 200%; 
+}
+
+.tabs .tab-2 [type="radio"]:checked + div {
+  margin-left: 0; 
+}
+
+.tabs .tab-2:last-child [type="radio"] + div {
+  margin-left: 100%; 
+}
+
+.tabs .tab-2:last-child [type="radio"]:checked + div {
+  margin-left: -100%; 
+}
+
+.tab-input{
+	border-style: none;
+	height: 1rem;
+	outline: none;
+}
 
 /* -------------- WIDE MARGIN PAGE LAYOUT for Contact/About/Events -------------- */
 .narrow-layout{

@@ -13,8 +13,6 @@
 
 <body>
 
-
-
 <!----------- START OF main nav SECTION ----------->
 	<nav class="nav">
 		<a href="./home.html">
@@ -53,43 +51,48 @@
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 
-            <div class="wide-layout">
-            	<div class="two-col">
-            		<div class="sign-up-item login-form">
-            			<h5>Already registered?</h5>
+    <section class="narrow-layout">
+    	<h2>Log in or sign up to manager your account.</h2>
 
-						<hr class="line-break-full"> </hr>
-						<label class="checkout" for="address">Email</label>
-						<input type="email" name="email">
+    	<!-- SIGN-IN FORM WITH TABS: https://codepen.io/flkt-crnpio/pen/WxROwy/?editors=0100 -->
+    	<div class="tabs">
+		  <div class="tab-2">
+		    <label for="tab2-1" class="tab-label">Already registered?</label>
+		    <input id="tab2-1" name="tabs-two" type="radio" checked="checked" class="tab-input">
+		      <div class="sign-up-item login-form">
+				<label class="checkout" for="address">Email</label>
+				<input type="email" name="email">
 
-						<label class="checkout" for="address">Password</label>
-						<input type="password" name="password">
-		
-						<form method="get" action="./track.html" class="sign-box-item-text">
-						<button type="submit" class="btn-sub">Sign In</button>
-						</form>
+				<label class="checkout" for="address">Password</label>
+				<input type="password" name="password">
 
-						<p class="forgot">Forgot your password? <a href="./contact.html">Reset it now.</a></p>
-            		</div>
-            		<!-- <div class="sign-up-item-narrow">
-            			<h6>OR</h6>
-            		</div> -->
-            		<div class="sign-up-item sign-form">
-            			<h5>New? Sign up now to get access to:</h5>
-						<hr class="line-break-full"> </hr>
-						<ul>
-							<li>Order trackings</li>
-							<li>Order history</li>
-							<li>Weekly newsletter on our freshest deals</li>
-							<li>Personalized shopping experience</li>
-							<li>Many more to come!</li>
-						</ul>
-						<form method="get" action="./track.html" class="sign-box-item-text">
-						<button type="submit" class="btn-sub">Create an Account</button>
-						</form>
-            		</div>
-            	</div>
-            </div>
+				<form method="get" action="./track.html" class="sign-box-item-text">
+				<button type="submit" class="btn-sub">Sign In</button>
+				</form>
+
+				<p class="forgot">Forgot your password? <a href="./contact.html">Reset it now.</a></p>
+    		  </div>
+		  </div>
+
+		  <div class="tab-2">
+		    <label for="tab2-2" class="tab-label">New?</label>
+		    <input id="tab2-2" name="tabs-two" type="radio" class="tab-input">
+		      <div class="sign-up-item sign-form">
+    			<p>Sign up now to get access to:</p>
+				<ul>
+					<li>Order trackings</li>
+					<li>Order history</li>
+					<li>Weekly newsletter on our freshest deals</li>
+					<li>Personalized shopping experience</li>
+					<li>Many more to come!</li>
+				</ul>
+				<form method="get" action="./track.html" class="sign-box-item-text">
+				<button type="submit" class="btn-sub">Create an Account</button>
+				</form>
+    		  </div>
+          </div>
+      </div>
+	</section>
 
 	<!----------- FOOTER ----------->
 	<footer>
