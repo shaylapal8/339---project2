@@ -855,12 +855,16 @@ img.back-button {
 	transition: opacity 0.2s ease-in-out;
 }
 
+.visa-img{
+	max-width:16.5%;
+}
+
 div.pp-form, div.mc-form, div.visa-form{
 	display: none;
 }
 
 img.pp-img:hover ~ div.pp-form {
-	display: block;
+	display: inline;
 }
 
 img.mc-img:hover ~ div.mc-form {
@@ -871,8 +875,8 @@ img.visa-img:hover ~ div.visa-form {
 	display: inline;
 }
 
-#pp-form{
-	/*display: inline-block;*/
+.pp-form{
+	margin-left: 3rem;
 }
 
 .pay-img:hover{
@@ -884,6 +888,8 @@ img.visa-img:hover ~ div.visa-form {
 	padding-top: 0.5rem;
 	text-align: left;
 	align-items:left;
+	display: flex; 
+	flex-direction: row;
 }
 
 .four-col-item-sub{
@@ -898,7 +904,7 @@ img.visa-img:hover ~ div.visa-form {
     border-color: #ddbea9;
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
-    width: 50%;
+    max-width: 100%;
 }
 
 #done{
