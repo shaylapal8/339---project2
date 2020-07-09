@@ -736,7 +736,7 @@ input:focus + div#content {
 	transition: opacity 0.3s ease-out;
 }
 
-.flower-img:active, .flower-img:hover, .flower-img:focus {
+.flower-img:active, .flower-img:hover, .flower-img:focus,.cart-product-img:active, .cart-product-img:hover, .cart-product-img:focus {
 	opacity: 0.5;
 }
 
@@ -1071,8 +1071,9 @@ img.visa-img:hover ~ div.visa-form {
 }
 
  .cart-product-img{
- 	width: 25%;
+ 	width: 100%;
  	border: none;
+ 	transition: opacity 0.3s ease-out;
  }
 
 #subtotal{
@@ -1081,6 +1082,15 @@ img.visa-img:hover ~ div.visa-form {
 
 .quantity-cart{
 	width: 50%;
+}
+
+.cart-diy-list{
+	display: inline;
+}
+
+.cart-diy-list > li{
+	font-size: 0.8em;
+	display: block;
 }
 
 /*-------------Checkout CSS-----------*/
