@@ -277,12 +277,13 @@
 	margin: 1rem;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 }
 
 .four-col-item-sign{
 	flex-direction: column;
-	flex: 1 1 25%;
+	flex: 1 1 auto;
 	margin: 1rem;
 }
 
