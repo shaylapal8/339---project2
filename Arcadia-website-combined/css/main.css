@@ -1017,6 +1017,7 @@ label {
 /*---------------Progress Bar----------------- */
 .progress-bar{
  display: inline-flex;
+ flex-flow: row-wrap;
  /*position: row;*/
  /*flex:1 1 90%;*/
  margin-bottom: 5%;
