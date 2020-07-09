@@ -63,14 +63,14 @@
 	  	    		<h6 class="progress-no-labels">Payment</h6>
 	  	    	</div>
 
-	  	    		<hr class="prog-line2 progress-bar-item">
-	  	    	
-	  	    	<div class="progress-state">
-	  	    		<span class="prog-c progress-bar-item"></span>
-	  	    		<h6 class="progress-no-labels">Done</h6>
-	  	    	</div>
-	  	    </div>
-  		</div>
+		  	    		<hr class="prog-line2 progress-bar-item">
+		  	    	 <a href="./done.html">	
+		  	    	<div class="progress-state">
+		  	    		<span class="prog-c progress-bar-item"></span>
+		  	    		<h6 class="progress-no-labels">Done</h6>
+		  	    	</div></a>
+		  	    </div>
+	  		</div>
 
      	<div class="four-col-title-review">
   			<h5 class="four-col-title-item-large">Product Summary</h5>
@@ -81,19 +81,19 @@
   		<div class="four-col delivery-form">
   			<div class="four-col-item-review">
 
-  			    <div class="col-divider">	
-  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img">
-  				<p class="four-col-item-sub"> <strong> Signature Bouquet</strong> x2 <p>
-  				</div>
-  				
-  			    <div class="col-divider" id="item-summary">	
-  				<h6 class="four-col-item-sub"> Summary </h6>
-  				<p class="four-col-item-sub"> Receiver's Name:  </p>
-  				<p class="four-col-item-sub"> Receiver's Phone Number: </p>
-  				<p class="four-col-item-sub"> Delivery Address: </p>
-  				<p class="four-col-item-sub"> Message: </p>
-  				</div>	
-  			</div>
+	  			    <div class="col-divider">	
+	  				<img src="img/bouquet.jpeg" alt="Product Image." class="review-product-img">
+	  				<p class="four-col-item-sub"> <strong> Signature Bouquet</strong> x2 <p>
+	  				</div>
+	  				
+	  			    <div class="col-divider" id="item-summary">	
+	  				<h6 class="four-col-item-sub"> Summary </h6>
+	  				<p class="four-col-item-sub"> <strong>Receiver's Name:</strong> Cynthia Haye </p>
+	  				<p class="four-col-item-sub"> <strong>Receiver's Phone Number:</strong> +1-891-039-1292</p>
+	  				<p class="four-col-item-sub"> <strong>Delivery Address:</strong> 27384 Unit# 102, Vancouver BC</p>
+	  				<p class="four-col-item-sub"> <strong>Message:</strong> Thank you so much for your help at the banquet! I hope these flowers can express my gratitude, and I hope to see you again soon! </p>
+	  				</div>	
+	  			</div>
 
   			<div class="four-col-item-review">	
               <label class="billing" for="address">Customer Name</label>
@@ -123,25 +123,28 @@
   			<h5 class="four-col-title-item-large">Enter Credit Card Information</h5>
   		</div>
 
-		<!------- single product ------->
-  		<div class="four-col">
-  			<div class="four-col-item-review">	
-   
-  				<p class="pay-sub"> PayPal </p>
-  				<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo" class="pay-img pp-img">
-				<div class="four-col-item-review pp-form">	
-					<label class="billing" for="address">Pay Pal</label>
-					<input type="name" name="number" placeholder="0000 0000 0000">
+			<!------- single product ------->
+	  		<div class="four-col">
+	  			<div class="four-col-item-review">	
 
-					<label class="billing" for="address">Cardholders Name</label>
-					<input type="name" id="name" name="name" placeholder="Name">	
+	  				<p class="pay-sub"> PayPal </p>
+                    <div class="pay-sub">
+	  				<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo" class="pay-img pp-img">
+					<div class="four-col-item-review pp-form">	
+						<label class="billing" for="email">Pay Pal Email</label>
+						<input type="name" name="email" placeholder="yourname@email.com">
 
-					<label class="billing" for="address" >Card Expiry Date</label>
-					<input type="expiry date"  name="expiry" placeholder="00/0000">				
+						<label class="billing" for="password">Password</label>
+						<input type="password" id="password" name="password" placeholder="******">		
+					</div>
+                    </div>
 
-					<label class="billing" for="CVV" >CVV</label>
-					<input type="expiry date"  name="cvv" placeholder="000">				
-				</div>
+      			    <p class="pay-sub"> Master Card </p>
+      			    <div class="pay-sub">
+                    <img src="img/masterc.png" alt="Icon for Mastercard" class="pay-img mc-img">
+                    <div class="four-col-item-review mc-form">	
+	                  <label class="billing" for="address"> Master Card Number</label>
+	                  <input type="name" name="number" placeholder="0000 0000 0000">
 
   			    <p class="pay-sub"> Master Card </p>
                 <img src="img/masterc.png" alt="Icon for Mastercard" class="pay-img mc-img">
@@ -149,34 +152,33 @@
                   <label class="billing" for="address"> Master Card Number</label>
                   <input type="name" name="number" placeholder="0000 0000 0000">
 
-                  <label class="billing" for="address">Cardholders Name</label>
-                  <input type="name" id="name" name="name" placeholder="Name">	
+	                  <label class="billing" for="address" >Card Expiry Date</label>
+	                  <input type="expiry date"  name="expiry" placeholder="00/0000">				
+	                
+	                  <label class="billing" for="CVV" >CVV</label>
+	                  <input type="expiry date"  name="cvv" placeholder="000">				
+	                </div>
+	                </div>
+     
+                    <p class="pay-sub"> Visa Checkout </p>
+                    <div class="pay-sub">
+                    <img src="img/visa.png" alt="Icon for Visa" class="pay-img visa-img">
+                    <div class="four-col-item-review visa-form">	
+	                  <label class="billing" for="address"> Visa Card Number</label>
+	                  <input type="name" name="number" placeholder="0000 0000 0000">
 
-                  <label class="billing" for="address" >Card Expiry Date</label>
-                  <input type="expiry date"  name="expiry" placeholder="00/0000">				
-                
-                  <label class="billing" for="CVV" >CVV</label>
-                  <input type="expiry date"  name="cvv" placeholder="000">				
+	                  <label class="billing" for="address">Cardholders Name</label>
+	                  <input type="name" id="name" name="name" placeholder="Name">	
+
+	                  <label class="billing" for="address" >Card Expiry Date</label>
+	                  <input type="expiry date"  name="expiry" placeholder="00/0000">				
+	                
+	                  <label class="billing" for="CVV" >CVV</label>
+	                  <input type="expiry date"  name="cvv" placeholder="000">				
+	                </div>
+	                </div>
                 </div>
- 
-                <p class="pay-sub"> Visa Checkout </p>
-                <img src="img/visa.png" alt="Icon for Visa" class="pay-img visa-img">
-                <div class="four-col-item-review visa-form">	
-                  <label class="billing" for="address"> Visa Card Number</label>
-                  <input type="name" name="number" placeholder="0000 0000 0000">
-
-                  <label class="billing" for="address">Cardholders Name</label>
-                  <input type="name" id="name" name="name" placeholder="Name">	
-
-                  <label class="billing" for="address" >Card Expiry Date</label>
-                  <input type="expiry date"  name="expiry" placeholder="00/0000">				
-                
-                  <label class="billing" for="CVV" >CVV</label>
-                  <input type="expiry date"  name="cvv" placeholder="000">				
-                </div>
-            </div>
-  		</div>
-  	</section>
+	  		</div>
 
    
            <!----------SUBTOTAL--------->
@@ -210,7 +212,7 @@
 		    </div>
 
 
-</div>
+</section>
 	
 	<!----------- FOOTER ----------->
 	<footer>

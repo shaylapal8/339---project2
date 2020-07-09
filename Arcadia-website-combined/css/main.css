@@ -395,6 +395,12 @@ input, .event-selector, select{
 	width: auto;
 }
 
+.shipping-filter{
+
+	height: auto;
+	width: auto;	
+}
+
 .form-field{
 	width: 100%;
 }
@@ -863,12 +869,16 @@ img.back-button {
 	transition: opacity 0.2s ease-in-out;
 }
 
+.visa-img{
+	max-width:16.5%;
+}
+
 div.pp-form, div.mc-form, div.visa-form{
 	display: none;
 }
 
 img.pp-img:hover ~ div.pp-form {
-	display: block;
+	display: inline;
 }
 
 img.mc-img:hover ~ div.mc-form {
@@ -879,8 +889,8 @@ img.visa-img:hover ~ div.visa-form {
 	display: inline;
 }
 
-#pp-form{
-	/*display: inline-block;*/
+.pp-form{
+	margin-left: 3rem;
 }
 
 .pay-img:hover{
@@ -892,6 +902,8 @@ img.visa-img:hover ~ div.visa-form {
 	padding-top: 0.5rem;
 	text-align: left;
 	align-items:left;
+	display: flex; 
+	flex-direction: row;
 }
 
 .four-col-item-sub{
@@ -906,7 +918,7 @@ img.visa-img:hover ~ div.visa-form {
     border-color: #ddbea9;
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
-    width: 50%;
+    max-width: 100%;
 }
 
 #done{
@@ -915,7 +927,7 @@ img.visa-img:hover ~ div.visa-form {
     border-color: #ddbea9;
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
-    max-width: 60%;
+    max-width: 100%;
 
 }
 
@@ -940,7 +952,8 @@ img.visa-img:hover ~ div.visa-form {
 }
 
  .cart-product-img{
- 	width: 20%;
+
+ 	max-width: 40%;
  	border: none;
  }
 
@@ -978,6 +991,18 @@ label {
 	margin-bottom: 1rem;
 }
 
+.item-id{
+  	border-width: 1px;
+    border-style: solid;
+    border-color: #ddbea9;
+    padding: 1rem; 
+    border-radius: 1%;
+    max-width: 85%;
+    max-height:100%;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*---------------Quantity Selector-------------*/
 
@@ -1012,6 +1037,7 @@ label {
 /*---------------Progress Bar----------------- */
 .progress-bar{
  display: inline-flex;
+ flex-flow: row-wrap;
  /*position: row;*/
  /*flex:1 1 90%;*/
  margin-bottom: 5%;
