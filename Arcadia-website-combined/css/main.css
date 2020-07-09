@@ -1071,8 +1071,7 @@ img.visa-img:hover ~ div.visa-form {
 }
 
  .cart-product-img{
-
- 	max-width: 40%;
+ 	width: 25%;
  	border: none;
  }
 
