@@ -696,6 +696,12 @@ input:focus + div#content {
 	opacity: 0.5;
 }
 
+.blog-text{
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
 /* -------------- IMAGES -------------- */
 .img{
 	border-style: none;
