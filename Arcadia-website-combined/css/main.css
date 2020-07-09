@@ -1110,18 +1110,11 @@ label {
 	margin-bottom: 1rem;
 }
 
-.item-id{
-  	border-width: 1px;
-    border-style: solid;
-    border-color: #ddbea9;
-    padding: 1rem; 
-    border-radius: 1%;
-    max-width: 85%;
-    max-height:100%;
-    align-items: center;
-    justify-content: center;
+.co-img{
+ max-width: 40%;
+ width: 40%;
+ align-self: flex-start;
 }
-
 
 /*---------------Quantity Selector-------------*/
 

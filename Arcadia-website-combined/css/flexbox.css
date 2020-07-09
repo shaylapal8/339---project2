@@ -163,11 +163,24 @@
 .two-col{
 	display: flex;
 	flex-direction: row;
+	align-items: top-left;
 }
 
 .two-col-item{
 	flex:1 1 50%;
 	display: flex;
+}
+
+.two-col-title{
+	display: flex;
+	flex-direction: row;
+}
+
+.two-col-item-c{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	align-items: top-left;
 }
 
 .two-col-review-item{
@@ -264,12 +277,6 @@
 	margin-right: 1rem;
 }
 
-.four-col-item-c{
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 100%;
-	align-items: top-left;
-}
 
 .sign-up-container{
 	display: flex;
