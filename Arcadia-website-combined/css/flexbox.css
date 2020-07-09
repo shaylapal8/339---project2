@@ -280,13 +280,17 @@
 .four-col-sign-up{
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
+	margin: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
 }
 
 .sign-up-item{
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 50%;
+	flex: 1 1 auto;
 	margin: 1rem;
 }
 
