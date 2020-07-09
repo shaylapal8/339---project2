@@ -14,35 +14,31 @@
 <body>
 
 <!----------- START OF main nav SECTION ----------->
+	
 	<nav class="nav">
 		<a href="./home.html">
 			<h1 class="nav-title">Arcadia</h1>
 		</a>
 
-		<div class="nav-content">
-			<div class="nav-tab">
-				<a href="./about.html" class="nav-tab-item">About Us</a>
-				<a href="./events.html" class="nav-tab-item">Events</a>
-				<a href="./contact.html" class="nav-tab-item">Contact Us</a>
-			</div>
+		<div class="nav-content" id="menu">
+			<ul class="clearfix nav-tab">
+				<li><a href="./product-type.html" class="nav-tab-item">Bouquets</a>
+				  <input type="checkbox" id="sm1">
+				  <ul class="sub-menu">
+				    <li><a href="./product-listing.html" class="nav-tab-item">Shop all</a></li>
+				    <li><a href="./diy.html" class="nav-tab-item">Build your own</a></li>
+				  </ul>
+				</li>
+				<li><a href="./events.html" class="nav-tab-item">Events</a></li>
+				<li><a href="./about.html" class="nav-tab-item">About Us</a></li>
+				<li><a href="./contact.html" class="nav-tab-item">Contact Us</a></li>
+			</ul>
 
 			<div class="nav-icon">
-				<div class="tab nav-icon-item">
-					<input type="radio" id="tab-1" name="tab-group-1" />
-					<img src="img/account.png" alt="Icon for your account" class="nav-icon-account">
-					<div class="tab close-tab">
-					  <input type="radio" id="tab-close" name="tab-group-1" />
-					</div>
-
-					<div class="content">
-					  <ul>
-					    <li><a href="./track.html" class="account-item">My orders</a></li>
-					    <li><a href="#" class="account-item">Settings</a></li>
-					    <li><a href="#" class="account-item">Log out</a></li>
-					  </ul>
-					</div>
-				</div>
 				
+				<a href="./sign-in.html" class="nav-icon-item">
+					<img src="img/account.png" alt="Icon for your account" class="nav-icon-cart">
+				</a>
 				<a href="./cart.html" class="nav-icon-item">
 					<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
 				</a>
