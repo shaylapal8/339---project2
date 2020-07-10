@@ -188,6 +188,15 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 
+.password-reset{
+	font-weight: 300;
+	text-decoration: none;
+	transition: color 0.5s ease-out;
+	color: #9DA88A;
+	font-size: 0.8rem;
+	transition: all 0.3s ease-in-out;
+}
+
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
 	font-weight: normal;
 }
