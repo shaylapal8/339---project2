@@ -986,17 +986,17 @@ details > summary:hover, details > summary:active, details > summary:focus{
 }
 
 .pay-img{
-	max-width: 30%;
-	padding-top: 1rem;
+	max-width: 100%;
+	padding: 0.25rem;
 	transition: opacity 0.2s ease-in-out;
 }
 
 .visa-img{
-	max-width:16.5%;
+max-width:35%;
 }
 
-div.pp-form, div.mc-form, div.visa-form{
-	display: none;
+.mc-img{
+max-width: 95%;
 }
 
 img.pp-img:hover ~ div.pp-form {
@@ -1026,6 +1026,8 @@ img.visa-img:hover ~ div.visa-form {
 	align-items:flex-start;
 	display: flex; 
 	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 .four-col-item-sub{
@@ -1539,7 +1541,7 @@ footer{
 		padding-right: 0rem;
 	}
 
-	.checkout-container{
+	.checkout-container, .checkout-container-pay{
      flex-wrap: wrap;
 	}
 }
