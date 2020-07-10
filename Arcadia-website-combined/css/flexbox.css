@@ -41,7 +41,7 @@
     display: flex;
 }
 
-.browse-container-filter{
+aside{
 	margin-right: 2rem;
 	flex: 1 2 30%;
 }
