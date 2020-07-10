@@ -168,6 +168,8 @@ aside{
 	flex: 2 0 100%;
 }
 
+
+
 .checkout-col{
 	display: flex;
 	flex-direction: column;
@@ -212,6 +214,10 @@ aside{
 }
 
 
+.pay{
+	display: flex;
+	flex-direction:row;
+}
 
 .two-col{
 	display: flex;
