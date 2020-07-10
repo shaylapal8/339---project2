@@ -1211,16 +1211,15 @@ padding-bottom: 1rem;
 /*---------------Progress Bar----------------- */
 .progress-bar{
  /*flex-flow: nowrap;*/
+
  margin-bottom: 5%;
- margin-right: 8%;
  padding-top:1rem;
 }
 
 .progress-yes-labels, .progress-no-labels{
  display: inline-flex;
- flex:1 1 100%;
+ flex:1 1 auto;
  margin-top: 0.5rem;
- align-items: stretch;
  justify-content: space-between;
 }
 
@@ -1248,16 +1247,16 @@ padding-bottom: 1rem;
 }
 
 .prog-cf {
-  height: 25px;
-  width: 25px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: #9DA88A;
   border-radius: 50%;
   display: inline-block;
 }
 
 .prog-c {
-  height: 25px;
-  width: 25px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: #D3D3C3;
   border-radius: 50%;
   display: inline-block;
@@ -1543,6 +1542,10 @@ footer{
 
 	.checkout-container, .checkout-container-pay{
      flex-wrap: wrap;
+	}
+
+	.progress-box{
+		flex-wrap: wrap;
 	}
 }
 

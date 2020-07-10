@@ -466,7 +466,6 @@ aside{
 .progress-bar{
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
 	/*flex-flow:nowrap;*/
 	justify-content: space-between;
 }
