@@ -1166,11 +1166,14 @@ label {
 .co-summary-box{
 	border-width: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(221,190,169);
     padding:1rem;
     max-width:100%;
     margin-left: 1rem;
     text-align:left;
+    border-radius: 1%;
+    position: sticky;
+	top: 6rem;
  }
 
 #co-summary{
@@ -1186,16 +1189,14 @@ label {
 padding-bottom: 1rem;
 }
 
-.two-col-item-c>img, h5{
+.two-col-item-c-product>img, h5{
 	margin-top: 1rem;
 }
 
 .summary-sec1>p{
-	padding: 0.75rem;
+	padding-right: 0.5rem;
 	font-size: 0.8rem;
 }
-
-
 
 /*---------------Quantity Selector-------------*/
 
@@ -1554,6 +1555,10 @@ footer{
      flex-wrap: wrap;
 	}
 
+	.co-summary-box{
+		margin-left: 0;
+	}
+
 	.progress-box{
 		flex-wrap: wrap;
 	}
@@ -1586,6 +1591,10 @@ footer{
 		padding-bottom: 0;
 		margin-right: 0;
 	}
+
+	.co-summary-box{
+	top: 10rem;
+ }
 }
 
 @media (max-width: 50em){

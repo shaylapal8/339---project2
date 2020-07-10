@@ -166,7 +166,6 @@ aside{
 	display: flex;
 	flex-direction: row;
 	align-items: top;
-	flex: 2 0 100%;
 }
 
 
@@ -178,16 +177,22 @@ aside{
 }
 
 
-.checkout-col{
+.checkout-col-major{
 	display: flex;
 	flex-direction: column;
+	flex: 1 1 70%;
+}
 
+.checkout-col-minor{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 30%;
 }
 
 .co-summary-box{
     display: flex;
     flex-direction: column;	
-	align-items: center; 
+	/*align-items: center; */
 	max-width: 100%;
 }
 
@@ -197,12 +202,17 @@ aside{
 	flex-direction: row;
 	align-items: center;
 	text-align:right;
+	justify-content: space-between;
+}
+
+.summary-sec1-item{
+	flex: 1 1 auto;
 }
 
 .sum-subtotal-box{
 	display: flex;
 	flex-direction: row;
-    padding:1rem;
+    /*padding:1rem;*/
 }
 
 .sum-subtotal-box-item{
@@ -220,7 +230,7 @@ aside{
 .sum-subtotal-box-item-text-2{
 	font-size: 0.8rem;
     text-align: left;	
-    padding-right:1rem;
+    /*padding-right:1rem;*/
 }
 
 
@@ -253,21 +263,25 @@ aside{
 .two-col{
 	display: flex;
 	flex-direction: row;
-	align-items: left;
 }
 
 .two-col-progress{
 	display: flex;
 	flex-direction: row;
-	/*align-items: center;*/
 	justify-content: space-between;
 }
 
-.two-col-item-c{
+.two-col-item-c-form{
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 100%;
-	align-items: top;
+	flex: 1 1 60%;
+	padding:0;
+}
+
+.two-col-item-c-product{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 40%;
 	padding:0;
 }
 
@@ -687,7 +701,7 @@ aside{
 	}
 }
 
-@media (min-width: 40em){
+@media (min-width: 641px){
 	.two-col-progress{
 		align-items: center;
 	}
