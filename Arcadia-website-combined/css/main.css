@@ -411,12 +411,6 @@ input, .event-selector, select{
 	width: auto;
 }
 
-.shipping-filter{
-
-	height: auto;
-	width: auto;	
-}
-
 .form-field{
 	width: 100%;
 }
@@ -1129,6 +1123,10 @@ img.visa-img:hover ~ div.visa-form {
 	display: block;
 }
 
+.sum-subtotal-box-item-text-2 {
+	text-align: left;
+}
+
 /*-------------Checkout CSS-----------*/
 
 label {
@@ -1156,10 +1154,55 @@ label {
 }
 
 .co-img{
- max-width: 40%;
- width: 40%;
- align-self: flex-start;
+ max-width: 50%;
 }
+
+.summary-img{
+	width:35%;
+	padding:1rem;
+}
+
+.summary-box{
+	border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 0rem 0rem 1.5rem 0.5rem;
+    max-width: 100%;
+}
+
+.co-summary-box{
+	border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding:1rem;
+    max-width:100%;
+    margin-left: 1rem;
+    text-align:left;
+ }
+
+#co-summary{
+	padding-top: 1rem;
+}
+
+.shipping-filter{
+	height: auto;
+	width: auto;	
+}
+
+.co-summary-box > h5{
+padding-bottom: 1rem;
+}
+
+.two-col-item-c>img, h5{
+	margin-top: 1rem;
+}
+
+.summary-sec1>p{
+	padding: 0.75rem;
+	font-size: 0.8rem;
+}
+
+
 
 /*---------------Quantity Selector-------------*/
 
@@ -1534,6 +1577,10 @@ footer{
 	.nav-icon-cart, .nav-icon-account{
 		max-width: 1rem;
 		padding-right: 0rem;
+	}
+
+	.checkout-container{
+     flex-wrap: wrap;
 	}
 }
 

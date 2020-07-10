@@ -156,33 +156,93 @@ aside{
 
 .cart-item{
 	max-width: 30rem;
-	flex: 1 1 100%;
+	flex: 1 2 100%;
 	padding: 1rem;
 	margin: 1rem;
 }
 
+.checkout-container{
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	flex: 2 0 100%;
+}
+
+.checkout-col{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.co-summary-box{
+    display: flex;
+    flex-direction: column;	
+	align-items: center; 
+}
+
+.summary-sec1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align:right;
+}
+
+.sum-subtotal-box{
+	display: flex;
+	flex-direction: row;
+    padding:1rem;
+}
+
+.sum-subtotal-box-item{
+	display: flex;
+	align-items: space-between;
+	align-content: space-between;
+}
+
+.sum-subtotal-box-item-text 
+{
+	flex:1 1 100%;
+	font-size: 0.8rem;
+	align-items: space-between;
+}
+.sum-subtotal-box-item-text-2{
+	font-size: 0.8rem;
+    text-align: left;	
+    padding-right:1rem;
+}
+
+
+
 .two-col{
 	display: flex;
 	flex-direction: row;
-	/*align-items: top-left;*/
+	align-items: left;
 }
-
-.two-col-item{
-	flex:1 1 50%;
-	display: flex;
-}
-
-.two-col-title{
-	display: flex;
-	flex-direction: row;
-}
-
 .two-col-item-c{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 100%;
-	/*align-items: top-left;*/
+	align-items: top;
+	padding:0;
 }
+
+
+.two-col-title{
+	display: flex;
+	flex-direction: row;
+	flex: 2 0 auto;
+	text-align: left;
+}
+
+.two-col-item{
+	flex:1 1 auto;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	align-items: top-left;
+}
+
+
 
 .two-col-review-item{
 	flex:1 1 50%;
