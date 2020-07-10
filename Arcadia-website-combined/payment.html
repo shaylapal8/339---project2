@@ -66,30 +66,30 @@
 
 		<!------- single product ------->
 	<div class="checkout-container-pay">
-	  <div class="checkout-col">	
+	  <div class="checkout-col-major">	
   		 <div class="one-col delivery-form">
   			<div class="one-col-item-c">	
-              <label class="billing">Customer Name</label>
+              <label class="billing">Full Name</label>
               <input type="text" id="name">
 
-              <label class="billing">Customer Phone Number</label>
-              <input type="number" id="phone">
-
-              <label class="billing">Customer Email</label>
-              <input type="text" id="email" name="address">
-
               <label class="billing">Address</label>
-              <input type="text">
+              <input type="text" id="address">
+
+              <label class="billing">Unit / Suite</label>
+              <input type="text" placeholder="optional">
 
               <label class="billing-2">City</label>
-              <input type="number">
+              <input type="text" id="city">
+
+              <label class="billing-2">Province</label>
+              <input type="text" id="province">
 
               <label class="billing-2">Postal/ZIP Code</label>
-              <input type="text" name="address">
+              <input type="text" id="zip">
 			</div>
   		</div>
         
-        <hr class="line-break">
+        <hr class="line-break-full">
 
         <div class="two-col-title">
   			<h5 class="four-col-title-item-large">Method of Payment</h5>
@@ -113,16 +113,16 @@
 
                  <div class="one-col-item-c visa-form">	
 	               <label class="billing"> Card Number</label>
-	               <input type="number" name="number" placeholder="0000 0000 0000">
+	               <input type="text" name="number" placeholder="">
 
-	               <label class="billing">Cardholders Name</label>
-	               <input type="text" placeholder="Name">	
+	               <label class="billing">Cardholder's Name</label>
+	               <input type="text">	
 
 	               <label class="billing">Card Expiry Date</label>
 	               <input type="number"  name="expiry" placeholder="00/0000">				
 	                
 	               <label class="billing">CVV</label>
-	               <input type="number"  name="cvv" placeholder="000">				
+	               <input type="number"  name="cvv" placeholder="XXX">				
 	             </div>
 	         </div>
 	     </div>
@@ -130,25 +130,25 @@
            <!----------SUBTOTAL--------->
         
 
-	   <div class="checkout-col" id="co-summary">
+	   <div class="checkout-col-minor co-summary">
            <div class="co-summary-box">
-           	            	<h5>Order Summary</h5>
+           	<h5>Order Summary</h5>
             <div class="summary-sec1">
-       		 <img src="img/product-shot1.jpg" alt="Product Image." class="summary-c-img">
-       		 <p> <strong>Signature Bouquet</strong> Qty: 1</p>
-       		 <p class="sum-subtotal-box-item-text-2"> 50$</p>
+       		 <img src="img/product-shot1.jpg" alt="Product Image." class="summary-c-img summary-sec1-item">
+       		 <p class="summary-sec1-item"> <strong>Signature Bouquet</strong> Qty: 1</p>
+       		 <p class="sum-subtotal-box-item-text-2 summary-sec1-item"> $50</p>
        		</div>
 
        		<div class="summary-sec1">
        		 <img src="img/diy-bouquet-thumbnail.jpg" alt="Product Image." class="summary-c-img">
        		 <p> <strong>Custom Bouquet</strong> </p>
-       		 <p class="sum-subtotal-box-item-text-2"> 46$</p>
+       		 <p class="sum-subtotal-box-item-text-2"> $46</p>
        		</div>
-                <hr class="line-break">
+                <hr class="line-break-full">
 			     <div class="two-col-item sum-subtotal-box">
 				  <div class="sum-subtotal-box-item">
 				   <h5 class="sum-subtotal-box-item-text">Subtotal</h5>
-				   <p class="sum-subtotal-box-item-text-2">96</p>
+				   <p class="sum-subtotal-box-item-text-2">$96</p>
 				 </div>
 				 <div class="sum-subtotal-box-item">
 					<h5 class="sum-subtotal-box-item-text">Taxes</h5>
@@ -158,14 +158,19 @@
 					<h5 class="sum-subtotal-box-item-text">Shipping</h5>
 					<p class="sum-subtotal-box-item-text-2">$10</p>
 				 </div>
-				 <div class="subtotal-box-item">
-					<form method="get" action="./done.html" class="subtotal-box-item-text">
-					    <button type="submit" class="btn-cta">Proceed to Payment</button>
+				 <div class="sum-subtotal-box-item">
+					<h5 class="sum-subtotal-box-item-text"><strong>Grand Total</strong></h5>
+					<p class="sum-subtotal-box-item-text-2"><strong>$117.50</strong></p>
+				 </div>
+				 <div>
+					<form method="get" action="./done.html">
+					    <button type="submit" class="btn-cta">Place Order</button>
 					</form>
 			    </div>
 			   </div>
+
+	  	    </div>
 	  	  </div>
-       </div>
    </div>
    </section>
 	

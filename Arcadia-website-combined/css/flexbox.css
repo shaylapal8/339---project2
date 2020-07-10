@@ -51,6 +51,10 @@ aside{
 	flex-direction: column;
 }
 
+.clsp-container-item{
+	flex: 1 1 33%;
+}
+
 .container-product{
 	display: flex;
 	flex-direction: column;
@@ -173,7 +177,6 @@ aside{
 	display: flex;
 	flex-direction: row;
 	align-items: top;
-	flex: 2 0 100%;
 }
 
 
@@ -238,6 +241,7 @@ aside{
 	display: flex;
 	flex-direction: row;
     align-items: stretch;
+    justify-content: space-between;
 }
 
 .one-col{
@@ -751,6 +755,10 @@ aside{
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+	aside{
+	margin-right: 0;
+}
 
 	.confirmation-box{
 		padding-left: 1rem;

@@ -1028,11 +1028,9 @@ img.visa-img:hover ~ div.visa-form {
 .pay-sub{
 	padding-top: 0.5rem;
 	text-align: left;
-	align-items:flex-start;
+	/*align-items:flex-start;*/
 	display: flex; 
 	flex-direction: row;
-	justify-content: space-between;
-
 }
 
 .four-col-item-sub{
@@ -1176,7 +1174,7 @@ label {
 	top: 6rem;
  }
 
-#co-summary{
+.co-summary{
 	padding-top: 1rem;
 }
 
