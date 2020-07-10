@@ -547,7 +547,7 @@ aside{
 
 /*---------- FOOTER ----------*/
 .footer-container{
-	margin: 5% 10% 2% 10%;
+	margin: 3% 10% 2% 10%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

@@ -13,24 +13,92 @@
 	</head>
 
 	<body>
-		<h1 class="title-main">IAT 339 PROJECT 2</h1>
+		<h1 class="title-main">PROJECT 2 STYLEGUIDE</h1>
 		<p>Shayla Pal & Sabrina He</p>
 		<p>GitHub Repository
 			<a href="https://github.com/shaylapal8/339---project2" class="hyperlink" target="_blank">here</a>
 
-
 		<nav class="pages">
-
 			<a href="./styleguide.html" class="pages-item">Styleguide</a>
 			<a href="./wireframes.html" class="pages-item">Wireframes</a>
 			<a href="./citations.html" class="pages-item">Citations</a>
-
 		</nav>
+		<hr class="line-break-full">
 
 		<section>
+		<div class="interactiveElements box">
+			<h2 class="title-section">Interactive Elements</h2>
 
-			<div class="interactiveElements box">
-				<h2 class="title-section">Interactive Elements</h2>
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Colour Swatches</h3>
+				<h4>Primary Colours</h4>
+					<div class="swatch">
+						<div class="swatch-block">
+							<div class="swatch-block-color" id="dark-beige">
+							</div>
+
+							<div class="swatch-block-detail">
+								<h3>Dark Beige</h3>
+								<p>Call to Action</p>
+								<p>R221 G190 B269</p>
+								<p>#ddbea9</p>
+							</div>
+						</div>
+
+						<div class="swatch-block">
+							<div class="swatch-block-color" id="green">
+							</div>
+
+							<div class="swatch-block-detail">
+								<h3>Green</h3>
+								<p>Accent Colour</p>
+								<p>R157 G168 B138</p>
+								<p>#9da88a</p>
+							</div>
+						</div>
+					</div>
+
+					<h4>Secondary Colours</h4>
+					<div class="swatch">
+						<div class="swatch-block">
+							<div class="swatch-block-color" id="cream">
+							</div>
+
+							<div class="swatch-block-detail">
+								<h3>Cream</h3>
+								<p>Background Colour</p>
+								<p>R240 G239 B235</p>
+								<p>#f0efeb</p>
+							</div>
+						</div>
+
+						<div class="swatch-block">
+							<div class="swatch-block-color" id="warm-cream">
+							</div>
+
+							<div class="swatch-block-detail">
+								<h3>Warm Cream</h3>
+								<p>Header / Footer</p>
+								<p>R252 G244 B237</p>
+								<p>#fcf4ed</p>
+							</div>
+						</div>
+
+						<div class="swatch-block">
+							<div class="swatch-block-color" id="light-beige">
+							</div>
+
+							<div class="swatch-block-detail">
+								<h3>Light Beige</h3>
+								<p>Header / Footer</p>
+								<p>R235 G224 B218</p>
+								<p>#ebe0da</p>
+							</div>
+						</div>
+					</div>
+			</div>
+					<hr class="line-break-full">
+
 					<div class="interactiveElements-item box-item">
 						<h3 class="title-element">In Text Link</h3>
 							<p>This is a
@@ -44,7 +112,7 @@
 										<pre>
 											<code>
 &lt;p>This is a
-	&lt;a href="https://www.pinterest.ca/pin/52706258125457032/" class="hyperlink" target="_blank">link&lt;/a>
+	&lt;a href="#" class="hyperlink" target="_blank">link&lt;/a>
 &lt;/p>
 											</code>
 										</pre>
@@ -55,21 +123,24 @@
 										<pre>
 											<code>
 .hyperlink {
-	font-style: italic;
+	font-weight: 300;
 	text-decoration: none;
 	transition: color 0.5s ease-out;
-	color: rgb(150,150,100);
+	color: #9DA88A;
+	font-size: 1rem;
+	transition: all 0.3s ease-in-out;
 }
 
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
-	color: rgb(180,180,140);
+	font-weight: normal;
 }
 											</code>
 										</pre>
 									</div>
 								</div>
 <!-- END OF SAMPLE CODE -->							
-					</div>			
+					</div>
+					<hr class="line-break-full">			
 
 
 					<div class="interactiveElements-item">
@@ -81,7 +152,7 @@
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;button class="btn-ctn">Order Now&lt;/button>
+&lt;button class="btn-cta">Order Now&lt;/button>
 											</code>
 										</pre>
 									</div>
@@ -90,22 +161,22 @@
 										<h4 class="title-code">CSS</h4>
 										<pre>
 											<code>
-.btn-ctn {
-	font-size: 1.2rem;
-
-	padding: 0.8rem 3rem 0.6rem 3rem;
+.btn-cta {
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 0.8rem 2rem 0.6rem 2rem;
 	margin-bottom: 0;
 	margin-top: 1rem;
-
+	width: 100%;
 	color: white;
 	background-color: rgb(221,190,169);
 	border-style: none;
-
-	transition: background-color 0.5s ease-out;
+	transition: background-color 0.3s ease-out;
 }
 
-.btn-ctn:active, .btn-ctn:hover, .btn-ctn:focus {
+.btn-cta:active, .btn-cta:hover, .btn-cta:focus{
 	background-color: rgb(237,220,210);
+	color: white;
 }
 											</code>
 										</pre>
@@ -114,6 +185,7 @@
 <!-- END OF SAMPLE CODE -->	
 
 					</div>
+					<hr class="line-break-full">
 
 					<div class="interactiveElements-item">
 						<h3 class="title-element">Submit + Reset Buttons for Forms</h3>
@@ -138,18 +210,17 @@
 											<code>
 .btn-submit{
 	color: white;
-	background-color: rgb(237,220,210);
+	background-color: #B9C3A8;
 	border-style: none;
-
+	cursor: pointer;
 	padding: 0.6rem 2rem 0.5rem 2rem;
 	margin-bottom: 0;
 	margin-top: 1rem;
-
-	transition: color 0.1s ease-out;
+	transition: background-color 0.3s ease-out;
 }
 
 .btn-submit:active, .btn-submit:hover, .btn-submit:focus {
-	color: rgb(221,190,169);
+	background-color: #9DA88A;
 }
 
 .btn-reset{
@@ -157,12 +228,11 @@
 	background-color: transparent;
 	border-color: rgb(221,190,169);
 	border-weight: 1;
-
+	cursor: pointer;
 	padding: 0.6rem 2rem 0.5rem 2rem;
 	margin-bottom: 0;
 	margin-top: 1rem;
-
-	transition: background-color 0.1s ease-out;
+	transition: background-color 0.3s ease-out;
 }
 
 .btn-reset:active, .btn-reset:hover, .btn-reset:focus {
@@ -175,13 +245,40 @@
 <!-- END OF SAMPLE CODE -->	
 
 					</div>							
-					</div>
+
+					<hr class="line-break-full">
 
 					<div class="interactiveElements-item">
 						<h3 class="title-element">Text Input Field + Label</h3>
 							
-							<label for="address">Address</label>
-							<input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+							<div class="events-form-container">
+								<div class="events-form-left">
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" placeholder="First and Last Name" class="form-field">
+
+									<label for="phone">Phone Number</label>
+									<input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" class="form-field">
+
+									<label>Email Address</label>
+									<input type="text" name="email" placeholder="example@mail.com" class="form-field">
+								</div>
+								
+								<div class="events-form-right">
+									<label for="event-type">Event Type</label>
+									<select id="event-type" class="event-selector">
+										<option value="wedding">Wedding</option>
+										<option value="party">Party</option>
+										<option value="babyshower">Baby Shower</option>
+										<option value="bday">Birthday</option>
+										<option value="bday">Others</option>
+									</select>
+									<!-- option selector tutorial: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_option -->
+
+									<label>Message</label>
+									<textarea name="Text1" cols="20" rows="6" class="form-field"></textarea>
+									<!-- textarea tutorial: https://stackoverflow.com/questions/6262472/multiple-lines-of-input-in-input-type-text -->
+								</div>
+							</div>
 
 <!-- START OF SAMPLE CODE -->
 								<div class="box">
@@ -189,8 +286,32 @@
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;label for="address">Address&lt;/label>
-&lt;input type="text" id="address" name="address" placeholder="Suite #, Street, City">
+&lt;div class="events-form-container">
+	&lt;div class="events-form-left">
+		&lt;label for="name">Name&lt;/label>
+		&lt;input type="text" id="name" name="name" placeholder="First and Last Name" class="form-field">
+
+		&lt;label for="phone">Phone Number&lt;/label>
+		&lt;input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" class="form-field">
+
+		&lt;label>Email Address&lt;/label>
+		&lt;input type="text" name="email" placeholder="example@mail.com" class="form-field">
+	&lt;/div>
+	
+	&lt;div class="events-form-right">
+		&lt;label for="event-type">Event Type&lt;/label>
+		&lt;select id="event-type" class="event-selector">
+			&lt;option value="wedding">Wedding&lt;/option>
+			&lt;option value="party">Party&lt;/option>
+			&lt;option value="babyshower">Baby Shower&lt;/option>
+			&lt;option value="bday">Birthday&lt;/option>
+			&lt;option value="bday">Others&lt;/option>
+		&lt;/select>
+
+		&lt;label>Message&lt;/label>
+		&lt;textarea name="Text1" cols="20" rows="6" class="form-field">&lt;/textarea>
+	&lt;/div>
+&lt;/div>
 											</code>
 										</pre>
 									</div>
@@ -201,27 +322,41 @@
 											<code>
 label {
 	display: block;
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1.2rem;
 
 	margin-top: 1rem;
-	margin-bottom: 0;
+	margin-bottom: 0.5rem;
 }
 
-input {
-	font-family: "NeutraText", Helvetica, sans-serif;
-	font-weight: 200;
-	font-size: 1rem;
+input, .event-selector, select, textarea {
+	font-weight: 400;
+	font-size: 0.9rem;
 	color: grey;
+	width: 100%;
 
 	border-style: solid;
 	border-width: 1.2px;
 	border-color: rgb(237,220,210);
+	border-radius: 1%;
 
 	margin-bottom: 0;
-	margin-top: 0.5rem;
 	padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+
+	outline: none;
+}
+
+input:focus, .event-selector:focus, select:focus, textarea:focus{
+	border-color:#D7B59D;
+}
+
+textarea{
+	max-height:10rem;
+	resize: vertical; 
+}
+
+input, .event-selector, select{
+	height: 2.5rem;
 }
 											</code>
 										</pre>
@@ -230,95 +365,33 @@ input {
 <!-- END OF SAMPLE CODE -->							
 
 					</div>
-
-					<div class="interactiveElements-item">
-						<h3 class="title-element">Colour Swatches</h3>
-						<h4>Primary Colours</h4>
-							<div class="swatch">
-								<div class="swatch-block">
-									<div class="swatch-block-color" id="dark-beige">
-									</div>
-
-									<div class="swatch-block-detail">
-										<h3>Dark Beige</h3>
-										<p>Call to Action</p>
-										<p>R221 G190 B269</p>
-										<p>#ddbea9</p>
-									</div>
-								</div>
-
-								<div class="swatch-block">
-									<div class="swatch-block-color" id="green">
-									</div>
-
-									<div class="swatch-block-detail">
-										<h3>Green</h3>
-										<p>Accent Colour</p>
-										<p>R157 G168 B138</p>
-										<p>#9da88a</p>
-									</div>
-								</div>
-							</div>
-
-							<h4>Secondary Colours</h4>
-							<div class="swatch">
-								<div class="swatch-block">
-									<div class="swatch-block-color" id="cream">
-									</div>
-
-									<div class="swatch-block-detail">
-										<h3>Cream</h3>
-										<p>Background Colour</p>
-										<p>R240 G239 B235</p>
-										<p>#f0efeb</p>
-									</div>
-								</div>
-
-								<div class="swatch-block">
-									<div class="swatch-block-color" id="warm-cream">
-									</div>
-
-									<div class="swatch-block-detail">
-										<h3>Warm Cream</h3>
-										<p>Header / Footer</p>
-										<p>R252 G244 B237</p>
-										<p>#fcf4ed</p>
-									</div>
-								</div>
-
-								<div class="swatch-block">
-									<div class="swatch-block-color" id="light-beige">
-									</div>
-
-									<div class="swatch-block-detail">
-										<h3>Light Beige</h3>
-										<p>Header / Footer</p>
-										<p>R235 G224 B218</p>
-										<p>#ebe0da</p>
-									</div>
-								</div>
-							</div>
-					</div>
-						
-
+				</div>
 
 			<!-- end of INTERACTIVE ELEMENTS div -->
 
-
+			<hr class="line-break-full">
 
 			<div class="textStyling">
 				<h2 class="title-section">Text Styling</h2>
 
 					<div class="textStyling-item">
-						<h3 class="title-element">Level 1 Heading</h3>
-							<h1>Header</h1>
-<!-- START OF H1 SAMPLE CODE -->
+						<h3 class="title-element">Levels of Heading</h3>
+							<h1>Heading - h1</h1>
+							<h2>Heading - h2</h2>
+							<h3>Heading - h3</h3>
+							<h4>Heading - h4</h4>
+							<h5>Heading - h5</h5>
+<!-- SAMPLE CODE -->
 								<div class="box">
 									<div class="box-code">
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;h1>Header&lt;/h1>
+&lt;h1>Heading - h1&lt;/h1>
+&lt;h2>Heading - h2&lt;/h2>
+&lt;h3>Heading - h3&lt;/h3>
+&lt;h4>Heading - h4&lt;/h4>
+&lt;h5>Heading - h5&lt;/h5>
 											</code>
 										</pre>
 									</div>
@@ -331,73 +404,39 @@ h1 {
 	font-family: "Cherolina", Helvetica, sans-serif;
 	margin: 1rem;
 	font-weight: normal;
-	font-size: 5rem;
+	font-size: 3rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
-											</code>
-										</pre>
-									</div>
-								</div>
-<!-- END OF H1 SAMPLE CODE -->		
-						<h3 class="title-element">Level 2 Heading</h3>
-							<h2>Section Title</h2>
-<!-- START OF H2 SAMPLE CODE -->
-								<div class="box">
-									<div class="box-code">
-										<h4 class="title-code">HTML</h4>
-										<pre>
-											<code>
-&lt;h2>Section Title&lt;/h2>
-											</code>
-										</pre>
-									</div>
 
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
 h2 {
-	font-family: "NeutraText", Helvetica, sans-serif;
-	margin-top: 2rem;
-	font-weight: bold;
-	font-size: 1.8rem;
-}
-											</code>
-										</pre>
-									</div>
-								</div>
-<!-- END OF  H2 SAMPLE CODE -->		
-						
-						<h3 class="title-element">Level 3 Heading</h3>
-							<h3>Sub-Title</h3>
-<!-- START OF H3 SAMPLE CODE -->
-								<div class="box">
-									<div class="box-code">
-										<h4 class="title-code">HTML</h4>
-										<pre>
-											<code>
-&lt;h3>Sub-Title&lt;/h3>
-											</code>
-										</pre>
-									</div>
-
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
-h3 {
-	font-family: "NeutraText", Helvetica, sans-serif;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	font-weight: normal;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+}
+
+h3{
+	margin-top: 1rem;
+	margin-bottom: 0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 1rem;
+	margin-bottom: 0;
+	/*padding-left: 0.5rem;
+	padding-right: 0.5rem;*/
 }
 											</code>
 										</pre>
 									</div>
 								</div>
-<!-- END OF  H3 SAMPLE CODE -->							
-
+<!-- END SAMPLE CODE -->															
 					</div>
-
+					<hr class="line-break-full">
 
 					<div class="textStyling-item">
 						<h3 class="title-element">Paragraph</h3>
@@ -418,13 +457,13 @@ h3 {
 										<pre>
 											<code>
 p {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 0;
-	max-width: 650px;
-	line-height: 1.2;
+	max-width: 500px;
+	line-height: 1.4;
+	text-align: left;
 }
 											</code>
 										</pre>
@@ -432,7 +471,7 @@ p {
 								</div>
 <!-- END OF  P SAMPLE CODE -->						
 					</div>
-
+					<hr class="line-break-full">
 
 					<div class="textStyling-item">
 						<h3 class="title-element">Bulletted List</h3>
@@ -461,8 +500,11 @@ p {
 										<h4 class="title-code">CSS</h4>
 										<pre>
 											<code>
+ul{
+	padding-left: 1rem;
+}
+
 li {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 1.2rem;
 	margin-top: 0.5rem;
@@ -473,213 +515,297 @@ li {
 									</div>
 								</div>
 <!-- END OF  bulletted SAMPLE CODE -->
-					</div>
-
-					<div class="textStyling-item">
-						<h3 class="title-element">Numbered List</h3>
-						<ol>
-							<li>First item</li>
-							<li>Second item</li>
-							<li>Third item</li>
-						</ol>
-
-<!-- START OF bulletted list SAMPLE CODE -->
-								<div class="box">
-									<div class="box-code">
-										<h4 class="title-code">HTML</h4>
-										<pre>
-											<code>
-&lt;ol>
-	&lt;li>First item&lt;/li>
-	&lt;li>Second item&lt;/li>
-	&lt;li>Third item&lt;/li>
-&lt;/ol>
-											</code>
-										</pre>
-									</div>
-
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
-li {
-	font-family: "NeutraText", Helvetica, sans-serif;
-	font-weight: 300;
-	font-size: 1.2rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0;
-}
-											</code>
-										</pre>
-									</div>
-								</div>
-<!-- END OF  bulletted SAMPLE CODE -->
-					</div>
-					
+					</div>					
 			</div>
+			<hr class="line-break-full">
 
 			<div>
 			<h2 class="title-section">Modular Pattern Elements</h2>
 				<div class="interactiveElements-item">
-				<h3 class="title-element">Main Navigation Module</h3>
-					<div class="nav">
-						<h1 class="nav-title" id="logo">Arcadia</h1>
-					<div class="nav-tab">
-						<h4>About Us</h4>
-						<h4>Events</h4>
-						<h4>Contact Us</h4>
-					</div>	
+				<h3 class="title-element">Main Navigation Bar</h3>
+					<nav class="nav">
+						<a href="./home.html">
+							<h1 class="nav-title">Arcadia</h1>
+						</a>
 
-					<div class="nav-item">
-						<img src="img/account.png" alt="Icon for your account" id="account-icon">
-						<img src="img/cart.png" alt="Icon for your cart" id="cart-icon">
-					</div>	
-					</div>
+						<div class="nav-content" id="menu">
+							<ul class="clearfix nav-tab">
+								<li><a href="./product-type.html" class="nav-tab-item">Bouquets</a>
+								  <input type="checkbox" id="sm1">
+								  <ul class="sub-menu">
+								    <li><a href="./product-listing.html" class="nav-tab-item">Shop all</a></li>
+								    <li><a href="./diy.html" class="nav-tab-item">Build your own</a></li>
+								  </ul>
+								</li>
+								<li><a href="./events.html" class="nav-tab-item">Events</a></li>
+								<li><a href="./about.html" class="nav-tab-item">About Us</a></li>
+								<li><a href="./contact.html" class="nav-tab-item">Contact Us</a></li>
+							</ul>
+
+							<div class="nav-icon">
+								
+								<a href="./sign-in.html" class="nav-icon-item">
+									<img src="img/account.png" alt="Icon for your account" class="nav-icon-cart">
+								</a>
+								<a href="./cart.html" class="nav-icon-item">
+									<img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+								</a>
+							</div>
+						</div>		
+					</nav>
 <!-- START OF main nav SAMPLE CODE -->
 								<div class="box">
 									<div class="box-code">
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;div class="nav">
-	&lt;h1 class="nav-title" id="logo">Arcadia&lt;/h1>
-	&lt;div class="nav-tab">
-		&lt;h4>About Us&lt;/h4>
-		&lt;h4>Events&lt;/h4>
-		&lt;h4>Contact Us&lt;/h4>
-	&lt;/div>	
+&lt;nav class="nav">
+	&lt;a href="./home.html">
+		&lt;h1 class="nav-title">Arcadia&lt;/h1>
+	&lt;/a>
 
-	&lt;div class="nav-item">
-		&lt;img src="img/account.png" alt="Icon for your account" id="account-icon">
-		&lt;img src="img/cart.png" alt="Icon for your cart" id="cart-icon">
-	&lt;/div>	
-&lt;/div>
-											</code>
-										</pre>
-									</div>
+	&lt;div class="nav-content" id="menu">
+		&lt;ul class="clearfix nav-tab">
+			&lt;li>&lt;a href="./product-type.html" class="nav-tab-item">Bouquets&lt;/a>
+			  &lt;input type="checkbox" id="sm1">
+			  &lt;ul class="sub-menu">
+			    &lt;li>&lt;a href="./product-listing.html" class="nav-tab-item">Shop all&lt;/a>&lt;/li>
+			    &lt;li>&lt;a href="./diy.html" class="nav-tab-item">Build your own&lt;/a>&lt;/li>
+			  &lt;/ul>
+			&lt;/li>
+			&lt;li>&lt;a href="./events.html" class="nav-tab-item">Events&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="./about.html" class="nav-tab-item">About Us&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="./contact.html" class="nav-tab-item">Contact Us&lt;/a>&lt;/li>
+		&lt;/ul>
 
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
-.nav{
-	display: flex;
-	flex-direction: row;
-	/*flex-wrap: wrap;*/
-	justify-content:space-around;
-	align-items: center;
-}
-
-.nav-title{
-	margin-left: 3rem;
-}
-
-.nav-tab {
-	flex: 1 1 auto;
-	display: flex;
-	justify-content: space-around;
-	margin-left: 2rem;
-}
-
-.nav-item {
-	flex: 1 1 auto;
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	margin-right: 3rem;
-}
+		&lt;div class="nav-icon">
+			&lt;a href="./sign-in.html" class="nav-icon-item">
+				&lt;img src="img/account.png" alt="Icon for your account" class="nav-icon-cart">
+			&lt;/a>
+			&lt;a href="./cart.html" class="nav-icon-item">
+				&lt;img src="img/cart.png" alt="Icon for your cart" class="nav-icon-cart">
+			&lt;/a>
+		&lt;/div>
+	&lt;/div>		
+&lt;/nav>
 											</code>
 										</pre>
 									</div>
 								</div>
-<!-- END OF main nav SAMPLE CODE -->						
+							</div>
+<!-- END OF main nav SAMPLE CODE -->
+<hr class="line-break-full">
+			
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Breadcrumb Navigation</h3>
+					<nav class="breadcrumb-container">
+						<ul class="breadcrumb">
+						  <li><a href="./home.html">Home</a></li>
+						  <li><a href="./product-type.html">Product Types</a></li>
+						  <li class="current-page">All Bouquets</li>
+						</ul>
+					</nav>
+<!-- START OF breadcrumb nav SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;nav class="breadcrumb-container">
+	&lt;ul class="breadcrumb">
+	  &lt;li>&lt;a href="./home.html">Home&lt;/a>&lt;/li>
+	  &lt;li>&lt;a href="./product-type.html">Product Types&lt;/a>&lt;/li>
+	  &lt;li class="current-page">All Bouquets&lt;/li>
+	&lt;/ul>
+&lt;/nav>
+											</code>
+										</pre>
+									</div>
+								</div>
+<!-- END OF breadcrumb SAMPLE CODE -->
+<hr class="line-break-full">
 
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Footer</h3>
+					<footer>
+						<div class="footer-container">
+							<div class="footer-item">
+								<h5 class="h5-footer">The Team</h5>
+								<p class="p-footer">Shayla Pal, Sabrina He</p>
+								<p class="p-footer">Github Respo <a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">here</a></p>
+								
+							</div>
+
+							<div class="footer-item">
+								<h5 class="h5-footer">External Links</h5>
+								<p class="p-footer"><a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">StyleGuide</a></p>
+								<p class="p-footer"><a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">Citation</a></p>
+
+							</div>
+
+							<div class="footer-item">
+								<h5 class="h5-footer">Contact Us</h5>
+								<p class="p-footer">604-111-2222</p>
+								<p class="p-footer">arcadia.florist@gmail.com</p>
+								<p class="p-footer">267 Brine Ave, Vancouver, BC</p>
+							</div>
+
+							<div class="footer-item">
+								<h5 class="h5-footer">Stay Informed</h5>
+								<p class="p-footer">Subscribe to receive weekly newsletter for the freshest deals</p>
+								<form>
+									<div class="subscribe">
+										<input type="text" id="email" name="email" placeholder="example@mail.com" class="form-field subscribe-item">
+										<button class="btn-subscribe subscribe-item">Subscribe</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</footer>
+<!-- START OF footer SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;footer>
+	&lt;div class="footer-container">
+		&lt;div class="footer-item">
+			&lt;h5 class="h5-footer">The Team&lt;/h5>
+			&lt;p class="p-footer">Shayla Pal, Sabrina He&lt;/p>
+			&lt;p class="p-footer">Github Respo &lt;a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">here&lt;/a>&lt;/p>		
+		&lt;/div>
+
+		&lt;div class="footer-item">
+			&lt;h5 class="h5-footer">External Links&lt;/h5>
+			&lt;p class="p-footer">&lt;a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">StyleGuide&lt;/a>&lt;/p>
+			&lt;p class="p-footer">&lt;a href="https://github.com/shaylapal8/339---project2" class="hyperlink p-footer">Citation&lt;/a>&lt;/p>
+		&lt;/div>
+
+		&lt;div class="footer-item">
+			&lt;h5 class="h5-footer">Contact Us&lt;/h5>
+			&lt;p class="p-footer">604-111-2222&lt;/p>
+			&lt;p class="p-footer">arcadia.florist@gmail.com&lt;/p>
+			&lt;p class="p-footer">267 Brine Ave, Vancouver, BC&lt;/p>
+		&lt;/div>
+
+		&lt;div class="footer-item">
+			&lt;h5 class="h5-footer">Stay Informed&lt;/h5>
+			&lt;p class="p-footer">Subscribe to receive weekly newsletter for the freshest deals&lt;/p>
+			&lt;form>
+				&lt;div class="subscribe">
+					&lt;input type="text" id="email" name="email" placeholder="example@mail.com" class="form-field subscribe-item">
+					&lt;button class="btn-subscribe subscribe-item">Subscribe&lt;/button>
+				&lt;/div>
+			&lt;/form>
+		<&lt;/div>
+	&lt;/div>
+&lt;/footer>
+											</code>
+										</pre>
+									</div>
+								</div>
+							</div>
+<!-- END OF main nav SAMPLE CODE -->
+
+<hr class="line-break-full">	
+
+			<div class="interactiveElements-item">
 				<h3 class="title-element">Product Listing Module</h3>
-					<div class="product">
+
+					<section class="product">
+						<!-- single product -->
 						<div class="product-item">
-							<a href="#">	
-								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-							</a>
+							<div class="product-item-box">
+								<a href="./product.html" class="product-item-element">	
+									<img src="img/product10.jpg" alt="A wedding bouquet" class="product-item-img">
+								</a>
+								<div class="product-item-element">	
+									<form style="display: inline" class="product-item-element-btn">
+										<button class="btn-product-cart">Add to Cart</button>
+									</form>
 
-							<div class="product-item-btn">	
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-cart">Add to Cart</button>
-								</form>
-
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-now">Order Now</button>
-								</form>
+									<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+										<button class="btn-product-now">Order Now</button>
+									</form>
+								</div>
 							</div>
 
-							<div class="product-item-detail">
-								<h2 class="product-name">Signature Bouquet</h2>
+							<div class="product-item-box">
+								<h3>Florist's Favourite</h3>
+								<p>$60</p>
+							</div>
+						</div>
+
+						<!-- single product -->
+						<div class="product-item">
+							<div class="product-item-box">
+								<a href="./product.html" class="product-item-element">	
+									<img src="img/product12.jpg" alt="A wedding bouquet" class="product-item-img">
+								</a>
+								<div class="product-item-element">	
+									<form style="display: inline" class="product-item-element-btn">
+										<button class="btn-product-cart">Add to Cart</button>
+									</form>
+
+									<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+										<button class="btn-product-now">Order Now</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="product-item-box">
+								<h3>Sunshine Bouquet</h3>
+								<p>$45</p>
+							</div>
+						</div>
+
+						<!-- single product -->
+						<div class="product-item">
+							<div class="product-item-box">
+								<a href="./product.html" class="product-item-element">	
+									<img src="img/product7.jpg" alt="A wedding bouquet" class="product-item-img">
+								</a>
+								<div class="product-item-element">	
+									<form style="display: inline" class="product-item-element-btn">
+										<button class="btn-product-cart">Add to Cart</button>
+									</form>
+
+									<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+										<button class="btn-product-now">Order Now</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="product-item-box">
+								<h3>Ash Rose Bouquet</h3>
 								<p>$50</p>
 							</div>
 						</div>
 
+						<!-- single product -->
 						<div class="product-item">
-							<a href="#">	
-								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-							</a>
+							<div class="product-item-box">
+								<a href="./product.html" class="product-item-element">	
+									<img src="img/product11.jpg" alt="A wedding bouquet" class="product-item-img">
+								</a>
+								<div class="product-item-element">	
+									<form style="display: inline" class="product-item-element-btn">
+										<button class="btn-product-cart">Add to Cart</button>
+									</form>
 
-							<div class="product-item-btn">	
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-cart">Add to Cart</button>
-								</form>
-
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-now">Order Now</button>
-								</form>
+									<form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+										<button class="btn-product-now">Order Now</button>
+									</form>
+								</div>
 							</div>
 
-							<div class="product-item-detail">
-								<h2 class="product-name">Signature Bouquet</h2>
+							<div class="product-item-box">
+								<h3>Classic Bouquet</h3>
 								<p>$50</p>
 							</div>
 						</div>
-
-						<div class="product-item">
-							<a href="#">	
-								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-							</a>
-
-							<div class="product-item-btn">	
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-cart">Add to Cart</button>
-								</form>
-
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-now">Order Now</button>
-								</form>
-							</div>
-
-							<div class="product-item-detail">
-								<h2 class="product-name">Signature Bouquet</h2>
-								<p>$50</p>
-							</div>
-						</div>
-
-						<div class="product-item">
-							<a href="#">	
-								<img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-							</a>
-
-							<div class="product-item-btn">	
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-cart">Add to Cart</button>
-								</form>
-
-								<form style="display: inline" action="http://google.com/" method="get">
-									<button class="btn-product-now">Order Now</button>
-								</form>
-							</div>
-
-							<div class="product-item-detail">
-								<h2 class="product-name">Signature Bouquet</h2>
-								<p>$50</p>
-							</div>
-						</div>
-					</div>
+					</section>
 
 <!-- START OF product listing SAMPLE CODE -->
 								<div class="box">
@@ -687,90 +813,159 @@ li {
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;div class="product">
+&lt;section class="product">
+	<!-- single product -->
 	&lt;div class="product-item">
-		&lt;a href="#">	
-			&lt;img src="img/bouquet.jpeg" alt="A wedding bouquet" class="product-item-img">
-		&lt;/a>
-
-		&lt;div class="product-item-btn">	
-			&lt;a href="#">
-				&lt;button class="btn-product-cart">Add to Cart&lt;/button>
+		&lt;div class="product-item-box">
+			&lt;a href="./product.html" class="product-item-element">	
+				&lt;img src="img/product10.jpg" alt="A wedding bouquet" class="product-item-img">
 			&lt;/a>
+			&lt;div class="product-item-element">	
+				&lt;form style="display: inline" class="product-item-element-btn">
+					&lt;button class="btn-product-cart">Add to Cart&lt;/button>
+				<&lt;/form>
 
-			&lt;a href="#">
-				&lt;button class="btn-product-now">Order Now&lt;/button>
-			&lt;/a>
+				&lt;form style="display: inline" action="./cart.html" method="get" class="product-item-element-btn">
+					&lt;button class="btn-product-now">Order Now&lt;/button>
+				&lt;/form>
+			&lt;/div>
 		&lt;/div>
 
-		&lt;div class="product-item-detail">
-			&lt;h2 class="product-name">Signature Bouquet&lt;/h2>
-			&lt;p>$50&lt;/p>
+		&lt;div class="product-item-box">
+			&lt;h3>Florist's Favourite&lt;/h3>
+			&lt;p>$60&lt;/p>
 		&lt;/div>
 	&lt;/div>
-&lt;/div>
-											</code>
-										</pre>
-									</div>
-
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
-.product{
-	display: flex;
-	flex-direction: row;
-	margin-top: 1rem;
-}
-
-.product-item{
-	flex: 1 1 auto;
-	flex-wrap:nowrap;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.product-item-detail{
-	margin-top: 0;
-	margin-bottom: 2rem;
-}
-
-.product-item-btn{
-	flex-direction: row;
-	flex: 1 1 auto;
-	margin-right: 1rem;
-}
-
-@media (max-width: 50em){
-	.review-container, .layout, .product{
-		flex-direction: column;
-	}
-}
+&lt;/section>
 											</code>
 										</pre>
 									</div>
 								</div>
+							</div>
 <!-- END OF product listing SAMPLE CODE -->
 
-				<h3 class="title-element">Customer Review Module</h3>
-				<div class="review-container">
-					<div class="review-container-item">
-						<h3>Customer 1</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."</p>
-					</div>
+			<hr class="line-break-full">
 
-					<div class="review-container-item">
-						<h3>Customer 2</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</p>
-					</div>
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Sign-in / Sign-up Form</h3>
+				<div class="tabs carousel-margin">
+				  <div class="tab-2">
+				    <label for="tab2-1" class="tab-label">Already registered?</label>
+				    <input id="tab2-1" name="tabs-two" type="radio" checked="checked" class="tab-input">
+				      <div class="sign-up-item login-form">
+						<label class="checkout">Email</label>
+						<input type="email" name="email">
+						<label class="checkout">Password</label>
+						<input type="password" name="password">
+						<form method="get" action="./track.html" class="sign-box-item-text">
+						<button type="submit" class="btn-cta">Sign In</button>
+						</form>
+						<p class="forgot">Forgot your password? <a href="./contact.html">Reset it now.</a></p>
+		    		  </div>
+				  </div>
 
-					<div class="review-container-item">
-						<h3>Customer 3</h3>
-						<p class="date">2020/03/01</p>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. "</p>
-					</div>
+				  <div class="tab-2">
+				    <label for="tab2-2" class="tab-label">New?</label>
+				    <input id="tab2-2" name="tabs-two" type="radio" class="tab-input">
+				      <div class="sign-up-item sign-form">
+		    			<p>Sign up now to get access to:</p>
+						<ul>
+							<li>Order trackings</li>
+							<li>Order history</li>
+							<li>Weekly newsletter on our freshest deals</li>
+							<li>Personalized shopping experience</li>
+							<li>Many more to come!</li>
+						</ul>
+						<form method="get" action="./track.html" class="sign-box-item-text">
+						<button type="submit" class="btn-submit btn-submit-register">Create an Account</button>
+						</form>
+		    		  </div>
+		          </div>
+		        </div>
+
+<!-- START OF review SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="tabs">
+  &lt;div class="tab-2">
+    &lt;label for="tab2-1" class="tab-label">Already registered?&lt;/label>
+    &lt;input id="tab2-1" name="tabs-two" type="radio" checked="checked" class="tab-input">
+      &lt;div class="sign-up-item login-form">
+		&lt;label class="checkout">Email&lt;/label>
+		&lt;input type="email" name="email">
+		&lt;label class="checkout">Password&lt;/label>
+		&lt;input type="password" name="password">
+		&lt;form method="get" action="./track.html" class="sign-box-item-text">
+		&lt;button type="submit" class="btn-cta">Sign In&lt;/button>
+		&lt;/form>
+		&lt;p class="forgot">Forgot your password? &lt;a href="./contact.html">Reset it now.&lt;/a>&lt;/p>
+	  &lt;/div>
+  &lt;/div>
+
+  &lt;div class="tab-2">
+    &lt;label for="tab2-2" class="tab-label">New?&lt;/label>
+    &lt;input id="tab2-2" name="tabs-two" type="radio" class="tab-input">
+      &lt;div class="sign-up-item sign-form">
+		&lt;p>Sign up now to get access to:&lt;/p>
+		&lt;ul>
+			&lt;li>Order trackings&lt;/li>
+			&lt;li>Order history&lt;/li>
+			&lt;li>Weekly newsletter on our freshest deals&lt;/li>
+			&lt;li>Personalized shopping experience&lt;/li>
+			&lt;li>Many more to come!&lt;/li>
+		&lt;/ul>
+		&lt;form method="get" action="./track.html" class="sign-box-item-text">
+		&lt;button type="submit" class="btn-submit">Create an Account&lt;/button>
+		&lt;/form>
+	  &lt;/div>
+  </div>
+</div>
+											</code>
+										</pre>
+									</div>
+								</div>
+							</div>
+<!-- END OF review SAMPLE CODE -->	
+
+			<hr class="line-break-full">
+
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Image Carousel</h3>
+				<div class="carousel-margin carousel">
+				    <div class="carousel-inner">
+				        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+				        <div class="carousel-item">
+				            <img src="img/event3.jpg" alt="A bride and 4 bridesmaid">
+				        </div>
+				        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+				        <div class="carousel-item">
+				            <img src="img/event2.jpg" alt="A couple on a open field getting married">
+				        </div>
+				        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+				        <div class="carousel-item">
+				            <img src="img/event1.jpg" alt="A table setup for a wedding">
+				        </div>
+				        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+				        <label for="carousel-2" class="carousel-control next control-1">›</label>
+				        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+				        <label for="carousel-3" class="carousel-control next control-2">›</label>
+				        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+				        <label for="carousel-1" class="carousel-control next control-3">›</label>
+				        <ol class="carousel-indicators">
+				            <li>
+				                <label for="carousel-1" class="carousel-bullet">•</label>
+				            </li>
+				            <li>
+				                <label for="carousel-2" class="carousel-bullet">•</label>
+				            </li>
+				            <li>
+				                <label for="carousel-3" class="carousel-bullet">•</label>
+				            </li>
+				        </ol>
+				    </div>
 				</div>
 
 <!-- START OF review SAMPLE CODE -->
@@ -779,11 +974,73 @@ li {
 										<h4 class="title-code">HTML</h4>
 										<pre>
 											<code>
-&lt;div class="review-container">
-	&lt;div class="review-container-item">
-		&lt;h3>Customer 1&lt;/h3>
-		&lt;p class="date">2020/03/01&lt;/p>
-		&lt;p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio."&lt;/p>
+&lt;div class="carousel">
+    &lt;div class="carousel-inner">
+        &lt;input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        &lt;div class="carousel-item">
+            &lt;img src="img/event2.jpg" alt="A bride and 4 bridesmaid">
+        &lt;/div>
+        &lt;input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        &lt;div class="carousel-item">
+            &lt;img src="img/event3.jpg" alt="A couple on a open field getting married">
+        &lt;/div>
+        &lt;input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        &lt;div class="carousel-item">
+            &lt;img src="img/event1.jpg" alt="A table setup for a wedding">
+        &lt;/div>
+        &lt;label for="carousel-3" class="carousel-control prev control-1">‹&lt;/label>
+        &lt;label for="carousel-2" class="carousel-control next control-1">›&lt;/label>
+        &lt;label for="carousel-1" class="carousel-control prev control-2">‹&lt;/label>
+        &lt;label for="carousel-3" class="carousel-control next control-2">›&lt;/label>
+        &lt;label for="carousel-2" class="carousel-control prev control-3">‹&lt;/label>
+        &lt;label for="carousel-1" class="carousel-control next control-3">›&lt;/label>
+        &lt;ol class="carousel-indicators">
+            &lt;li>
+                &lt;label for="carousel-1" class="carousel-bullet">•&lt;/label>
+            &lt;/li>
+            &lt;li>
+                &lt;label for="carousel-2" class="carousel-bullet">•&lt;/label>
+            &lt;/li>
+            &lt;li>
+                &lt;label for="carousel-3" class="carousel-bullet">•&lt;/label>
+            &lt;/li>
+        &lt;/ol>
+    &lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+									</div>
+								</div>
+							</div>
+<!-- END OF review SAMPLE CODE -->			
+<hr class="line-break-full">
+
+			<div class="interactiveElements-item">
+				<h3 class="title-element">Grid Structure</h3>
+
+				<h4>2 column - Product Detail Page, Product Type Page, Events Page </h4>
+					<div class="layout">
+						<div class="layout-left-img layout-page-bg">
+							<code>.layout-left-img</code>
+						</div>
+
+						<div class="layout-right-text layout-page-bg">
+							<code>.layout-right-text</code>
+						</div>
+					</div>		
+<!-- START OF 2 column SAMPLE CODE -->
+								<div class="box">
+									<div class="box-code">
+										<h4 class="title-code">HTML</h4>
+										<pre>
+											<code>
+&lt;div class="layout">
+	&lt;div class="layout-left-img layout-page-bg">
+		&lt;code>.layout-left-img&lt;/code>
+	&lt;/div>
+
+	&lt;div class="layout-right-text layout-page-bg">
+		&lt;code>.layout-right-text&lt;/code>
 	&lt;/div>
 &lt;/div>
 											</code>
@@ -794,17 +1051,14 @@ li {
 										<h4 class="title-code">CSS</h4>
 										<pre>
 											<code>
-.review-container{
-	display: flex;
-	flex-direction: row;
-}
-
-.review-container-item{
-	margin: 0.5rem;
+.layout-left-img, .layout-right-text{
+	flex: 1 1 auto;
+	margin-right: 0.5rem;
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 50em){
-	.review-container{
+	.review-container, .layout{
 		flex-direction: column;
 	}
 }
@@ -812,11 +1066,12 @@ li {
 										</pre>
 									</div>
 								</div>
-<!-- END OF review SAMPLE CODE -->				
+							
+<!-- END OF 2 column SAMPLE CODE -->
+<hr class="line-break-full">
 
-
-				<h3 class="title-element">Grid Structure</h3>
-				<h4>4 column - Product Listing, Shopping Cart</h4>
+			<div class="interactiveElements-item">
+				<h4>4 column - Product Listing, Shopping Cart, Contact Page</h4>
 					<div class="layout">
 						<div class="layout-product-item layout-product-bg">
 							<code>.layout-product</code>
@@ -887,9 +1142,12 @@ li {
 										</pre>
 									</div>
 								</div>
+							</div>
 <!-- END OF 4 column SAMPLE CODE -->						
-
-				<h4>Unequal - Product Page, About Us Page</h4>
+<hr class="line-break-full">
+			
+			<div class="interactiveElements-item">
+				<h4>Unequal - Product Page, Checkout Page</h4>
 					<div class="layout">
 						<div class="layout-minor layout-page-bg">
 							<code>.layout-minor</code>
@@ -944,57 +1202,8 @@ li {
 										</pre>
 									</div>
 								</div>
+							</div>
 <!-- END OF unequal SAMPLE CODE -->
-
-				<h4>Product Detail Page - 2 column</h4>
-					<div class="layout">
-						<div class="layout-left-img layout-page-bg">
-							<code>.layout-left-img</code>
-						</div>
-
-						<div class="layout-right-text layout-page-bg">
-							<code>.layout-right-text</code>
-						</div>
-					</div>		
-<!-- START OF 2 column SAMPLE CODE -->
-								<div class="box">
-									<div class="box-code">
-										<h4 class="title-code">HTML</h4>
-										<pre>
-											<code>
-&lt;div class="layout">
-	&lt;div class="layout-left-img layout-page-bg">
-		&lt;code>.layout-left-img&lt;/code>
-	&lt;/div>
-
-	&lt;div class="layout-right-text layout-page-bg">
-		&lt;code>.layout-right-text&lt;/code>
-	&lt;/div>
-&lt;/div>
-											</code>
-										</pre>
-									</div>
-
-									<div class="box-code">
-										<h4 class="title-code">CSS</h4>
-										<pre>
-											<code>
-.layout-left-img, .layout-right-text{
-	flex: 1 1 auto;
-	margin-right: 0.5rem;
-	margin-bottom: 2rem;
-}
-
-@media (max-width: 50em){
-	.review-container, .layout{
-		flex-direction: column;
-	}
-}
-											</code>
-										</pre>
-									</div>
-								</div>
-<!-- END OF 2 column SAMPLE CODE -->
 
 				</div>
 			</div>
