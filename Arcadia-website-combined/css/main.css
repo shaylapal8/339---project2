@@ -27,7 +27,6 @@ h1 {
 }
 
 h2 {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 1rem;
 	font-weight: normal;
 	font-size: 1.1rem;
@@ -35,7 +34,6 @@ h2 {
 }
 
 summary{
-	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 1rem;
 	font-weight: normal;
 	font-size: 1rem;
@@ -51,6 +49,34 @@ summary::-webkit-details-marker{
   opacity: 0.6;
 }
 
+.summary-review{
+	color: #B9C3A8;
+    background-color: transparent;
+    border-color: #B9C3A8;
+    border-style: solid;
+    border-width: 1.5px;
+    font-size: 1rem;
+    border-color: c;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: center;
+	transition: background-color 0.3s ease-out;
+	margin-top: 0;
+}
+
+.summary-review:active, .summary-review:hover, .summary-review:focus{
+	background-color: #B9C3A8;
+	color: white;
+}
+
+.summary-review:focus{
+    outline: none;
+}
+
+.summary-review::-webkit-details-marker{
+  display: none;
+}
+
 .h2-green{
 	color: rgb(150,150,100);
 }
@@ -62,7 +88,6 @@ summary::-webkit-details-marker{
 }
 
 h3{
-	font-family: "NeutraText", Helvetica, sans-serif;
 	margin-top: 1rem;
 	margin-bottom: 0;
 	text-decoration: none;
@@ -71,7 +96,6 @@ h3{
 }
 
 h4 {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1rem;
 	margin-bottom: 0;
@@ -79,8 +103,7 @@ h4 {
 	padding-right: 0.5rem;*/
 }
 
-h5, .filter-toggle, .product-qty-label{
-	font-family: "NeutraText", Helvetica, sans-serif;
+h5, .product-qty-label{
 	margin-top: 2rem;
 	margin-bottom: 0;
 	font-weight: normal;
@@ -88,15 +111,18 @@ h5, .filter-toggle, .product-qty-label{
 }
 
 h6 {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-size: 1rem;
 	margin-bottom: 0;
 	font-weight: normal;
 }
 
+.filter-toggle{
+	margin-top: 1rem;
+	margin-bottom: 0;
+	font-size: 0.9rem;
+}
 
 p {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	margin-top: 1rem;
@@ -131,7 +157,6 @@ p {
 }
 
 li {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	margin-top: 0.5rem;
@@ -149,7 +174,6 @@ a {
 }
 
 .product-page-name {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 1.5rem;
 	margin-top: 1rem;
@@ -157,30 +181,24 @@ a {
 }
 
 .hyperlink {
-	font-style: italic;
+	font-weight: 300;
 	text-decoration: none;
 	transition: color 0.5s ease-out;
-	color: rgb(150,150,100);
+	color: #9DA88A;
 	font-size: 1rem;
+	transition: all 0.3s ease-in-out;
 }
-
 
 .hyperlink:active, .hyperlink:hover, .hyperlink:focus {
-	color: rgb(180,180,140);
+	/*color: #7E8B67;*/
+	font-weight: normal;
 }
 
-.hyperlink-back-nav {
-	transition: color 0.5s ease-out;
-	color: rgb(150,150,100);
-	font-size: 0.8rem;
-	margin-left: 9.5rem;
-}
 /* -------------- END of TEXT STYLING -------------- */
 
 
 /* -------------- BUTTONS STYLING -------------- */
 button {
-	font-family: "NeutraText", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1rem;
 }
@@ -622,36 +640,6 @@ ul.breadcrumb li a:active, ul.breadcrumb li a:hover, ul.breadcrumb li a:focus{
 	margin-bottom: 0.8rem;
 }
 
-#content {
-  display: none;
-}
-
-input[type="reveal"]{
-    color: transparent;
-    background-color: transparent;
-    border-width: 1.5px;
-    font-size: 1rem;
-    text-shadow: 0 0 0 #9DA88A;
-    border-color: #B9C3A8;
-    padding: 6px 12px;
-    cursor: pointer;
-    text-align: center;
-	transition: background-color 0.3s ease-out;
-}
-
-
-input[type="reveal"]:active, input[type="reveal"]:hover, input[type="reveal"]:focus{
-	background-color: #B9C3A8;
-	text-shadow: 0 0 0 white;
-}
-
-input[type="reveal"]:focus{
-    outline: none;
-}
-
-input:focus + div#content {
-  display: block;
-}
 /* -------------- END of REVIEW FORM -------------- */
 
 .line-break {
@@ -1471,16 +1459,6 @@ footer{
 #menu ul span.drop-icon {
   display: none;
 }
-
-/*#menu li{
-  border-style: solid;
-  border-color: rgba(0, 0, 0, .05);
-}*/
-
-/*#menu li, 
-#toggle-menu {
-  border-width: 0 0 1px;
-}*/
 
 /* Sub menu style */
 #menu .sub-menu {
