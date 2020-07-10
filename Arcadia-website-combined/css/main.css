@@ -1533,7 +1533,7 @@ footer{
 		padding-left: 0.2rem;
 		padding-right: 0.2rem;
 	}
-	
+
 }
 
 @media (max-width: 455px){
@@ -1555,6 +1555,8 @@ footer{
 	.progress-box{
 		flex-wrap: wrap;
 	}
+	
+
 }
 
 @media (max-width: 500px){
@@ -1562,8 +1564,14 @@ footer{
 		padding-left: 4%;
 		padding-right: 4%;
 	}
-
 }
+
+
+@media (max-width: 812px){
+      #co-summary {
+		max-width: 100%;
+	}
+	}
 
 /* 640px */
 @media (max-width: 40em){
@@ -1592,8 +1600,14 @@ footer{
 	.wide-layout{
 		margin: 2rem 50% 3rem 50%;
 	}
+
 }
 
+@media(min-width: 900px){
+	#co-summary{
+		max-width: 35%;
+	}
+}
 
 @media only screen and (max-width: 40em) {
   /*#menu li {
