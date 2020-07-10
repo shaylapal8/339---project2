@@ -48,30 +48,17 @@
 <!----------- END OF main nav SECTION ----------->
   
 	<section class="narrow-layout">
-    	<div class="two-col progress-box">
-  	  		<h1 class="page-title two-col-item">Payment</h1>
-  	  		<div class="two-col-item progress-bar">
-  	  			<a href="./checkout.html">
-	  	      	<div class="progress-state">
-	  	    		<span class="prog-c progress-bar-item"></span>
-	  	    		<h6 class="progress-yes-labels">Delivery</h6>
-	  	    	</div></a>
-	  	    	
-	  	    		<hr class="prog-line progress-bar-item">
-	  	    	<a href="./payment.html">	
-	  	    	<div class="progress-state">
-	  	    		<span class="prog-cf progress-bar-item"></span>
-	  	    		<h6 class="progress-no-labels">Payment</h6>
-	  	    	</div></a>
-
-		  	    		<hr class="prog-line2 progress-bar-item">
-		  	    	 <a href="./done.html">	
-		  	    	<div class="progress-state">
-		  	    		<span class="prog-c progress-bar-item"></span>
-		  	    		<h6 class="progress-no-labels">Done</h6>
-		  	    	</div></a>
-		  	    </div>
-	  		</div>
+    	<div class="two-col-progress">
+  	  		<h1 class="page-title two-col-progress-item">Payment</h1>
+  	  		<!-- Progress bar with steps: http://kodhus.com/newsite/step-progress-bar-css-only/ -->
+			<div class="two-col-progress-item">
+		        <ul class="progressbar">
+		            <li class="active">Delivery</li>
+		            <li class="active">Payment</li>
+		            <li>Done!</li>
+		  		</ul>
+		  	</div>
+	  	</div>
 
      	<div class="two-col-title">
   			<h5 class="four-col-title-item-large">Billing Information</h5>

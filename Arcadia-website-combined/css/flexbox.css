@@ -255,6 +255,14 @@ aside{
 	flex-direction: row;
 	align-items: left;
 }
+
+.two-col-progress{
+	display: flex;
+	flex-direction: row;
+	/*align-items: center;*/
+	justify-content: space-between;
+}
+
 .two-col-item-c{
 	display: flex;
 	flex-direction: column;
@@ -277,6 +285,10 @@ aside{
 	flex-direction: column;
 	flex: 1 1 100%;
 	align-items: top-left;
+}
+
+.two-col-progress-item{
+	flex:1 1 50%;
 }
 
 
@@ -675,8 +687,14 @@ aside{
 	}
 }
 
+@media (min-width: 40em){
+	.two-col-progress{
+		align-items: center;
+	}
+}
+
 @media (max-width: 40em){
-	.nav, .blog-container{
+	.nav, .blog-container,.two-col-progress{
 		flex-direction: column;
 	}
 	.nav-content{
