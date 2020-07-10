@@ -1080,6 +1080,14 @@ img.visa-img:hover ~ div.visa-form {
 	padding: 1rem 0.5rem 0 0;
 }
 
+
+.summary-c-img{
+	width: 40%;
+	border-style: none;
+	padding: 1rem 0.5rem 0 0;
+}
+
+
 /*----------- Item Cart CSS -----------*/
 
 .back-button {
