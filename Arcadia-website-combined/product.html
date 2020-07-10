@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Signature Bouquet</title>
@@ -67,15 +67,16 @@
 			    <div class="carousel-inner">
 			        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 			        <div class="carousel-item">
-			            <img src="img/product-shot1.jpg" class="product-page-img">
+			            <img src="img/product-shot1.jpg" class="product-page-img" alt="A bouquet with pink and green flowers">
 			        </div>
 			        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
 			        <div class="carousel-item">
-			            <img src="img/product-shot2.jpg" class="product-page-img">
+			            <img src="img/product-shot2.jpg" class="product-page-img" alt="A bride holding a bouquet deside the groom">
 			        </div>
 			        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
 			        <div class="carousel-item">
-			            <img src="img/product-shot3.jpg" class="product-page-img">
+			            <img src="img/product-shot3.jpg" class="product-page-img"
+			            alt="A close up of a bouquet of flowers">
 			        </div>
 			        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
 			        <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -124,7 +125,7 @@
 				</div>
 				
 				<form>
-					<label for="quantity"><h5>Quantity</h5></label>
+					<label class="product-qty-label">Quantity</label>
 					<div class="quantity-cart-box">
 						<div class="quantity-wrapper">
 							<input type="number" min="1" max="9" value="1" class="quantity-cart-box-item quantity">
@@ -139,7 +140,7 @@
 	</section>
 <!----------- END of PRODUCT DETAIL CONTAINER ----------->
 
-	<hr class="line-break"></hr>
+	<hr class="line-break">
 
 	<section class="wide-layout">
 		<div id="review">
@@ -168,23 +169,23 @@
 				</div>
 
 				<div class="review-item">
-					<input type="reveal" value="Leave a Review" class="btn-reveal">
+					<input type="submit" value="Leave a Review" class="btn-reveal">
 						<div id="content">
 							<label for="name">Name</label>
 							<input type="text" id="name" name="name" placeholder="First and Last Name" class="form-field">
 							
-							<label for="text">Comments</label>
+							<label>Comments</label>
 							<textarea name="Text1" cols="40" rows="5" placeholder="How was the product?"></textarea>
 
 							<button class="btn-cs">Post Review</button>
 						</div>	
 				</div>
-			
+			</div>			
 		</div>
 	</section>
 <!----------- END of REVIEW MODULE ----------->
 
-	<hr class="line-break"></hr>
+	<hr class="line-break">
 
 	<section class="wide-layout">
 		<h2>You Might Also Like</h2>

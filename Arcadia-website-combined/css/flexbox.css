@@ -164,7 +164,7 @@ aside{
 .two-col{
 	display: flex;
 	flex-direction: row;
-	align-items: top-left;
+	/*align-items: top-left;*/
 }
 
 .two-col-item{
@@ -181,7 +181,7 @@ aside{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 100%;
-	align-items: top-left;
+	/*align-items: top-left;*/
 }
 
 .two-col-review-item{
@@ -223,7 +223,7 @@ aside{
 	display: flex;
 	flex-direction: row;
 	flex: 1 1 100%;
-	align-content: top;
+	align-content: flex-start;
 }
 
 .four-col-title-item{
@@ -267,7 +267,7 @@ aside{
 }
 
 .four-col-item-sub{
-	display: 1 1 auto;
+	flex: 1 1 auto;
 	left: 0%;
 	right: 50%;
 	align-items: center;
@@ -312,7 +312,7 @@ aside{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 100%;
-	align-items: top;	
+	align-items: flex-start;	
 	text-align: left;
 	padding: 0.5rem;
 }
@@ -362,12 +362,12 @@ aside{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	flex-flow:row-wrap;
-	/*justify-content: space-between;*/
+	/*flex-flow:nowrap;*/
+	justify-content: space-between;
 }
 
 .progress-bar-item{
-	/*flex: 1 1 auto;*/
+	flex: 1 1 auto;
 }
 
 .progress-state{
@@ -380,7 +380,7 @@ aside{
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
-	flex-flow: row-wrap;
+	flex-flow: nowrap;
 }
 
 .hero-container{
