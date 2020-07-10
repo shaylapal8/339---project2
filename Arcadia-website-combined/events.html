@@ -47,10 +47,50 @@
 	</nav>
 <!----------- END OF main nav SECTION ----------->
 
-	<div class="narrow-layout">
+	<section class="narrow-layout">
 		<h1 class="page-title">Events</h1>
-		<p class="about-blurb">Our team at Arcadia would be ecstatic to provide gorgeous flowers for any significant event in your life! In order for us to serve you best, fill out the following page and we can book a consultation with you. Please ensure that all the information is accurate. If there are any important details we need to know, please include this in our message input.</p>
+		<p class="about-blurb">Our team at Arcadia would be ecstatic to provide gorgeous flowers for any significant event in your life! If you wish to take about your upcoming events, you're more than welcome to <a href="#book-consultation" class="hyperlink">book a free consultation</a> with our team.</p>
 
+		<div class="carousel">
+		    <div class="carousel-inner">
+		        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+		        <div class="carousel-item">
+		            <img src="img/event2.jpg">
+		        </div>
+		        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+		        <div class="carousel-item">
+		            <img src="img/event3.jpg">
+		        </div>
+		        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+		        <div class="carousel-item">
+		            <img src="img/event1.jpg">
+		        </div>
+		        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+		        <label for="carousel-2" class="carousel-control next control-1">›</label>
+		        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+		        <label for="carousel-3" class="carousel-control next control-2">›</label>
+		        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+		        <label for="carousel-1" class="carousel-control next control-3">›</label>
+		        <ol class="carousel-indicators">
+		            <li>
+		                <label for="carousel-1" class="carousel-bullet">•</label>
+		            </li>
+		            <li>
+		                <label for="carousel-2" class="carousel-bullet">•</label>
+		            </li>
+		            <li>
+		                <label for="carousel-3" class="carousel-bullet">•</label>
+		            </li>
+		        </ol>
+		    </div>
+		</div>
+	</section>
+
+	<hr class="line-break-full"> </hr>
+
+	<section class="narrow-layout" id="book-consultation">
+		<h2>Book a Consultation</h2>
+		<p>In order for us to serve you best, include any important details we need to know. Please ensure that all the information is accurate.</p>
 		<div class="events-form-container">
 			<div class="events-form-left">
 				<label for="name">Name</label>
@@ -63,7 +103,6 @@
 				<input type="text" id="email" name="email" placeholder="example@mail.com" class="form-field">
 			</div>
 			
-
 			<div class="events-form-right">
 				<label for="event-type">Event Type</label>
 				<select id="event-type" class="event-selector">
@@ -71,6 +110,7 @@
 					<option value="party">Party</option>
 					<option value="babyshower">Baby Shower</option>
 					<option value="bday">Birthday</option>
+					<option value="bday">Others</option>
 				</select>
 				<!-- option selector tutorial: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_option -->
 
@@ -79,9 +119,8 @@
 				<!-- textarea tutorial: https://stackoverflow.com/questions/6262472/multiple-lines-of-input-in-input-type-text -->
 			</div>
 		</div>
-
 		<button class="btn-submit">Submit</button>
-	</div>
+	</section>
 
 	<!----------- FOOTER ----------->
 	<footer>

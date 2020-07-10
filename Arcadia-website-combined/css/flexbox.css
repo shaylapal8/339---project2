@@ -460,12 +460,11 @@ aside{
 
 .events-form-left{
 	flex:1 1 auto;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 .events-form-right{
 	flex:1 1 auto;
-	margin-right: 2rem;
 }
 /*---------- END of EVENTS PAGE ----------*/
 
@@ -548,6 +547,10 @@ aside{
 @media (max-width: 50em){
 	.layout, .cart-layout, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .browse-container, .progress-box, .subscribe, .diy-title-item, .four-col-item-c{
 		flex-direction: column;
+	}
+
+	.events-form-left{
+		margin-right: 0;
 	}
 
 	.contact-container, .about-container, .review-container{
