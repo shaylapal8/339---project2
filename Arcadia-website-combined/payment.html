@@ -82,27 +82,27 @@
 	  <div class="checkout-col">	
   		 <div class="one-col delivery-form">
   			<div class="one-col-item-c">	
-              <label class="billing" for="address">Customer Name</label>
-              <input type="name" id="name" name="name" placeholder="Name">
+              <label class="billing">Customer Name</label>
+              <input type="text" id="name">
 
-              <label class="billing" for="address">Customer Phone Number</label>
-              <input type="phone" id="phone" name="phone" placeholder="Phone Number">
+              <label class="billing">Customer Phone Number</label>
+              <input type="number" id="phone">
 
-              <label class="billing" for="address">Customer Email</label>
-              <input type="address" id="email" name="address" placeholder="person@mail.com">
+              <label class="billing">Customer Email</label>
+              <input type="text" id="email" name="address">
 
-              <label class="billing" for="address">Address</label>
-              <input type="name" id="name" name="name" placeholder="12345 Ave, 123 Street">
+              <label class="billing">Address</label>
+              <input type="text">
 
-              <label class="billing-2" for="address">City</label>
-              <input type="phone" id="phone" name="phone" placeholder="City" maxlength="3" size="3">
+              <label class="billing-2">City</label>
+              <input type="number">
 
-              <label class="billing-2" for="address">Postal/ZIP Code</label>
-              <input type="address" id="address" name="address" placeholder="A1A 1A1" maxlength="3" size="3">
+              <label class="billing-2">Postal/ZIP Code</label>
+              <input type="text" name="address">
 			</div>
   		</div>
         
-        <hr class="line-break"> </hr>
+        <hr class="line-break">
 
         <div class="two-col-title">
   			<h5 class="four-col-title-item-large">Method of Payment</h5>
@@ -125,17 +125,17 @@
 
 
                  <div class="one-col-item-c visa-form">	
-	               <label class="billing" for="address"> Card Number</label>
-	               <input type="name" name="number" placeholder="0000 0000 0000">
+	               <label class="billing"> Card Number</label>
+	               <input type="number" name="number" placeholder="0000 0000 0000">
 
-	               <label class="billing" for="address">Cardholders Name</label>
-	               <input type="name" id="name" name="name" placeholder="Name">	
+	               <label class="billing">Cardholders Name</label>
+	               <input type="text" placeholder="Name">	
 
-	               <label class="billing" for="address" >Card Expiry Date</label>
-	               <input type="expiry date"  name="expiry" placeholder="00/0000">				
+	               <label class="billing">Card Expiry Date</label>
+	               <input type="number"  name="expiry" placeholder="00/0000">				
 	                
-	               <label class="billing" for="CVV" >CVV</label>
-	               <input type="expiry date"  name="cvv" placeholder="000">				
+	               <label class="billing">CVV</label>
+	               <input type="number"  name="cvv" placeholder="000">				
 	             </div>
 	         </div>
 	     </div>
@@ -148,16 +148,16 @@
            	  <h5>Order Summary</h5>
                 <div class="summary-sec1">
        		     <img src="img/bouquet.jpeg" alt="Product Image." class="summary-c-img">
-       		     <p> <strong>Spring Bouquet<strong> Qty: 1</p>
+       		     <p> <strong>Spring Bouquet</strong> Qty: 1</p>
        		     <p class="sum-subtotal-box-item-text-2"> 50$</p>
        		    </div>
 
        		    <div class="summary-sec1">
        		     <img src="img/bouquet.jpeg" alt="Product Image." class="summary-c-img">
-       		     <p> <strong>Spring Bouquet<strong> Qty: 1</p>
+       		     <p> <strong>Spring Bouquet</strong> Qty: 1</p>
        		     <p class="sum-subtotal-box-item-text-2"> 50$</p>
        		    </div>
-                <hr class="line-break"></hr> 
+                <hr class="line-break">
 
 			    <div class="two-col-item sum-subtotal-box">
 				  <div class="sum-subtotal-box-item">
@@ -211,7 +211,7 @@
 				<p class="p-footer">Subscribe to receive weekly newsletter for the freshest deals.</p>
 				<form>
 					<div class="subscribe">
-						<input type="text" id="email" name="email" placeholder="example@mail.com" class="form-field subscribe-item">
+						<input type="text" class="form-field subscribe-item">
 						<button class="btn-subscribe subscribe-item">Subscribe</button>
 					</div>
 				</form>
