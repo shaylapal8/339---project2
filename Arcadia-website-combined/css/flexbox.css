@@ -161,12 +161,22 @@ aside{
 	margin: 1rem;
 }
 
+
 .checkout-container{
 	display: flex;
 	flex-direction: row;
 	align-items: top;
 	flex: 2 0 100%;
 }
+
+
+.checkout-container-pay{
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	flex: 2 0 100%;
+}
+
 
 .checkout-col{
 	display: flex;
@@ -212,6 +222,31 @@ aside{
 }
 
 
+.pay{
+	display: flex;
+	flex-direction: row;
+    align-items: stretch;
+}
+
+.one-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.one-col-item-c{
+	display: flex;
+	flex-direction: column;
+	flex: 2 0 100%;
+	align-items: top;
+	padding:0;
+}
+
+.one-col-item{ 
+	display: flex;
+	flex-direction: column;
+	flex: 2 0 100%;
+	align-items: top-left;
+ }
 
 .two-col{
 	display: flex;
@@ -241,7 +276,6 @@ aside{
 	flex: 1 1 100%;
 	align-items: top-left;
 }
-
 
 
 .two-col-review-item{
