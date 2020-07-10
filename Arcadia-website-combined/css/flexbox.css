@@ -335,6 +335,7 @@ aside{
 	display: flex;
 	flex-direction: row;
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -654,20 +655,21 @@ aside{
 	.nav, .blog-container{
 		flex-direction: column;
 	}
-
-	.four-col-item-large-cart{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.four-col{
-		align-items: flex-start;
-	}
-
 	.nav-content{
 		justify-content: space-between;
 	}
 }
+
+@media (max-width: 1106px){
+	.four-col-item-large-cart{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.four-col{
+		align-items: flex-start;
+	}
+}
+
 
 @media (max-width: 50em){
 	.layout, .cart-layout, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .browse-container, .progress-box, .subscribe, .diy-title-item, .four-col-item-c{
