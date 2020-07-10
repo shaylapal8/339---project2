@@ -407,13 +407,6 @@ aside{
 
 }
 
-/*.sign-up-item{
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 auto;
-	margin: 1rem;
-}*/
-
 .sign-up-item-narrow{
 	/*flex: 1 1 10%;*/
 	margin: 1rem;
@@ -529,6 +522,36 @@ aside{
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+}
+
+/*---------- CONFIRMATION BOX ----------*/
+.confirmation-box{
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.confirmation-section{
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+ .summary-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.summary-box-item{
+	flex: 1 1 40%;
+	margin-right: 3%;
+}
+
+.summary-box-item-small{
+	flex: 1 1 20%;
+	margin-right: 3%;
 }
 
 /*---------- START of CONTACT PAGE ----------*/
@@ -670,7 +693,6 @@ aside{
 	}
 }
 
-
 @media (max-width: 50em){
 	.layout, .cart-layout, .product-page-container, .contact-container, .events-form-container, .four-col-item-large, .browse-container, .progress-box, .subscribe, .diy-title-item, .four-col-item-c{
 		flex-direction: column;
@@ -695,6 +717,11 @@ aside{
 	.clsp-container-box{
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.confirmation-box{
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 

@@ -1040,34 +1040,44 @@ img.visa-img:hover ~ div.visa-form {
 	margin-left: 0.5rem;
 }
 
-
-#item-summary{
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ddbea9;
-    padding: 0rem 0rem 1.5rem 0.5rem;
-    border-radius: 1%;
-    max-width: 100%;
-}
-
-#done{
+.done{
 	border-width: 1px;
     border-style: solid;
     border-color: #ddbea9;
     padding: 0rem 0rem 1.5rem 0.5rem;
     border-radius: 1%;
     max-width: 100%;
-
 }
 
-#final-img{
-	padding-top: 1rem;
-	padding-left: 1rem;
+/*---------- Confirmation ----------*/
+.details-order-summary > summary{
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 1.1rem;
+
+	cursor: pointer;
+	transition: 0.3s;
+	display: block;
+	outline:none;
 }
 
-.col-divider{
-	padding:0.5rem;
+.details-order-summary{
+	margin: 0;
+}
 
+.details-order-summary > summary::-webkit-details-marker{
+  color: rgb(221,190,169);
+  opacity: 0.6;
+}
+
+.details-order-summary > summary:hover, .details-order-summary > summary:active, .details-order-summary > summary:focus{
+	color: rgb(221,190,169);
+}
+
+.summary-img{
+	width: 100%;
+	border-style: none;
+	padding: 1rem 0.5rem 0 0;
 }
 
 /*----------- Item Cart CSS -----------*/
@@ -1132,19 +1142,6 @@ label {
 
 .co-img{
  max-width: 50%;
-}
-
-.summary-img{
-	width:35%;
-	padding:1rem;
-}
-
-.summary-box{
-	border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    padding: 0rem 0rem 1.5rem 0.5rem;
-    max-width: 100%;
 }
 
 .co-summary-box{
