@@ -1113,6 +1113,17 @@ img.visa-img:hover ~ div.visa-form {
 	display: inline;
 }
 
+.cart-diy-list-2{
+	display: inline;
+	padding:0;
+	list-style: none;
+}
+
+.cart-diy-list-2 > li{
+	
+	font-size: 0.8rem;
+}
+
 .cart-diy-list > li{
 	font-size: 0.8em;
 	display: block;
