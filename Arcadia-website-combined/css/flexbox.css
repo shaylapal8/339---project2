@@ -521,7 +521,6 @@ aside{
 
 .flower-selection{
 	display: flex;
-	/*flex-direction: row;*/
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -529,7 +528,7 @@ aside{
 .flower-item{
 	display: flex;
 	align-items: center;
-	flex: 1 1 10%;
+	flex: 1 1 auto;
 	flex-direction: column;
 	margin: 0.5rem;
 }
